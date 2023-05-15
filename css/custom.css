@@ -1,27 +1,26 @@
 /*--GLOBALES-- */
 :root {
-  --red: #FF003F;
+  --red: #ff003f;
   --black: #0d0813;
   --grey: #474c59;
   --white: #d5dbe5;
   --pureBlack: #000000;
-
 }
-*{
-    font-family: var(--tituloFont);
+* {
+  font-family: var(--tituloFont);
 }
-body{
+body {
   background-color: gray;
 }
-a, button {
+a,
+button {
   font-size: 2em;
   font-family: var(--tituloFont);
   text-decoration: none;
 }
 
-.goticColor{
-  background-color: #FF003F!important
-  
+.goticColor {
+  background-color: #ff003f !important;
 }
 
 /*--HEADER Y NAV-- */
@@ -30,53 +29,133 @@ a, button {
   width: 15%;
   height: auto;
   margin: 2% 0;
-  
 }
-#navbar{
+#navbar {
   margin-bottom: 4rem;
   width: 100%;
-  position:fixed;
-  transition: 0.5s;
-  z-index: 2000;
 }
-
 
 /*--MAIN-- */
 
-main{
-background-color:#F3F3F3
+main {
+  background-color: #f3f3f3;
 }
-main img{
+main img {
   width: 65%;
   border-radius: 2em;
 }
-main a:hover, main button:hover{
-  background-color: #ffeaeb
+main a:hover,
+main button:hover {
+  background-color: #ffeaeb;
 }
-.cartaBorde{
-  border: 0!important;
-  padding: 0!important;
-  margin: 1em!important;
+.cartaBorde {
+  border: 0 !important;
+  padding: 0 !important;
+  margin: 1em !important;
 }
-.formulario{
+.formulario {
   border-radius: 1em;
-
 }
-
 
 /*--MEDIA QUERIES-- */
 
 @media screen and (max-width: 780px) {
   .logo {
-    width: 80%!important;
+    width: 80% !important;
   }
-  main img{
+  main img {
     width: 80%;
   }
-  .formulario{
-    width: 95%!important;
+  .formulario {
+    width: 95% !important;
   }
 }
 
+#carousel {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+#carousel div {
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 1;
+}
+.carousel-image {
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
 
+#carousel div img {
+  width: 400px;
+  transition: width 1s;
+}
+#carousel div.hideLeft {
+  left: 0%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideLeft img {
+  width: 200px;
+}
+#carousel div.hideRight {
+  left: 100%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideRight img {
+  width: 200px;
+}
+#carousel div.prev {
+  z-index: 5;
+  left: 30%;
+  transform: translateY(50px) translateX(-50%);
+}
+#carousel div.prev img {
+  width: 300px;
+}
+#carousel div.prevLeftSecond {
+  z-index: 4;
+  left: 15%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+#carousel div.prevLeftSecond img {
+  width: 200px;
+}
+#carousel div.selected {
+  z-index: 10;
+  left: 50%;
+  transform: translateY(0px) translateX(-50%);
+}
+.botones-ocultos {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#carousel div.next {
+  z-index: 5;
+  left: 70%;
+  transform: translateY(50px) translateX(-50%);
+}
+#carousel div.next img {
+  width: 300px;
+}
+#carousel div.nextRightSecond {
+  z-index: 4;
+  left: 85%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+#carousel div.nextRightSecond img {
+  width: 200px;
+}
 
+.buttons {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+}
