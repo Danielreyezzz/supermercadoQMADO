@@ -159,3 +159,12 @@ main button:hover {
   transform: translateX(-50%);
   bottom: 10px;
 }
+
+.imgcategorias{
+  height: 50px;
+  width: 50px;
+}
+
+#despensa-tabla {
+  display: none;
+}

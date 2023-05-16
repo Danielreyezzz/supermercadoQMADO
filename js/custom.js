@@ -72,3 +72,17 @@ $(".selected img").mouseenter(function() {
   $("#carousel").mouseleave(function() {
     $(".botones-ocultos").hide();
   });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  let despensaTitulo = document.getElementById("despensa-titulo");
+  let despensaTabla = document.getElementById("despensa-tabla");
+
+  despensaTitulo.addEventListener("click", function() {
+    if (despensaTabla.style.display === "none") {
+      despensaTabla.style.display = "table";
+   } else {
+      despensaTabla.style.display = "none";
+   }
+  });
+});
