@@ -18,7 +18,16 @@ button {
   font-family: var(--tituloFont);
   text-decoration: none;
 }
-
+.cate{
+  font-size: 1em!important;
+  text-decoration: none;
+  color: black;
+}
+.cate:hover{
+  background-color: white;
+  cursor: pointer;
+  color: red;
+}
 .goticColor {
   background-color: #ff003f !important;
 }
@@ -128,13 +137,7 @@ main button:hover {
   left: 50%;
   transform: translateY(0px) translateX(-50%);
 }
-.botones-ocultos {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+
 #carousel div.next {
   z-index: 5;
   left: 70%;
@@ -167,4 +170,44 @@ main button:hover {
 
 #despensa-tabla {
   display: NONE;
+}
+
+
+.boxshadow {
+  -webkit-box-shadow: 10px 10px 5px -3px rgba(96, 130, 167, 0.51);
+  -moz-box-shadow: 10px 10px 5px -3px rgba(96, 130, 167, 0.51);
+  box-shadow: 10px 10px 5px -3px rgba(46, 15, 15, 0.51);
+}
+
+
+.categoria:hover{
+  -webkit-box-shadow: 10px 10px 5px -3px rgba(96, 130, 167, 0.51);
+  -moz-box-shadow: 10px 10px 5px -3px rgba(96, 130, 167, 0.51);
+  box-shadow: 10px 10px 4px -1px rgba(139, 12, 12, 0.51);
+  transition: 0.3s;
+  cursor: pointer;
+}
+button{
+  border: 0!important;
+  width: 100%;
+}
+
+.selected {
+  position: relative; /* Agregar posición relativa */
+}
+
+.selected:hover img {
+  opacity: 0.7;
+}
+
+.botones-ocultos {
+  display: none;
+  position: absolute; /* Agregar posición absoluta */
+  top: 50%; /* Alinear en el centro verticalmente */
+  left: 50%; /* Alinear en el centro horizontalmente */
+  transform: translate(-50%, -50%); /* Alinear en el centro exacto */
+}
+
+.selected:hover .botones-ocultos {
+  display: block;
 }
