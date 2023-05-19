@@ -219,39 +219,20 @@ button{
 #fondomain{
   background-image: url(/supermercadoQMADO/img/Fondo_Ladrillos.png);
   background-repeat: no-repeat;
-}
-
-.estantecristal{
-
-  background-image: url(/supermercadoQMADO/img/Estante.png);
-  background-repeat: no-repeat;
   
- 
 }
 
 #contenedorestantecristal{
-  position: relative;
-  width: 100%;
-  
-  z-index: 1;
-}
 
-#estantecristal {
-  position: relative;
-  width: 100%;
-  height: 255px;
-  z-index: 1;
+  background-image: url(/supermercadoQMADO/img/Balda_basica_sin_fondo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0;
 }
 
 
 
-#tomate {
-  position: absolute;
-  top: 9%;
-  left: 10%;
-  z-index: 2;
-  
-}
+
 
 
 
