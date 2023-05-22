@@ -230,6 +230,31 @@ button{
   background-position: 0;
 }
 
+#contenedorestantemetacrilato{
+
+  background-image: url(/supermercadoQMADO/img/Balda_metacrilato.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0;
+}
+
+#tomate{
+
+  background-image: url(/supermercadoQMADO/img/tomate.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0;
+  width: 100px;
+  height: 100px;
+
+}
+
+.fila{
+  width: 80%;
+}
+
+
+
 
 
 
