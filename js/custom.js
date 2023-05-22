@@ -121,4 +121,16 @@ function moveToSelected(element) {
   });
 
 
+ function showButtons(element) {
+    var buttons = element.getElementsByClassName('botones-ocultos');
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].classList.add('mostrar');
+    }
+  }
 
+  function hideButtons(element) {
+    var buttons = element.getElementsByClassName('botones-ocultos');
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].classList.remove('mostrar');
+    }
+  }

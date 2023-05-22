@@ -200,35 +200,50 @@ button{
   opacity: 0.7;
 }
 
-.botones-ocultos {
-  display: none;
-  position: absolute; /* Agregar posición absoluta */
-  top: 50%; /* Alinear en el centro verticalmente */
-  left: 50%; /* Alinear en el centro horizontalmente */
-  transform: translate(-50%, -50%); /* Alinear en el centro exacto */
-}
+
 .botones-ocultos:hover svg:hover{
   background-color: rgb(0, 0, 0)!important;
-  transition: .3s;
   cursor: pointer;
+
+}
+.botones-ocultos  {
+  opacity: 0;
+  transition: opacity .3s;
+  transform: translate(-50%, -50%); /* Alinear en el centro exacto */
 }
 
-.selected:hover .botones-ocultos {
-  display: block;
+.botones-ocultos.mostrar {
+  opacity: 1;
+}
+
+.botones-ocultos:not(.mostrar) {
+  opacity: 0;
+  transition: opacity .3s;
+  transform: translate(-50%, -50%); 
+}
+#tomate .botones-ocultos {
+display: grid!important;
+grid-template-columns: 1fr 1fr!important;
+margin: 50% 20%!important;
+gap: 8rem;
+
+}
+.circulo{
+  border-radius: 50%;
 }
 .balda{
   background-image: url(../img/baldas.png);
 }
 
 #fondomain{
-  background-image: url(/supermercadoQMADO/img/Fondo_Ladrillos.png);
+  background-image: url(../img/fondo3.png);
   background-repeat: no-repeat;
   
 }
 
 #contenedorestantecristal{
 
-  background-image: url(/supermercadoQMADO/img/Balda_basica_sin_fondo.png);
+  background-image: url(../img/Balda_basica_sin_fondo.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0;
@@ -236,7 +251,7 @@ button{
 
 #contenedorestantemetacrilato{
 
-  background-image: url(/supermercadoQMADO/img/Balda_metacrilato.png);
+  background-image: url(../img/Balda_metacrilato.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0;
@@ -244,17 +259,22 @@ button{
 
 #tomate{
 
-  background-image: url(/supermercadoQMADO/img/tomate.png);
+  background-image: url(../img/tomate.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 7rem!important;
 
 }
 
 .fila{
   width: 80%;
+  padding: 2rem 0;
+}
+.margines{
+  margin: 3rem 0;
 }
 
 
