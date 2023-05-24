@@ -245,7 +245,7 @@ gap: 8rem;
 
   background-image: url(../img/Balda_basica_sin_fondo.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: 0;
 }
 
@@ -253,7 +253,7 @@ gap: 8rem;
 
   background-image: url(../img/Balda_metacrilato.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: 0;
 }
 
@@ -261,7 +261,7 @@ gap: 8rem;
 
   background-image: url(../img/12-bandeja-ensalada-pasta-600x533.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: 0;
   width: 200px;
   height: 200px;
@@ -275,6 +275,17 @@ gap: 8rem;
 }
 .margines{
   margin: 3rem 0;
+}
+
+.precio{
+  position: relative;
+  left: 20%;
+  top: 40%;
+
+}
+.imgetiqueta{
+  position: absolute;
+  width:8%;
 }
 
 
