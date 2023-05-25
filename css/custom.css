@@ -328,6 +328,73 @@ button {
 .product-image {
   display: inline-block;
 }
+#fondomain{
+  background-image: url(../img/Fondo_Blanco.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+#contenedorestantecristal{
+
+  background-image: url(../img/Balda_Naranja.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0;
+}
+
+#contenedorestantemetacrilato{
+
+  background-image: url(../img/Balda_metacrilato.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0;
+}
+
+#tomate{
+
+  background-image: url(../img/12-bandeja-ensalada-pasta-600x533.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 7rem!important;
+
+}
+
+.fila{
+  width: 80%;
+  padding: 2rem 0;
+  position: relative;
+  margin-top:8% !important;
+  z-index: 10;
+}
+.margines{
+  height: 25rem!important;
+}
+
+.precio{
+  position: relative;
+  left: 13%;
+  top: 13%;
+  font-size: 150%;
+
+
+}
+.imgetiqueta{
+  position: absolute;
+  width:6%;
+  margin-left: 1.5rem;
+  
+}
+.imgbalda{
+  width: 100%;
+  position: absolute;
+}
+.contenedoretiqueta{
+  margin-left: 5rem;
+}
 .rack-product .shadow {
   position: absolute;
   bottom: -10px;
