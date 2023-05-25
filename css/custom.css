@@ -236,14 +236,15 @@ gap: 8rem;
 }
 
 #fondomain{
-  background-image: url(../img/fondo3.png);
+  background-image: url(../img/Fondo_Blanco.png);
   background-repeat: no-repeat;
+  background-size: cover;
   
 }
 
 #contenedorestantecristal{
 
-  background-image: url(../img/Balda_basica_sin_fondo.png);
+  background-image: url(../img/Balda_Naranja.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 0;
@@ -272,20 +273,34 @@ gap: 8rem;
 .fila{
   width: 80%;
   padding: 2rem 0;
+  position: relative;
+  margin-top:8% !important;
+  z-index: 10;
 }
 .margines{
-  margin: 3rem 0;
+  height: 25rem!important;
 }
 
 .precio{
   position: relative;
-  left: 20%;
-  top: 40%;
+  left: 13%;
+  top: 13%;
+  font-size: 150%;
+
 
 }
 .imgetiqueta{
   position: absolute;
-  width:8%;
+  width:6%;
+  margin-left: 1.5rem;
+  
+}
+.imgbalda{
+  width: 100%;
+  position: absolute;
+}
+.contenedoretiqueta{
+  margin-left: 5rem;
 }
 
 
