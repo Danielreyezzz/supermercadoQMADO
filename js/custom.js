@@ -134,3 +134,10 @@ function moveToSelected(element) {
       buttons[i].classList.remove('mostrar');
     }
   }
+
+  $('.item').on('click',function(){
+    $('p',this).stop().slideDown(300);
+  })
+  $('.item').on('mouseleave',function(){
+    $('p',this).stop().slideUp(300);
+  })
