@@ -274,7 +274,8 @@ button {
 .shop-line .rack .right {
   right: -60px;
 }
-.shop-line .rack .left, .shop-line .rack .right {
+.shop-line .rack .left,
+.shop-line .rack .right {
   position: absolute;
   width: 50px;
   height: 120px;
@@ -319,86 +320,80 @@ button {
 }
 .rack-product .product-image {
   position: absolute;
-  bottom: 29px;
   left: 50%;
   width: 95%;
   max-width: 95%;
   z-index: 0;
 }
+svg {
+  border-radius: 50% !important;
+}
 .product-image {
   display: inline-block;
 }
-#fondomain{
+#fondomain {
   background-image: url(../img/Fondo_Blanco.png);
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 
-#contenedorestantecristal{
-
+#contenedorestantecristal {
   background-image: url(../img/Balda_Naranja.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 0;
 }
 
-#contenedorestantemetacrilato{
-
+#contenedorestantemetacrilato {
   background-image: url(../img/Balda_metacrilato.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 0;
 }
 
-#tomate{
-
+#tomate {
   background-image: url(../img/12-bandeja-ensalada-pasta-600x533.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 0;
   width: 200px;
   height: 200px;
-  margin-bottom: 7rem!important;
-
+  margin-bottom: 7rem !important;
 }
 
-.fila{
+.fila {
   width: 80%;
   padding: 2rem 0;
   position: relative;
-  margin-top:8% !important;
+  margin-top: 8% !important;
   z-index: 10;
 }
-.margines{
-  height: 25rem!important;
+.margines {
+  height: 25rem !important;
 }
 
-.precio{
+.precio {
   position: relative;
   left: 13%;
   top: 13%;
   font-size: 150%;
-
-
 }
-.imgetiqueta{
+.imgetiqueta {
   position: absolute;
-  width:6%;
+  width: 6%;
   margin-left: 1.5rem;
-  
 }
-.imgbalda{
+.imgbalda {
   width: 100%;
   position: absolute;
 }
-.contenedoretiqueta{
+.contenedoretiqueta {
   margin-left: 5rem;
 }
 .rack-product .shadow {
   position: absolute;
   bottom: -10px;
-  left: calc(50% -10px);
+  left: -20px;
   width: 95%;
   max-width: 95%;
   opacity: 0.4;
@@ -423,7 +418,6 @@ button {
 }
 .rack-product .price-tag p {
   display: inline-block;
- 
 }
 .rack-product .price-tag img {
   position: absolute;
@@ -433,4 +427,60 @@ button {
   height: auto;
   z-index: -1;
   border-radius: 0;
+}
+.btn-cart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.rack-product .position-relative {
+  transition: opacity 0.3s;
+}
+
+.rack-product .position-relative:hover img {
+  opacity: 0.7; /* Cambiar la opacidad de la imagen */
+}
+
+.rack-product .position-relative:hover .btn-cart {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.rack-product .position-relative:not(hover) .btn-cart {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.product-overlay {
+  position: absolute;
+  top: 10px; /* Espacio desde la parte superior */
+  left: 10px; /* Espacio desde la parte izquierda */
+  z-index: 1;
+  border-radius: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.product-overlay:hover {
+  background-color: white!important;
+  transition: opacity 0.3s;
+}
+.btn-eye {
+  border: none;
+  border-radius: 2rem;
+  font-size: 24px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.product-overlay:hover {
+  background-color: white;
+}
+
+.position-relative:hover .btn-eye {
+  opacity: 1;
+  color: black;
+}
+.position-relative:hover .product-overlay {
+  opacity: 1;
 }
