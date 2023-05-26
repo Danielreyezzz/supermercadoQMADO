@@ -47,7 +47,9 @@ button {
 /*--MAIN-- */
 
 main {
-  background-color: #f3f3f3;
+  background-color: aliceblue;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 main img {
   width: 65%;
@@ -398,7 +400,7 @@ button {
 .rack-product .shadow {
   position: absolute;
   bottom: -10px;
-  left: calc(50% -10px);
+  left: -13px;
   width: 95%;
   max-width: 95%;
   opacity: 0.4;
