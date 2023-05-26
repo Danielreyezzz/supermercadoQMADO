@@ -465,6 +465,7 @@ svg {
 .product-overlay:hover {
   background-color: white!important;
   transition: opacity 0.3s;
+  
 }
 .btn-eye {
   border: none;
