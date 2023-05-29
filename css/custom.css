@@ -487,3 +487,35 @@ svg {
 .position-relative:hover .product-overlay {
   opacity: 1;
 }
+.shop-line .shop-line_controlls {
+  position: absolute;
+  width: 100vw;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate3d(0, -50%, 0);
+  -moz-transform: translate3d(0, -50%, 0);
+  -ms-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+  z-index: 3;
+  pointer-events: none;
+}
+.shop-line .shop-line_controlls .prev {
+  float: left;
+  left: 40px;
+}
+.shop-line_controlls .next {
+  float: right;
+  right: 40px;
+}
+.shop-line_controlls .prev, .shop-line .shop-line_controlls .next {
+  position: relative;
+  pointer-events: all;
+}
+.btn.icon.fab {
+  width: 50px;
+  max-width: 50px;
+  height: 50px;
+  max-height: 50px;
+  padding: 6px;
+  border-radius: 50%;
+}
