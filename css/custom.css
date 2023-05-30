@@ -386,6 +386,8 @@ button {
 .imgbalda {
   width: 100%;
   position: absolute;
+  top: -80px;
+  z-index: 1;
 }
 .contenedoretiqueta {
   margin-left: 5rem;
@@ -544,4 +546,5 @@ button {
 }
 .show .accordion-header{
   font-weight: bold!important;
+
 }
