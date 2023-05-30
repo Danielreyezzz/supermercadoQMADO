@@ -61,8 +61,10 @@ header {
 
 main {
   background-color: aliceblue;
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
+  overflow: hidden auto;
+
 }
 main img {
   width: 65%;
@@ -317,12 +319,14 @@ button {
   position: absolute;
   width: 100%;
   min-width: 310px;
-  height: 230px;
+  height: 240px;
   margin-top: -80px;
   margin-left: -10%;
   display: table;
   table-layout: fixed;
   z-index: 10;
+  border-spacing: 0; /* Ajusta el espaciado entre celdas a 0 */
+  
 }
 .rack-product {
   position: relative;
@@ -572,8 +576,6 @@ svg {
   header {
     height: 120px;
   }
-
-
 
 }
 
