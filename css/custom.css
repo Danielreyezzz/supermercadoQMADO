@@ -11,6 +11,7 @@
 }
 body {
   background-color: gray;
+  
 }
 a,
 button {
@@ -18,6 +19,12 @@ button {
   font-family: var(--tituloFont);
   text-decoration: none;
 }
+
+header {
+  height: 76px;
+  z-index: 999 !important;
+}
+
 .cate {
   font-size: 1em !important;
   text-decoration: none;
@@ -39,10 +46,16 @@ button {
   height: auto;
   margin: 2% 0;
 }
-#navbar {
-  margin-bottom: 4rem;
-  width: 100%;
+
+.logo-nav {
+  width: 256px;
 }
+
+#searchNav {
+  outline: none !important;
+
+}
+
 
 /*--MAIN-- */
 
@@ -531,4 +544,69 @@ svg {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
+}
+.carousel-item {
+  transition: transform 2s ease-in-out!important;
+}
+
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+  transition: opacity .2s 0s!important;
+  
+}
+.carousel-control-prev{
+  left: -100px!important;
+}
+.carousel-control-next{
+  right: -100px!important;
+}
+
+/* Navbar mediaQuery */
+
+@media (max-width: 1052px) {
+  #navbar {
+    justify-content: center !important;
+  }
+  #menu-logo{
+    margin-inline-end: auto !important;
+  }
+
+  header {
+    height: 120px;
+  }
+
+
+
+}
+
+@media (max-width: 778px) {
+
+  header {
+    height: 126px;
+  }
+  
+  #navbar {
+    justify-content: center !important;
+  }
+
+  #navbar>a {
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 526px) {
+  header {
+    height: 185px !important;
+  }
+}
+
+
+/* Custom bootstrap class */
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.text-justify {
+  text-align: justify;
 }
