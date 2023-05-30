@@ -233,6 +233,7 @@ button {
   width: 100vw;
   top: 0;
   left: 0;
+  height: 20vw;
 }
 .shop-line {
   top: 0;
@@ -254,10 +255,10 @@ button {
 
 .shop-line .rack {
   width: 100%;
-  height: 110px;
+  height: 510px;
   margin: 0 auto;
-  margin-top: 100px;
-  margin-left: 84px;
+  margin-top: 180px;
+  margin-left: 0px;
   z-index: 2;
 }
 .shop-line .rack .center {
@@ -304,11 +305,11 @@ button {
   width: 100%;
   min-width: 310px;
   height: 230px;
-  margin-top: -178px;
-  margin-left: -15%;
+  margin-top: -80px;
+  margin-left: -10%;
   display: table;
   table-layout: fixed;
-  z-index: 1;
+  z-index: 10;
 }
 .rack-product {
   position: relative;
@@ -327,7 +328,9 @@ button {
   max-width: 95%;
   z-index: 0;
 }
-
+svg {
+  border-radius: 50% !important;
+}
 .product-image {
   display: inline-block;
 }
@@ -520,32 +523,10 @@ button {
   padding: 6px;
   border-radius: 50%;
 }
-.modal-header img{
-  width: 10%;
-}
-.accordion-button:hover{
-  background-color: white!important;
-}
-.accordion-button:not(hover){
-  background-color: white!important;
-}
-.accordion-button:focus{
-  border-color: none!important;
-  box-shadow: none!important;
-  color: #FF003E!important;
-  font-weight: bold!important;
-  transition: 0.2s!important;
-}
-.accordion-button:not(focus){
-  background-color: white!important;
-  border-color: white!important;
-  color: #FF003E!important;
 
-}
-.accordion-button:not(.collapsed) {
-  color: #FF003E!important;
-}
-.show .accordion-header{
-  font-weight: bold!important;
-
+#textaa{
+  background-image: url("../img/Balda_Naranja.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
 }
