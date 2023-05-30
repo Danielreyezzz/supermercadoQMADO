@@ -61,8 +61,10 @@ header {
 
 main {
   background-color: aliceblue;
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
+  overflow: hidden auto;
+
 }
 main img {
   width: 65%;
