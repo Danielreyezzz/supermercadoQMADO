@@ -11,7 +11,7 @@
 }
 body {
   background-color: gray;
-  
+  height: 100dvh !important;
 }
 a,
 button {
@@ -23,6 +23,10 @@ button {
 header {
   height: 76px;
   z-index: 999 !important;
+}
+
+footer{
+  height: 35px !important;
 }
 
 .cate {
@@ -48,7 +52,7 @@ header {
 }
 
 .logo-nav {
-  width: 256px;
+  width: 256px !important;
 }
 
 #searchNav {
@@ -565,7 +569,7 @@ svg {
 
 /* Navbar mediaQuery */
 
-@media (max-width: 1052px) {
+@media (max-width: 1054px) {
   #navbar {
     justify-content: center !important;
   }
