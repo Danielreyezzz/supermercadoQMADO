@@ -386,7 +386,8 @@ button {
 .imgbalda {
   width: 100%;
   position: absolute;
-  top: -80px;
+  top: -5px;
+  
   z-index: 1;
 }
 .contenedoretiqueta {
