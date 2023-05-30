@@ -530,3 +530,18 @@ svg {
   background-position: bottom;
   background-size: cover;
 }
+.carousel-item {
+  transition: transform 2s ease-in-out!important;
+}
+
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+  transition: opacity .2s 0s!important;
+  
+}
+.carousel-control-prev{
+  left: -100px!important;
+}
+.carousel-control-next{
+  right: -100px!important;
+}
