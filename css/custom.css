@@ -327,9 +327,7 @@ button {
   max-width: 95%;
   z-index: 0;
 }
-svg {
-  border-radius: 50% !important;
-}
+
 .product-image {
   display: inline-block;
 }
@@ -518,4 +516,32 @@ svg {
   max-height: 50px;
   padding: 6px;
   border-radius: 50%;
+}
+.modal-header img{
+  width: 10%;
+}
+.accordion-button:hover{
+  background-color: white!important;
+}
+.accordion-button:not(hover){
+  background-color: white!important;
+}
+.accordion-button:focus{
+  border-color: none!important;
+  box-shadow: none!important;
+  color: #FF003E!important;
+  font-weight: bold!important;
+  transition: 0.2s!important;
+}
+.accordion-button:not(focus){
+  background-color: white!important;
+  border-color: white!important;
+  color: #FF003E!important;
+
+}
+.accordion-button:not(.collapsed) {
+  color: #FF003E!important;
+}
+.show .accordion-header{
+  font-weight: bold!important;
 }
