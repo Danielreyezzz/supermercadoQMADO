@@ -50,6 +50,7 @@
     background-color: aliceblue;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh!important;
   }
   main img {
     width: 65%;
@@ -233,6 +234,7 @@
     width: 100vw;
     top: 0;
     left: 0;
+    height: 30vh!important;
   }
   .shop-line {
     top: 0;
@@ -301,7 +303,6 @@
     transform: translate3d(0, -50%, 0);
   }
   .shop-line .prods {
-    position: relative!important;
     width: 90%!important;
     min-width: 310px;
     height: 245px!important;
@@ -563,3 +564,6 @@
   .carousel-control-prev:hover, .carousel-control-next:hover{
     background-color: transparent!important;
   }
+.sc1{
+  
+}
