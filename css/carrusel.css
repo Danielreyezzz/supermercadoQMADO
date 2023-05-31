@@ -90,7 +90,7 @@
   }
   #carousel div {
     position: absolute;
-    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    transition: transform 1s, left 5000s, opacity 1s, z-index 0s;
     opacity: 1;
   }
   .carousel-image {
