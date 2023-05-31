@@ -141,3 +141,6 @@ function moveToSelected(element) {
   $('.item').on('mouseleave',function(){
     $('p',this).stop().slideUp(300);
   })
+
+  let ruta = window.location
+  alert(ruta);
