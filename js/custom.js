@@ -142,5 +142,3 @@ function moveToSelected(element) {
     $('p',this).stop().slideUp(300);
   })
 
-  let ruta = window.location
-  alert(ruta);
