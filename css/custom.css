@@ -669,12 +669,24 @@ svg {
   padding: 0.25rem;
   max-width: 100%;
   height: auto;
+  border: 0;
 
 }
 .img-fluid {
   max-width: 100%;
   height: auto;
   border-radius: 0!important;
+}
+.boton{
+  background-color: #FFFFFF
+  border: 0!important;
+  padding: 0;
+}
+.boton:hover{
+  width: 90%;
+  transition: 1s;
+  background-color: #FFFFFF
+
 }
 img, svg {
   vertical-align: middle;
