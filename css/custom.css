@@ -252,7 +252,7 @@ button {
   width: 100vw;
   top: 0;
   left: 0;
-  height: 20vw;
+  height: 30vh!important;
 }
 .shop-line {
   top: 0;
@@ -321,11 +321,11 @@ button {
 }
 .shop-line .prods {
   position: absolute;
-  width: 100%;
+  width: 90%!important;
   min-width: 310px;
-  height: 240px;
+  height: 245px!important;
   margin-top: -80px;
-  margin-left: -10%;
+  margin-left: -3%!important;
   display: table;
   table-layout: fixed;
   z-index: 10;
@@ -482,8 +482,8 @@ svg {
 }
 .product-overlay {
   position: absolute;
-  top: 10px; /* Espacio desde la parte superior */
-  left: 10px; /* Espacio desde la parte izquierda */
+  top: -20px!important; /* Espacio desde la parte superior */
+  left: -20px!important; /* Espacio desde la parte izquierda */
   z-index: 1;
   border-radius: 1rem;
   opacity: 0;
@@ -501,6 +501,48 @@ svg {
   opacity: 0;
   transition: opacity 0.3s;
 }
+.modal-header img{
+  width: 10%;
+}
+.accordion-button:hover{
+  background-color: white!important;
+}
+.accordion-button:not(hover){
+  background-color: white!important;
+}
+.accordion-button:focus{
+  border-color: none!important;
+  box-shadow: none!important;
+  color: #FF003E!important;
+  font-weight: bold!important;
+  transition: 0.2s!important;
+}
+.accordion-button:not(focus){
+  background-color: white!important;
+  border-color: white!important;
+  color: #FF003E!important;
+
+}
+.accordion-button:not(.collapsed) {
+  color: #FF003E!important;
+}
+.show .accordion-header{
+  font-weight: bold!important;
+}
+.carousel-item {
+  transition: transform 2s ease-in-out!important;
+}
+
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+  transition: opacity .2s 0s!important;
+  
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover{
+  background-color: transparent!important;
+}
+
 .product-overlay:hover {
   background-color: white;
 }
@@ -613,4 +655,7 @@ svg {
 
 .text-justify {
   text-align: justify;
+}
+.banner{
+  height: 55%!important;
 }
