@@ -700,11 +700,11 @@ img, svg {
 .row > .container{
   max-width: 0!important;
 }
-.carousel .carousel-item {
+.carro .item {
   height: 460px!important;
 }
 
-.carousel-item img {
+.item img {
     position: absolute;
     object-fit:cover;
     top: 0;
