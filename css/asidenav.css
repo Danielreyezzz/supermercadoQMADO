@@ -1,0 +1,152 @@
+.aside-menu {
+    height: calc(100vh - 76px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+.aside-menu,
+#panelUser {
+    scrollbar-width: none;
+    scrollbar-color: #4d4d4d #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+.aside-menu::-webkit-scrollbar,
+#panelUser::-webkit-scrollbar {
+    width: 0px;
+}
+
+.aside-menu::-webkit-scrollbar-track,
+#panelUser::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+.aside-menu::-webkit-scrollbar-thumb,
+#panelUser::-webkit-scrollbar-thumb {
+    background-color: #4d4d4d;
+    border-radius: 0px;
+    border: 0px solid #ffffff;
+}
+@media (max-width: 1052px) {
+    .aside-menu {
+        height: calc(100vh - 120px);
+      }
+}
+@media (max-width: 778px) {
+    .aside-menu {
+        height: calc(100vh - 126px);
+    }
+}
+
+@media (max-width: 767px) {
+    #asideMenu {
+      z-index: 900 !important;
+      opacity: 1 !important;
+    }
+  
+  }
+
+@media (max-width: 526px) {
+    .aside-menu {
+        height: calc(100vh - 185px) !important;
+    }
+}
+
+/* ASIDE MENU */
+.color-effect:hover{
+    color: rgb(201, 88, 88);
+    transition: color 0.5s ease-in-out;
+  }
+  .color-effect{
+    color: rgb(255, 255, 255);
+    transition: color 0.5s ease-in-out;
+  }
+  
+  #asideNavButton{
+    transition: transform 0.7s ease-in-out;
+  }
+  #asideNavButton:hover{
+    color: #4d4d4d !important;
+    transform: rotate(180deg) !important;
+  }
+  
+  #asideMenu {
+    z-index: 900 !important;
+    opacity: 0.9 !important;
+  }
+  
+  #asideMenu:hover {
+    opacity: 1 !important;
+  }
+  
+  .text-align-last{
+    text-align-last: justify;
+  }
+  
+  .fade-in-left {
+    -webkit-animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+  
+  .fade-out-left {
+    -webkit-animation: fade-out-left .7s cubic-bezier(.25, .46, .45, .94) both;
+    animation: fade-out-left .7s cubic-bezier(.25, .46, .45, .94) both
+  }
+  
+  @-webkit-keyframes fade-out-left {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1
+    }
+  
+    100% {
+      -webkit-transform: translateX(-4000px);
+      transform: translateX(-400px);
+      opacity: 0
+    }
+  }
+  
+  @keyframes fade-out-left {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1
+    }
+  
+    100% {
+      -webkit-transform: translateX(-400px);
+      transform: translateX(-400px);
+      opacity: 0
+    }
+  }
+  
+  @-webkit-keyframes fade-in-left {
+    0% {
+      -webkit-transform: translateX(-400px);
+      transform: translateX(-400px);
+      opacity: 0;
+    }
+  
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-in-left {
+    0% {
+      -webkit-transform: translateX(-400px);
+      transform: translateX(-400px);
+      opacity: 0;
+    }
+  
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
