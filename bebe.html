@@ -4,32 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/carrusel.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/asidenav.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
     <script defer src="js/bootstrap.bundle.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap"rel="stylesheet"/>
-    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
     <script defer src="js/custom.js"></script>
     <title>Supermercado</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
-        $(document).ready(function () {
-            $("#navBarWeb").load("navbar.html");
-            $("#asideMenu").load("asidemenu.html", function () {
-                loadCustomScript();
-            });
+      $(document).ready(function () {
+        $("#navBarWeb").load("navbar.html");
+        $("#asideMenu").load("asidemenu.html", function () {
+          loadCustomScript();
         });
-        function loadCustomScript() {
-            let script = document.createElement("script");
-            script.src = "./js/asidenav.js";
-            script.defer = true;
-            document.head.appendChild(script);
-        }
+       $("#footerWeb").load("footer.html"); 
+      });
+      function loadCustomScript() {
+        let script = document.createElement("script");
+        script.src = "./js/asidenav.js";
+        script.defer = true;
+        document.head.appendChild(script);
+      }
     </script>
   </head>
   <body>
@@ -1618,13 +1619,13 @@
         
         
         
-        
+            <div id="footerWeb" class="bg-white"></div>
           </main>
     
     
 
   
-  <footer id="contacto" class="container p-4 rounded">
+  <!-- <footer id="contacto" class="container p-4 rounded">
     <div class=" row d-lg-flex justify-content-between align-items-center">
       <div class="col-lg-3 col-sm-12 d-flex justify-content-center align-items-center">
         <img class="w-50 justify-content-center align-items-center" src="img/Logo_QMado_Ver2_transp.png" alt="logo">
@@ -1640,7 +1641,8 @@
         </ul>
       </div>
     </div>
-  </footer>
+  </footer> -->
+  
         </main>
       </div>
     </div>
