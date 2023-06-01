@@ -764,15 +764,20 @@ svg {
   border-radius: 0 !important;
 }
 
-.boton {
-  background-color: #FFFFFF; 
-  border: 0 !important;
+.boton{
+  background-color: #FFFFFF;
+  border: 0!important;
   padding: 0;
 }
+.boton:hover{
+  width: 103%;
+  transition: 0.3s;
+  background-color: #FFFFFF
 
-.boton:hover {
-  width: 90%;
-  transition: 1s;
+}
+.boton:not(hover){
+  width: 100%;
+  transition: 0.3s;
   background-color: #FFFFFF
 }
 
@@ -785,14 +790,15 @@ svg {
   max-width: 0 !important;
 }
 
-.carousel .carousel-item {
-  height: 460px !important;
+.carro .item {
+  height: 460px!important;
 }
 
-.carousel-item img {
-  position: absolute;
-  object-fit: cover;
-  top: 0;
-  left: 0;
-  min-height: 460px;
+.item img {
+    position: absolute;
+    object-fit:cover;
+    top: 0;
+    left: 0;
+    min-height: 460px;
+
 }
