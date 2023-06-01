@@ -32,7 +32,7 @@ footer{
 }
 
 #containerPanel{
-  max-height: calc(100vh - (128px)) !important;
+  height: calc(100vh - (128px)) !important;
 }
 
 .cate {
