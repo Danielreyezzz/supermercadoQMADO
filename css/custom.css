@@ -659,3 +659,20 @@ svg {
 .banner{
   height: 55%!important;
 }
+.img-thumbnail{
+  padding: 0.25rem;
+  max-width: 100%;
+  height: auto;
+
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0!important;
+}
+img, svg {
+  vertical-align: middle;
+}
+.row > .container{
+  max-width: 0!important;
+}
