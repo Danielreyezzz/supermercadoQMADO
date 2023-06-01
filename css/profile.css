@@ -1,0 +1,43 @@
+/* PROFILE */
+body {
+    height: 100dvh !important;
+}
+
+header {
+    height: 76px;
+    z-index: 999 !important;
+}
+
+footer {
+    height: 35px !important;
+}
+
+.logo-nav {
+    width: 256px;
+  }
+
+#profilePanel {
+    min-height: calc(100vh - 128px) !important;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+    align-items: start !important;
+}
+
+#profileMenuButton {
+    padding: 0px !important;
+
+}
+
+#profileMenu {
+    top: 0 !important;
+    left: 0 !important;
+    opacity: 0.9 !important;
+    height: 100dvh !important;
+    z-index: 999 !important;
+    position: absolute !important;
+
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
