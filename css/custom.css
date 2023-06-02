@@ -802,3 +802,13 @@ svg {
     min-height: 460px;
 
 }
+#cart{
+  background-image: url(../img/cart.png) ;
+  background-size: 100% 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: transparent !important;
+}
+#cart:hover{
+  background-image: url(../img/cart_hover.png) ;
+}
