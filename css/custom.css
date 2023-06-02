@@ -764,18 +764,19 @@ svg {
   border-radius: 0 !important;
 }
 
-.boton{
+.boton {
   background-color: #FFFFFF;
-  border: 0!important;
+  border: 0 !important;
   padding: 0;
 }
-.boton:hover{
+
+.boton:hover {
   width: 103%;
   transition: 0.3s;
   background-color: #FFFFFF
-
 }
-.boton:not(hover){
+
+.boton:not(hover) {
   width: 100%;
   transition: 0.3s;
   background-color: #FFFFFF
@@ -791,14 +792,46 @@ svg {
 }
 
 .carro .item {
-  height: 460px!important;
+  height: 460px !important;
 }
 
 .item img {
-    position: absolute;
-    object-fit:cover;
-    top: 0;
-    left: 0;
-    min-height: 460px;
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  min-height: 460px;
 
+}
+
+
+
+/*! TEST */
+
+.balda {
+  top: -40px;
+  position: relative;
+  z-index: -2;
+}
+
+.tag {
+  position: relative;
+  top: 196px;
+  background-image: url(../img/tag.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.bg-rack {
+  background-image: url(../img/fondos/Fondo_Ladrillos.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.imgshadow {
+  filter: drop-shadow(-8px -1px 6px rgba(10, 10, 10, 0.767));
 }
