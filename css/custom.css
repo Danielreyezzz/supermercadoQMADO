@@ -859,3 +859,38 @@ svg {
   opacity: 0.2;
 }
 
+/* Media query */
+
+@media screen and (max-width: 1450px) {
+  .tag {
+   top: 115%;
+
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .tag {
+   top: 110%;
+
+  }
+}
+
+
+
+@media screen and (max-width: 1150px) {
+  .tag {
+   top: 105%;
+   width: 100%;
+   font-size: 14px;
+
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .tag {
+   top: 100%;
+   width: 100%;
+   font-size: 12px;
+
+  }
+}
