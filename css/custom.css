@@ -825,7 +825,7 @@ svg {
 
 .tag {
   position: relative;
-  top: 196px;
+  top: 120%;
   background-image: url(../img/tag.png);
   background-size: cover;
   background-position: top center;
@@ -839,9 +839,23 @@ svg {
   background-position: top center;
   background-repeat: no-repeat;
   z-index: 0;
+  height: 100% !important;
 }
 
-.imgshadow {
+.img-shadow {
   filter: drop-shadow(-8px -1px 6px rgba(10, 10, 10, 0.767));
+}
+
+.carrito:hover{
+ background-image: url(../img/cart.png);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: 40%;
+ z-index: 100 !important;
+ 
+}
+.img-producto:hover{
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0.2;
 }
 

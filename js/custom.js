@@ -1,3 +1,4 @@
+
 function moveToSelected(element) {
     if (element == "next") {
       var selected = $(".selected").next();
