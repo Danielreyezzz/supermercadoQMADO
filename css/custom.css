@@ -804,7 +804,16 @@ svg {
 
 }
 
-
+#cart{
+  background-image: url(../img/cart.png) ;
+  background-size: 100% 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: transparent !important;
+}
+#cart:hover{
+  background-image: url(../img/cart_hover.png) ;
+}
 
 /*! TEST */
 
@@ -835,3 +844,4 @@ svg {
 .imgshadow {
   filter: drop-shadow(-8px -1px 6px rgba(10, 10, 10, 0.767));
 }
+
