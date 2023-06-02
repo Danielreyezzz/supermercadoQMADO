@@ -23,6 +23,7 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="css/asidenav.css" />
     <script defer src="js/custom.js"></script>
     <script defer src="js/baldas.js"></script>
 
@@ -32,15 +33,24 @@
     <script>
         $(document).ready(function () {
             $("#navBarWeb").load("navbar.html");
-            $("#asideMenu").load("asidenav.html");
+            $("#asideMenu").load("asidemenu.html", function () {
+                loadCustomScript();
+            });
             $("#footerWeb").load("footer.html");
         });
+        function loadCustomScript() {
+            let script = document.createElement("script");
+            script.src = "./js/asidenav.js";
+            script.defer = true;
+            document.head.appendChild(script);
+        }
     </script>
 </head>
 
 <body class="overflow-x-hidden container-fluid px-0 mx-0">
     <div id="navBarWeb"></div>
-    <div id="asideMenu"></div>
+    <div id="asideMenu" class="col-12 col-md-3 col-xl-2 px-sm-0 px-0 bg-dark position-absolute d-none fade-in-left">
+    </div>
     <div id="containerPanel"
         class="d-flex flex-column py-3 overflow-y-auto overflow-x-hidden aside-menu px-0 pt-0 pb-0 bg-gradient">
         <!-- PÁGINA -->
@@ -997,7 +1007,7 @@
                                         architecto amet tenetur aperiam cum esse?
                                     </div>
                                 </div>
-        
+
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingTwo">
