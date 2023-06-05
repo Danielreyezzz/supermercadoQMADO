@@ -39,7 +39,7 @@ footer {
 }
 
 #containerPanel {
-  height: calc(100vh - (129px)) !important;
+  height: calc(100vh - (128px)) !important;
 }
 
 .cate {
@@ -892,6 +892,16 @@ svg {
   border-top: 0px;
 }
 
+/* modal */
 
+#marcaDiv {
+  top: -110px;
+  position: relative;
+}
+
+#marco_marca {
+  text-align: center;
+  max-height: 7vh;
+}
 
  
