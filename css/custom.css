@@ -842,8 +842,8 @@ svg {
 .tag {
   position: relative;
   top: 120%;
-  background-image: url(../img/tag.png);
-  background-size: cover;
+  background-image: url(../img/Etiqueta3.png);
+  background-size: 80% 100%;
   background-position: top center;
   background-repeat: no-repeat;
   z-index: 0;
@@ -853,9 +853,9 @@ svg {
   background-image: url(../img/fondos/Fondo_Ladrillos.png);
   background-size: cover;
   background-position: top center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat repeat-y;
   z-index: 0;
-  height: 100% !important;
+  min-height: 100% !important;
 }
 
 .img-shadow {
