@@ -575,59 +575,12 @@ svg {
   width: 10%;
 }
 
-.accordion-button:hover {
-  background-color: white !important;
-}
-
-.accordion-button:not(hover) {
-  background-color: white !important;
-}
-
-.accordion-button:focus {
-  border-color: none !important;
-  box-shadow: none !important;
-  color: #ff003e !important;
-  font-weight: bold !important;
-  transition: 0.2s !important;
-}
-
-.accordion-button:not(focus) {
-  background-color: white !important;
-  border-color: white !important;
-  color: #ff003e !important;
-}
-
-.accordion-button:not(.collapsed) {
-  color: #ff003e !important;
-}
 
 
 .show .accordion-header {
   font-weight: bold !important;
 }
 
-
-.accordion-body a {
-  font-size: 1rem !important;
-  color: black !important;
-
-}
-.accordion-body a:hover {
-  font-weight: bold;
-}
-.accordion-item {
-  display: flex!important;
-}
-
-.accordion-button {
-  flex-grow: 1!important;
-  text-align: left!important;
-
-}
-
-.accordion-button::after{
-  display: none!important;
-}
 
 .carousel-item {
   transition: transform 2s ease-in-out !important;
@@ -937,8 +890,4 @@ svg {
 
 
 
-.show .accordion-header {
-  font-weight: bold !important;
-}
-
-
+ 
