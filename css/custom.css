@@ -815,17 +815,36 @@ svg {
   filter: drop-shadow(-8px -1px 6px rgba(10, 10, 10, 0.767));
 }
 
-.carrito:hover {
-  background-image: url(../img/cart.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 40%;
-  z-index: 100 !important;
+.carrito{
+  place-content: center !important;
+  top: 45% !important;
+  left: 0 !important;
+  height: 50% !important;
+  width: 100% !important;
+  text-align: center !important;
+  padding: 10px !important;
+  border-radius: 40px !important;
+  background-color: #ffffff75 !important;
+  
+
+}.carrito img{
+  opacity: 1 !important;
+}
+
+
+/* .carrito:hover{
+ background-image: url(../img/cart.png);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: 40%;
+ z-index: 100 !important;
+ 
+
 }
 .img-producto:hover {
   transition: opacity 0.5s ease-in-out;
   opacity: 0.2;
-}
+} */
 
 /* Media query */
 
