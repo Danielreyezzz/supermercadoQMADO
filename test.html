@@ -22,7 +22,7 @@
     <title>Supermercado</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+    
     <script>
         $(document).ready(function () {
             $("#navBarWeb").load("navbar.html");
@@ -44,587 +44,1068 @@
     <div id="navBarWeb"></div>
     <div id="asideMenu" class="col-12 col-md-3 col-xl-2 px-sm-0 px-0 bg-dark position-absolute d-none fade-in-left">
     </div>
-    <div class="accordion accordion-flush bg-dark" id="accordionFlushExample">
-        <div class="accordion-item rounded-bottom">
-
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-              Congelados
+    <div class="desplegables py-3 rounded-bottom ">
+        <div class="dropdown rounded-bottom bg-cum">
+            <button class="desplegable enlace-desplegable rounded-bottom actual" data-bs-toggle="dropdown" aria-expanded="false">
+            Congelados
             </button>
-          </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body d-flex gap-5 ">
-              <div>
-                <div class="dropdown">
-                    <button class="desplegable" data-bs-toggle="dropdown" aria-expanded="false">
-                    Helados
-                    </button>
-                    <ul class="dropdown-menu desplegable-menu">
-                      <li><a class="dropdown-item" href="#">Calipo</a></li>
-                      <li><a class="dropdown-item" href="#">Calipo</a></li>
-                      <li><a class="dropdown-item" href="#">Calipo</a></li>
-                      <li><a class="dropdown-item" href="#">Calipo</a></li>
-                      <li><a class="dropdown-item" href="#">Calipo</a></li>
-                      <li><a class="dropdown-item" href="#">Calipo</a></li>
-                    </ul>
-                  </div>
-              </div>
-           
-             
-            </div>
-        </div>
+            <ul class="dropdown-menu desplegable-menu bg-white enlace-desplegable drop">
+              <li><a class="dropdown-item enlace-desplegable" href="#">Calipo</a></li>
+              <li><a class="dropdown-item enlace-desplegable" href="#">Calipo</a></li>
+              <li><a class="dropdown-item enlace-desplegable" href="#">Calipo</a></li>
+              <li><a class="dropdown-item enlace-desplegable" href="#">Calipo</a></li>
+              <li><a class="dropdown-item enlace-desplegable" href="#">Calipo</a></li>
+              <li><a class="dropdown-item enlace-desplegable" href="#">Calipo</a></li>
+            </ul>
+          </div>
+          <div>
+            /
+          </div>
+          <div class="dropdown">
+            <button class="desplegable bg-white enlace-desplegable" data-bs-toggle="dropdown" aria-expanded="false">
+            Helados
+            </button>
+            <ul class="dropdown-menu desplegable-menu bg-white enlace-desplegable">
+              <li><a class="dropdown-item  enlace-desplegable" href="#">Calipo</a></li>
+              <li><a class="dropdown-item  enlace-desplegable" href="#">Calipo</a></li>
+              <li><a class="dropdown-item  enlace-desplegable" href="#">Calipo</a></li>
+              <li><a class="dropdown-item  enlace-desplegable" href="#">Calipo</a></li>
+              <li><a class="dropdown-item  enlace-desplegable" href="#">Calipo</a></li>
+              <li><a class="dropdown-item  enlace-desplegable" href="#">Calipo</a></li>
+            </ul>
+          </div>
     </div>
 
+               
+       
     <div id="containerPanel"
         class="d-flex flex-column py-3 overflow-y-auto overflow-x-hidden aside-menu px-0 pt-0 pb-0 bg-gradient">
         <!-- PÁGINA -->
 
         <div class="bg-rack">
             <!-- BOTONES -->
-            <div class="">
-                <i
-                    class="bi bi-arrow-left px-3 py-2 btn btn-primary rounded-5 position-absolute top-50 start-0 ms-5 border border-dark shadow"></i>
-                <i
-                    class="bi bi-arrow-right px-3 py-2 btn btn-primary rounded-5 position-absolute top-50 end-0 me-5 border border-dark shadow"></i>
-            </div>
+            <!-- <div class="">
+        <i class="bi bi-arrow-left px-3 py-2 btn btn-primary rounded-5 position-absolute top-50 start-0 ms-5 border border-dark shadow"></i>
+        <i class="bi bi-arrow-right px-3 py-2 btn btn-primary rounded-5 position-absolute top-50 end-0 me-5 border border-dark shadow"></i>
+        
+    </div> -->
 
-            <!-- BALDA - 1 -->
-            <div class="mt-3">
-                <section class="col-8 d-flex flex-row flex-nowrap justify-content-between my-0 mx-auto">
-                    <div id="slot_1" class="col-1 mx-1 d-flex flex-column slot position-relative">
-                        <div
-                            class="tag text-center d-flex p-2 rounded-5 border border-warning fs-5 fw-bold font-monospace">
-                            <p class="m-auto">1.50€</p>
+    <!-- DESPLEGABLE -->
+
+
+            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <!-- BALDA - 1 -->
+                        <div class="mt-3">
+                            <section class="col-8 d-flex flex-row flex-nowrap justify-content-between my-0 mx-auto">
+                                <div id="slot_1" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                      <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                      <img src="./img/tomate.png" alt="product" class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"
+                                        data-toggle="modal" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop2"></i>
+                                  </div>
+                                <div id="slot_2" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/con1.jpg" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_3" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/con2.jpg" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_4" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/con6.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_5" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/con3.jpg" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_6" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/con8.jpg" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_7" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/con9.jpg" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_8" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/con3.jpg" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                            </section>
+                            <article class="col-10 d-flex flex-row flex-nowrap my-0 mx-auto balda">
+                                <img src="./img/Baldas Procesadas/Balda_test.png" alt="" srcset="" class="img-fluid" />
+                            </article>
                         </div>
-                        <div>
-                            <img src="./img/tomate.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
+                        <!-- BALDA - 2 -->
+                        <div class="mt-0">
+                            <section class="col-8 d-flex flex-row flex-nowrap justify-content-between my-0 mx-auto">
+                                <div id="slot_9" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_10" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_11" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_12" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_13" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_14" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_15" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_16" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                            </section>
+                            <article class="col-10 d-flex flex-row flex-nowrap my-0 mx-auto balda">
+                                <img src="./img/Baldas Procesadas/Balda_test.png" alt="" srcset="" class="img-fluid" />
+                            </article>
                         </div>
-                        <div class="carrito position-absolute d-none">
-                            <img src="./img/cart.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
+                        <!-- BALDA - 3 -->
+                        <div class="mt-0">
+                            <section class="col-8 d-flex flex-row flex-nowrap justify-content-between my-0 mx-auto">
+                                <div id="slot_17" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_18" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_19" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_20" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_21" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_22" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_23" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_24" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                            </section>
+                            <article class="col-10 d-flex flex-row flex-nowrap my-0 mx-auto balda">
+                                <img src="./img/Baldas Procesadas/Balda_test.png" alt="" srcset="" class="img-fluid" />
+                            </article>
                         </div>
-                        <i class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"
-                            data-toggle="modal" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"></i>
                     </div>
-                    <div id="slot_2" class="col-1 mx-1 d-flex flex-column slot position-relative">
-                        <div
-                            class="tag text-center d-flex p-2 rounded-5 border border-warning fs-5 fw-bold font-monospace">
-                            <p class="m-auto">1.50€</p>
+                    <div class="carousel-item">
+                        <!-- BALDA - 1 -->
+                        <div class="mt-3">
+                            <section class="col-8 d-flex flex-row flex-nowrap justify-content-between my-0 mx-auto">
+                                <div id="slot_1" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"
+                                        data-toggle="modal" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop2"></i>
+                                </div>
+                                <div id="slot_2" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/con1.jpg" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_3" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/con2.jpg" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_4" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/con6.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_5" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/con3.jpg" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_6" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/con8.jpg" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_7" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/con9.jpg" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_8" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/con3.jpg" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                            </section>
+                            <article class="col-10 d-flex flex-row flex-nowrap my-0 mx-auto balda">
+                                <img src="./img/Baldas Procesadas/Balda_test.png" alt="" srcset="" class="img-fluid" />
+                            </article>
                         </div>
-                        <div>
-                            <img src="./img/con1.jpg" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
+                        <!-- BALDA - 2 -->
+                        <div class="mt-0">
+                            <section class="col-8 d-flex flex-row flex-nowrap justify-content-between my-0 mx-auto">
+                                <div id="slot_9" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_10" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_11" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_12" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_13" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_14" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_15" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_16" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                            </section>
+                            <article class="col-10 d-flex flex-row flex-nowrap my-0 mx-auto balda">
+                                <img src="./img/Baldas Procesadas/Balda_test.png" alt="" srcset="" class="img-fluid" />
+                            </article>
                         </div>
-                        <div class="carrito position-absolute d-none">
-                            <img src="./img/cart.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
+                        <!-- BALDA - 3 -->
+                        <div class="mt-0">
+                            <section class="col-8 d-flex flex-row flex-nowrap justify-content-between my-0 mx-auto">
+                                <div id="slot_17" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_18" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_19" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_20" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_21" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_22" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_23" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_24" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                            </section>
+                            <article class="col-10 d-flex flex-row flex-nowrap my-0 mx-auto balda">
+                                <img src="./img/Baldas Procesadas/Balda_test.png" alt="" srcset="" class="img-fluid" />
+                            </article>
                         </div>
-                        <i class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"
-                            data-toggle="modal" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"></i>
                     </div>
-                    <div id="slot_3" class="col-1 mx-1 d-flex flex-column slot position-relative">
-                        <div
-                            class="tag text-center d-flex p-2 rounded-5 border border-warning fs-5 fw-bold font-monospace">
-                            <p class="m-auto">1.50€</p>
+                    <div class="carousel-item">
+                        <!-- BALDA - 1 -->
+                        <div class="mt-3">
+                            <section class="col-8 d-flex flex-row flex-nowrap justify-content-between my-0 mx-auto">
+                                <div id="slot_1" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"
+                                        data-toggle="modal" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop2"></i>
+                                </div>
+                                <div id="slot_2" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/con1.jpg" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_3" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/con2.jpg" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_4" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/con6.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_5" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/con3.jpg" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_6" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/con8.jpg" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_7" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/con9.jpg" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_8" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/con3.jpg" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                            </section>
+                            <article class="col-10 d-flex flex-row flex-nowrap my-0 mx-auto balda">
+                                <img src="./img/Baldas Procesadas/Balda_test.png" alt="" srcset="" class="img-fluid" />
+                            </article>
                         </div>
-                        <div>
-                            <img src="./img/con2.jpg" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
+                        <!-- BALDA - 2 -->
+                        <div class="mt-0">
+                            <section class="col-8 d-flex flex-row flex-nowrap justify-content-between my-0 mx-auto">
+                                <div id="slot_9" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_10" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_11" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_12" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_13" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_14" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_15" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_16" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                            </section>
+                            <article class="col-10 d-flex flex-row flex-nowrap my-0 mx-auto balda">
+                                <img src="./img/Baldas Procesadas/Balda_test.png" alt="" srcset="" class="img-fluid" />
+                            </article>
                         </div>
-                        <div class="carrito position-absolute d-none">
-                            <img src="./img/cart.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
+                        <!-- BALDA - 3 -->
+                        <div class="mt-0">
+                            <section class="col-8 d-flex flex-row flex-nowrap justify-content-between my-0 mx-auto">
+                                <div id="slot_17" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_18" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_19" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_20" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_21" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_22" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_23" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                                <div id="slot_24" class="col-1 mx-1 d-flex flex-column slot">
+                                    <div class="tag text-center d-flex p-3">
+                                        <p class="m-auto">1.50€</p>
+                                    </div>
+                                    <div class="carrito">
+                                        <img src="./img/tomate.png" alt="product"
+                                            class="img-fluid img-shadow img-producto cursor-pointer" />
+                                    </div>
+                                    <i
+                                        class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"></i>
+                                </div>
+                            </section>
+                            <article class="col-10 d-flex flex-row flex-nowrap my-0 mx-auto balda">
+                                <img src="./img/Baldas Procesadas/Balda_test.png" alt="" srcset="" class="img-fluid" />
+                            </article>
                         </div>
-                        <i class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"
-                            data-toggle="modal" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"></i>
                     </div>
-                    <div id="slot_4" class="col-1 mx-1 d-flex flex-column slot position-relative">
-                        <div
-                            class="tag text-center d-flex p-2 rounded-5 border border-warning fs-5 fw-bold font-monospace">
-                            <p class="m-auto">1.50€</p>
-                        </div>
-                        <div>
-                            <img src="./img/con6.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <div class="carrito position-absolute d-none">
-                            <img src="./img/cart.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <i class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"
-                            data-toggle="modal" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"></i>
-                    </div>
-                    <div id="slot_5" class="col-1 mx-1 d-flex flex-column slot position-relative">
-                        <div
-                            class="tag text-center d-flex p-2 rounded-5 border border-warning fs-5 fw-bold font-monospace">
-                            <p class="m-auto">1.50€</p>
-                        </div>
-                        <div>
-                            <img src="./img/con3.jpg" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <div class="carrito position-absolute d-none">
-                            <img src="./img/cart.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <i class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"
-                            data-toggle="modal" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"></i>
-                    </div>
-                    <div id="slot_6" class="col-1 mx-1 d-flex flex-column slot position-relative">
-                        <div
-                            class="tag text-center d-flex p-2 rounded-5 border border-warning fs-5 fw-bold font-monospace">
-                            <p class="m-auto">1.50€</p>
-                        </div>
-                        <div>
-                            <img src="./img/con8.jpg" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <div class="carrito position-absolute d-none">
-                            <img src="./img/cart.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <i class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"
-                            data-toggle="modal" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"></i>
-                    </div>
-                    <div id="slot_7" class="col-1 mx-1 d-flex flex-column slot position-relative">
-                        <div
-                            class="tag text-center d-flex p-2 rounded-5 border border-warning fs-5 fw-bold font-monospace">
-                            <p class="m-auto">1.50€</p>
-                        </div>
-                        <div>
-                            <img src="./img/con9.jpg" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <div class="carrito position-absolute d-none">
-                            <img src="./img/cart.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <i class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"
-                            data-toggle="modal" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"></i>
-                    </div>
-                    <div id="slot_8" class="col-1 mx-1 d-flex flex-column slot position-relative">
-                        <div
-                            class="tag text-center d-flex p-2 rounded-5 border border-warning fs-5 fw-bold font-monospace">
-                            <p class="m-auto">1.50€</p>
-                        </div>
-                        <div>
-                            <img src="./img/con3.jpg" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <div class="carrito position-absolute d-none">
-                            <img src="./img/cart.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <i class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"
-                            data-toggle="modal" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"></i>
-                    </div>
-                </section>
-                <article class="col-10 d-flex flex-row flex-nowrap my-0 mx-auto balda">
-                    <img src="./img/Baldas Procesadas/Balda_test.png" alt="" srcset="" class="img-fluid" />
-                </article>
-            </div>
-            <!-- BALDA - 2 -->
-            <div class="mt-0">
-                <section class="col-8 d-flex flex-row flex-nowrap justify-content-between my-0 mx-auto">
-                    <div id="slot_9" class="col-1 mx-1 d-flex flex-column slot position-relative">
-                        <div
-                            class="tag text-center d-flex p-2 rounded-5 border border-warning fs-5 fw-bold font-monospace">
-                            <p class="m-auto">1.50€</p>
-                        </div>
-                        <div>
-                            <img src="./img/tomate.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <div class="carrito position-absolute d-none">
-                            <img src="./img/cart.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <i class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"
-                            data-toggle="modal" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"></i>
-                    </div>
-                    <div id="slot_10" class="col-1 mx-1 d-flex flex-column slot position-relative">
-                        <div
-                            class="tag text-center d-flex p-2 rounded-5 border border-warning fs-5 fw-bold font-monospace">
-                            <p class="m-auto">1.50€</p>
-                        </div>
-                        <div>
-                            <img src="./img/tomate.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <div class="carrito position-absolute d-none">
-                            <img src="./img/cart.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <i class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"
-                            data-toggle="modal" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"></i>
-                    </div>
-                    <div id="slot_11" class="col-1 mx-1 d-flex flex-column slot position-relative">
-                        <div
-                            class="tag text-center d-flex p-2 rounded-5 border border-warning fs-5 fw-bold font-monospace">
-                            <p class="m-auto">1.50€</p>
-                        </div>
-                        <div>
-                            <img src="./img/tomate.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <div class="carrito position-absolute d-none">
-                            <img src="./img/cart.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <i class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"
-                            data-toggle="modal" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"></i>
-                    </div>
-                    <div id="slot_12" class="col-1 mx-1 d-flex flex-column slot position-relative">
-                        <div
-                            class="tag text-center d-flex p-2 rounded-5 border border-warning fs-5 fw-bold font-monospace">
-                            <p class="m-auto">1.50€</p>
-                        </div>
-                        <div>
-                            <img src="./img/tomate.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <div class="carrito position-absolute d-none">
-                            <img src="./img/cart.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <i class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"
-                            data-toggle="modal" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"></i>
-                    </div>
-                    <div id="slot_13" class="col-1 mx-1 d-flex flex-column slot position-relative">
-                        <div
-                            class="tag text-center d-flex p-2 rounded-5 border border-warning fs-5 fw-bold font-monospace">
-                            <p class="m-auto">1.50€</p>
-                        </div>
-                        <div>
-                            <img src="./img/tomate.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <div class="carrito position-absolute d-none">
-                            <img src="./img/cart.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <i class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"
-                            data-toggle="modal" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"></i>
-                    </div>
-                    <div id="slot_14" class="col-1 mx-1 d-flex flex-column slot position-relative">
-                        <div
-                            class="tag text-center d-flex p-2 rounded-5 border border-warning fs-5 fw-bold font-monospace">
-                            <p class="m-auto">1.50€</p>
-                        </div>
-                        <div>
-                            <img src="./img/tomate.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <div class="carrito position-absolute d-none">
-                            <img src="./img/cart.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <i class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"
-                            data-toggle="modal" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"></i>
-                    </div>
-                    <div id="slot_15" class="col-1 mx-1 d-flex flex-column slot position-relative">
-                        <div
-                            class="tag text-center d-flex p-2 rounded-5 border border-warning fs-5 fw-bold font-monospace">
-                            <p class="m-auto">1.50€</p>
-                        </div>
-                        <div>
-                            <img src="./img/tomate.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <div class="carrito position-absolute d-none">
-                            <img src="./img/cart.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <i class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"
-                            data-toggle="modal" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"></i>
-                    </div>
-                    <div id="slot_16" class="col-1 mx-1 d-flex flex-column slot position-relative">
-                        <div
-                            class="tag text-center d-flex p-2 rounded-5 border border-warning fs-5 fw-bold font-monospace">
-                            <p class="m-auto">1.50€</p>
-                        </div>
-                        <div>
-                            <img src="./img/tomate.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <div class="carrito position-absolute d-none">
-                            <img src="./img/cart.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <i class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"
-                            data-toggle="modal" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"></i>
-                    </div>
-                </section>
-                <article class="col-10 d-flex flex-row flex-nowrap my-0 mx-auto balda">
-                    <img src="./img/Baldas Procesadas/Balda_test.png" alt="" srcset="" class="img-fluid" />
-                </article>
-            </div>
-            <!-- BALDA - 3 -->
-            <div class="mt-0">
-                <section class="col-8 d-flex flex-row flex-nowrap justify-content-between my-0 mx-auto">
-                    <div id="slot_17" class="col-1 mx-1 d-flex flex-column slot position-relative">
-                        <div
-                            class="tag text-center d-flex p-2 rounded-5 border border-warning fs-5 fw-bold font-monospace">
-                            <p class="m-auto">1.50€</p>
-                        </div>
-                        <div>
-                            <img src="./img/tomate.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <div class="carrito position-absolute d-none">
-                            <img src="./img/cart.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <i class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"
-                            data-toggle="modal" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"></i>
-                    </div>
-                    <div id="slot_18" class="col-1 mx-1 d-flex flex-column slot position-relative">
-                        <div
-                            class="tag text-center d-flex p-2 rounded-5 border border-warning fs-5 fw-bold font-monospace">
-                            <p class="m-auto">1.50€</p>
-                        </div>
-                        <div>
-                            <img src="./img/tomate.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <div class="carrito position-absolute d-none">
-                            <img src="./img/cart.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <i class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"
-                            data-toggle="modal" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"></i>
-                    </div>
-                    <div id="slot_19" class="col-1 mx-1 d-flex flex-column slot position-relative">
-                        <div
-                            class="tag text-center d-flex p-2 rounded-5 border border-warning fs-5 fw-bold font-monospace">
-                            <p class="m-auto">1.50€</p>
-                        </div>
-                        <div>
-                            <img src="./img/tomate.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <div class="carrito position-absolute d-none">
-                            <img src="./img/cart.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <i class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"
-                            data-toggle="modal" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"></i>
-                    </div>
-                    <div id="slot_20" class="col-1 mx-1 d-flex flex-column slot position-relative">
-                        <div
-                            class="tag text-center d-flex p-2 rounded-5 border border-warning fs-5 fw-bold font-monospace">
-                            <p class="m-auto">1.50€</p>
-                        </div>
-                        <div>
-                            <img src="./img/tomate.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <div class="carrito position-absolute d-none">
-                            <img src="./img/cart.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <i class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"
-                            data-toggle="modal" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"></i>
-                    </div>
-                    <div id="slot_21" class="col-1 mx-1 d-flex flex-column slot position-relative">
-                        <div
-                            class="tag text-center d-flex p-2 rounded-5 border border-warning fs-5 fw-bold font-monospace">
-                            <p class="m-auto">1.50€</p>
-                        </div>
-                        <div>
-                            <img src="./img/tomate.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <div class="carrito position-absolute d-none">
-                            <img src="./img/cart.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <i class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"
-                            data-toggle="modal" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"></i>
-                    </div>
-                    <div id="slot_22" class="col-1 mx-1 d-flex flex-column slot position-relative">
-                        <div
-                            class="tag text-center d-flex p-2 rounded-5 border border-warning fs-5 fw-bold font-monospace">
-                            <p class="m-auto">1.50€</p>
-                        </div>
-                        <div>
-                            <img src="./img/tomate.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <div class="carrito position-absolute d-none">
-                            <img src="./img/cart.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <i class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"
-                            data-toggle="modal" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"></i>
-                    </div>
-                    <div id="slot_23" class="col-1 mx-1 d-flex flex-column slot position-relative">
-                        <div
-                            class="tag text-center d-flex p-2 rounded-5 border border-warning fs-5 fw-bold font-monospace">
-                            <p class="m-auto">1.50€</p>
-                        </div>
-                        <div>
-                            <img src="./img/tomate.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <div class="carrito position-absolute d-none">
-                            <img src="./img/cart.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <i class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"
-                            data-toggle="modal" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"></i>
-                    </div>
-                    <div id="slot_24" class="col-1 mx-1 d-flex flex-column slot position-relative">
-                        <div
-                            class="tag text-center d-flex p-2 rounded-5 border border-warning fs-5 fw-bold font-monospace">
-                            <p class="m-auto">1.50€</p>
-                        </div>
-                        <div>
-                            <img src="./img/tomate.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <div class="carrito position-absolute d-none">
-                            <img src="./img/cart.png" alt="product"
-                                class="img-fluid img-shadow img-producto cursor-pointer" />
-                        </div>
-                        <i class="bi bi-eye ojo fs-2 text-white text-center position-absolute cursor-pointer d-none"
-                            data-toggle="modal" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"></i>
-                    </div>
-                </section>
-                <article class="col-10 d-flex flex-row flex-nowrap my-0 mx-auto balda">
-                    <img src="./img/Baldas Procesadas/Balda_test.png" alt="" srcset="" class="img-fluid" />
-                </article>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
-
-
-    </div>
-    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel2" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
-            <div class="modal-content">
-                <div class="modal-header d-flex flex-column gap-2">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <img src="img/brand2.png" alt="brand" />
-                    <div class="d-flex gap-5 align-items-center mb-5">
-                        <h1 class="modal-title" id="staticBackdropLabel">
-                            Nombre de producto
-                        </h1>
-                    </div>
-                    <div
-                        class="d-flex gap-5 align-items-center justify-content-between border border-dark border-3 rounded">
-                        <p class="mx-3"><strong>Descipción del producto:</strong></p>
-                        <p class="mx-3">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-                            cupiditate nisi aspernatur, est ut vero fugiat veritatis rem
-                            reiciendis nulla nostrum, labore aperiam, modi eligendi
-                            aliquid distinctio saepe eius provident?
-                        </p>
-                        <div class="d-flex gap-5 align-items-center justify-content-between">
-                            <h5 class="mx-3">Precio: <strong>5€</strong></h5>
-                            <button
-                                class="rounded rounded-1 px-5 my-3 text-white btn btn-primary bg-black bg-gradient shadow border rounded-0 border-dark mx-5 mx-lg-5 py-2 fs-4 hvr-rectangle-out">
-                                Añadir
-                                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor"
-                                    class="bi bi-cart-plus" viewBox="0 0 16 16">
-                                    <path
-                                        d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z" />
-                                    <path
-                                        d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
-                                </svg>
-                            </button>
+        <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel2" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header d-flex flex-column gap-2">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <img src="img/brand2.png" alt="brand" />
+                        <div class="d-flex gap-5 align-items-center mb-5">
+                            <h1 class="modal-title" id="staticBackdropLabel">
+                                Nombre de producto
+                            </h1>
+                        </div>
+                        <div
+                            class="d-flex gap-5 align-items-center justify-content-between border border-dark border-3 rounded">
+                            <p class="mx-3"><strong>Descipción del producto:</strong></p>
+                            <p class="mx-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                                cupiditate nisi aspernatur, est ut vero fugiat veritatis rem
+                                reiciendis nulla nostrum, labore aperiam, modi eligendi
+                                aliquid distinctio saepe eius provident?
+                            </p>
+                            <div class="d-flex gap-5 align-items-center justify-content-between">
+                                <h5 class="mx-3">Precio: <strong>5€</strong></h5>
+                                <button
+                                    class="rounded rounded-1 px-5 my-3 text-white btn btn-primary bg-black bg-gradient shadow border rounded-0 border-dark mx-5 mx-lg-5 py-2 fs-4 hvr-rectangle-out">
+                                    Añadir
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor"
+                                        class="bi bi-cart-plus" viewBox="0 0 16 16">
+                                        <path
+                                            d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z" />
+                                        <path
+                                            d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-body">
-                    <div class="accordion accordion-flush" id="accordionFlushExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                    aria-controls="flush-collapseOne">
-                                    Información
-                                </button>
-                            </h2>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse show"
-                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Deleniti itaque labore, fugit suscipit atque nihil et vero
-                                    sapiente. Quis nulla repudiandae veritatis tempore nihil
-                                    architecto amet tenetur aperiam cum esse?
+                    <div class="modal-body">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        Información
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Deleniti itaque labore, fugit suscipit atque nihil et vero
+                                        sapiente. Quis nulla repudiandae veritatis tempore nihil
+                                        architecto amet tenetur aperiam cum esse?
+                                    </div>
                                 </div>
-                            </div>
 
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                    aria-controls="flush-collapseTwo">
-                                    Nutricional
-                                </button>
-                            </h2>
-                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Voluptates temporibus vel, pariatur incidunt neque placeat
-                                    provident magnam quos enim rerum doloribus quae sapiente
-                                    minima nam vitae sit repellendus maiores perspiciatis.
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        Nutricional
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Voluptates temporibus vel, pariatur incidunt neque placeat
+                                        provident magnam quos enim rerum doloribus quae sapiente
+                                        minima nam vitae sit repellendus maiores perspiciatis.
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                    aria-controls="flush-collapseThree">
-                                    Ingredientes
-                                </button>
-                            </h2>
-                            <div id="flush-collapseThree" class="accordion-collapse collapse"
-                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Repellendus mollitia repudiandae dolorum libero in
-                                    nesciunt aperiam modi facere commodi quaerat? Facere nisi
-                                    beatae aliquid odit iusto libero temporibus animi!
-                                    Asperiores!
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        Ingredientes
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Repellendus mollitia repudiandae dolorum libero in
+                                        nesciunt aperiam modi facere commodi quaerat? Facere nisi
+                                        beatae aliquid odit iusto libero temporibus animi!
+                                        Asperiores!
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseFour" aria-expanded="false"
-                                    aria-controls="flush-collapseFour">
-                                    Alérgenos
-                                </button>
-                            </h2>
-                            <div id="flush-collapseFour" class="accordion-collapse collapse"
-                                aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Minima voluptates, porro eum est numquam reiciendis sunt
-                                    distinctio veniam a quae asperiores expedita fugiat ex
-                                    voluptas officia nesciunt deserunt. Voluptatum, tempora.
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                        aria-controls="flush-collapseFour">
+                                        Alérgenos
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Minima voluptates, porro eum est numquam reiciendis sunt
+                                        distinctio veniam a quae asperiores expedita fugiat ex
+                                        voluptas officia nesciunt deserunt. Voluptatum, tempora.
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                        Cerrar
-                    </button>
-                    <button type="button" class="btn btn-danger">Comprar</button>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Cerrar
+                        </button>
+                        <button type="button" class="btn btn-danger">Comprar</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
+    <div id="footerWeb" class="container-fluid mx-0 px-0"></div>
 </body>
 
 </html>

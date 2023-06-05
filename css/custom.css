@@ -876,18 +876,28 @@ svg {
   }
 }
 
-.desplegable{
-  font-size: 1rem;
-  background-color: #FFFFFF;
+.desplegables{
+  display: flex;
+  align-items: center;
+  background-color: #FEFEFE;
+  gap: 2rem;
+  margin-left: 1rem;
 
 }
-.desplegable-menu{
-
-  border-radius: 0px 0px 1rem 0px!important;
-  margin-top: 14.9px!important;
-  border-top: 0px;
+.enlace-desplegable{
+  font-size: 1rem!important;
+  background-color: #ffffff!important;
+  border-radius: 0px 0px 0px 1rem;
+  border: 0px;
 }
-
-
-
- 
+.bg-cum{
+  background-color: #FEFEFE;
+}
+.drop{
+  margin-top: 0.8rem!important;
+  left: -10px!important;
+  width: 2rem!important;;
+}
+.actual{
+  color: red!important;
+}
