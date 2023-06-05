@@ -923,15 +923,14 @@ svg {
   }
 }
 
-.img-producto {
-  transition: all 0.5s ease;
-}
+.desplegable{
+  font-size: 1rem;
+  background-color: #FFFFFF;
 
-.img-producto.animate {
-  position: fixed!important;
-  top: 0!important;
-  right: 0!important;
-  transform: translate(-50%, -50%) scale(0)!important;
-  opacity: 0!important;
-  z-index: 999!important;
+}
+.desplegable-menu{
+  transition: .3s!important;
+  border-radius: 0px 0px 1rem 0px!important;
+  margin-top: 14.5px!important;
+  border-top: 0px;
 }
