@@ -60,7 +60,7 @@
     transition: color 0.5s ease-in-out;
   }
   .color-effect{
-    color: rgb(43, 43, 43);
+    color: white;
     transition: color 0.5s ease-in-out;
   }
   
