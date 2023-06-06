@@ -18,7 +18,6 @@ for (let i = 1; i <= 24; i++) {
 function show_eye(slot) {
     let eye = slot.lastElementChild;
     let cart = eye.previousElementSibling;
-    console.log(cart)
     if (eye.classList.contains('d-none')) {
         eye.classList.remove('d-none');
     }
@@ -37,3 +36,31 @@ function hide_eye(slot) {
         cart.classList.add('d-none');
     }
 }
+
+// animation 
+
+const next = document.getElementById('nextPage')
+const previous = document.getElementById('previousPage')
+
+next.addEventListener('click', ()=>{
+    
+    let tl = gsap.timeline();
+    tl.fromTo(".anim-products", {x: 0}, {x: -1920, duration: 1})
+    tl.fromTo(".anim-products", {opacity: 1}, {opacity: 0, duration: 0.2},">")
+    tl.to(".anim-products", {x: 1920, duration: 0.2},">")
+    tl.to(".anim-products", {opacity: 1, duration: 0.2},">")
+    tl.to(".anim-products", {x: 0, duration: 1},">")
+})
+previous.addEventListener('click', ()=>{
+    
+    let tl = gsap.timeline();
+    tl.fromTo(".anim-products", {x: 0}, {x: 1920, duration: 1})
+    tl.fromTo(".anim-products", {opacity: 1}, {opacity: 0, duration: 0.2},">")
+    tl.to(".anim-products", {x: -1920, duration: 0.2},">")
+    tl.to(".anim-products", {opacity: 1, duration: 0.2},">")
+    tl.to(".anim-products", {x: 0, duration: 1},">")
+})
+
+
+
+
