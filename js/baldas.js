@@ -1,6 +1,7 @@
 const slots = [];
 
-// Iterar del 1 al 24 y obtener las constantes
+function cargarSlots(){
+    // Iterar del 1 al 24 y obtener las constantes
 for (let i = 1; i <= 24; i++) {
     const slot = document.getElementById(`slot_${i}`);
     slots.push(slot);
@@ -13,7 +14,7 @@ for (let i = 1; i <= 24; i++) {
         hide_eye(slot);
     });
 }
-
+}
 
 function show_eye(slot) {
     let eye = slot.lastElementChild;
@@ -43,6 +44,15 @@ const next = document.getElementById('nextPage')
 const previous = document.getElementById('previousPage')
 
 next.addEventListener('click', ()=>{
+    if(pos!=-1 && pos+1==jsonFamilias.length){
+        pos=0;
+        
+
+    }else{
+        pos=pos+1;
+    }
+    cat=jsonFamilias[pos].id_categoria;
+    sub=jsonFamilias[pos].id_subcategoria;
     
     let tl = gsap.timeline();
     tl.fromTo(".anim-products", {x: 0}, {x: -1920, duration: 1})
@@ -50,15 +60,26 @@ next.addEventListener('click', ()=>{
     tl.to(".anim-products", {x: 1920, duration: 0.2},">")
     tl.to(".anim-products", {opacity: 1, duration: 0.2},">")
     tl.to(".anim-products", {x: 0, duration: 1},">")
+    cargarPag();
 })
 previous.addEventListener('click', ()=>{
-    
+    if(pos!=-1 && pos-1==-1){
+        pos=jsonFamilias.length-1;
+        console.log(pos+" el"+jsonFamilias[pos].id_subcategoria);
+        
+
+    }else{
+        pos=pos-1;
+    }
+    cat=jsonFamilias[pos].id_categoria;
+    sub=jsonFamilias[pos].id_subcategoria;
     let tl = gsap.timeline();
     tl.fromTo(".anim-products", {x: 0}, {x: 1920, duration: 1})
     tl.fromTo(".anim-products", {opacity: 1}, {opacity: 0, duration: 0.2},">")
     tl.to(".anim-products", {x: -1920, duration: 0.2},">")
     tl.to(".anim-products", {opacity: 1, duration: 0.2},">")
     tl.to(".anim-products", {x: 0, duration: 1},">")
+    cargarPag();
 })
 
 
