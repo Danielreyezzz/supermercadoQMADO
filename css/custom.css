@@ -39,7 +39,7 @@ footer {
 }
 
 #containerPanel {
-  height: calc(100vh - (127px)) !important;
+  height: calc(100vh - (172px)) !important;
 }
 
 .cate {
@@ -785,7 +785,9 @@ svg {
 }
 
 /*! TEST */
-
+.anim-products{
+  /* opacity: 0 !important;  */
+}
 .balda {
   top: -20px;
   position: relative;
@@ -990,7 +992,7 @@ svg {
 }
 
 #panel_info {
-  max-height: 32vh;
+  min-height: 31vh;
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
