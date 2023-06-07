@@ -955,6 +955,11 @@ svg {
   left: -10px!important;
   padding: auto;
 }
+.drop-estas{
+  margin-top: 10px!important;
+  left: 35%!important;
+  padding: auto;
+}
 .actual{
   color: red!important;
 }
