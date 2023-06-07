@@ -123,5 +123,44 @@ previous.addEventListener('click', ()=>{
 })
 
 
+// let tl = gsap.timeline();
+// let pro_1 = document.getElementById("#producto_1");
+// let pro_7 = document.getElementById("#producto_7");
+
+// tl.to(pro_1, {y: 500, duration: 1.2})
+
+function animateToCenter(element) {
+    let tl = gsap.timeline();
+    let container = document.getElementById("containerPanel");
+    let containerRect = container.getBoundingClientRect();
+    let elementRect = element.getBoundingClientRect();
+    let centerX = containerRect.left + containerRect.width / 2 - elementRect.width / 2;
+    let centerY = containerRect.top + containerRect.height / 2 - elementRect.height / 2;
+  
+    let initialX = elementRect.left - containerRect.left + elementRect.width / 2;
+    let initialY = elementRect.top - containerRect.top + elementRect.height / 2;
+  
+    let deltaX = centerX - initialX;
+    let deltaY = centerY - initialY + (elementRect.height * 2.5); // Desplazamiento del 80% hacia abajo
+  
+    tl.to(element, { x: "+=" + deltaX, y: "+=" + deltaY, duration: 1.2 })
+    .to(element, { opacity: 0, duration: .2 },">")
+  
+    resetPosition()
+    function resetPosition() {
+      tl.to(element, { x: 0, y: 0, duration: 0.1 })
+      .to(element, { opacity: 1, duration: 0.1 },">");
+    }
+  }
+  // Ejemplo de uso
+  
+  let pro_1 = document.getElementById("producto_1");
+  const buy_pro_1 = document.getElementById("buy_producto_1");
+ 
+
+  buy_pro_1.addEventListener("click",  ()=>{animateToCenter(pro_1)});
+  
+  
+
 
 
