@@ -788,9 +788,10 @@ svg {
 }
 
 /*! TEST */
-.anim-products{
-  /* opacity: 0 !important;  */
+.modal-xl{
+  --bs-modal-width: 1440px !important;
 }
+
 .balda {
   top: -20px;
   position: relative;
