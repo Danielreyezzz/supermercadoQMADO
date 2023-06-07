@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/asidenav.css" />
     <script defer src="js/custom.js"></script>
     <script defer src="js/baldas.js"></script>
+    <script defer src="js/productos_gsap.js"></script>
     <title>Supermercado</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -515,27 +516,27 @@
                                     id="carrousel">
                                     <section
                                         class="col-12 col-md-9 col-lg-9 d-flex justify-content-center justify-content-md-start justify-content-md-start justify-content-lg-start align-content-center order-md-2 order-lg-2 order-1">
-                                        <img id="main_img" class="img-fluid w-100" src="./src/img/producto1.png" alt="">
+                                        <img id="main_img" class="img-fluid w-100" src="./img/con1.jpg" alt="">
                                     </section>
                                     <div
                                         class="row col-12 col-md-2 col-lg-2 text-center justify-content-lg-start justify-content-center m-0 m-lg-0 order-md-1 order-lg-1 order-2 bg-gradient bg-body-emphasis shadow rounded rounded-5 p-3 p-sm-2 p-md-2 p-lg-2">
                                         <div class="col-3 col-md-12 col-lg-12 my-1 mb-md-1 mb-lg-1 m-0 p-0">
                                             <img id="preview_0"
-                                                class="img-thumbnail img-fluid border-danger preview_img"
-                                                src="./src/img/producto1.png" alt="" value="selected"
+                                                class="img-thumbnail img-fluid border-danger preview_img cursor-pointer"
+                                                src="./img/con1.jpg" alt="" value="selected"
                                                 onclick="carrousel('preview_0')">
                                         </div>
                                         <div class="col-3 col-md-12 col-lg-12 my-1 mb-md-1 mb-lg-1 m-0 p-0">
-                                            <img id="preview_1" class="img-thumbnail img-fluid preview_img"
-                                                src="./src/img/producto2.png" alt="" onclick="carrousel('preview_1')">
+                                            <img id="preview_1" class="img-thumbnail img-fluid preview_img cursor-pointer"
+                                                src="./img/con7.jpg" alt="" onclick="carrousel('preview_1')">
                                         </div>
                                         <div class="col-3 col-md-12 col-lg-12 my-1 mb-md-1 mb-lg-1 m-0 p-0">
-                                            <img id="preview_2" class="img-thumbnail img-fluid preview_img"
-                                                src="./src/img/producto3.png" alt="" onclick="carrousel('preview_2')">
+                                            <img id="preview_2" class="img-thumbnail img-fluid preview_img cursor-pointer"
+                                                src="./img/con2.jpg" alt="" onclick="carrousel('preview_2')">
                                         </div>
                                         <div class="col-3 col-md-12 col-lg-12 my-1 mb-md-1 mb-lg-1 m-0 p-0">
-                                            <img id="preview_3" class="img-thumbnail img-fluid  preview_img"
-                                                src="./src/img/producto4.png" alt="" onclick="carrousel('preview_3')">
+                                            <img id="preview_3" class="img-thumbnail img-fluid  preview_img cursor-pointer"
+                                                src="./img/con3.jpg" alt="" onclick="carrousel('preview_3')">
                                         </div>
                                     </div>
                                 </div>
@@ -622,8 +623,7 @@
                                                 class="nav-link text-dark col-2 border-bottom-0 text-truncate text-center  p-1"
                                                 data-bs-toggle="tab" data-bs-target="#nav-contact" type="button"
                                                 role="tab" aria-controls="nav-contact" aria-selected="false"
-                                                tabindex="-1">Condiciones de
-                                                conservación</li>
+                                                tabindex="-1">Conservación</li>
                                         </ul>
                                     </nav>
 
@@ -649,46 +649,46 @@
                                                     <p id="alergenosDiv" style="display: none;"> No se han declarado
                                                         alérgenos para este producto.</p>
                                                     <div id="alergenos" style="display: inline;"> <img id="aler1"
-                                                            src="./src/img/alergeno_gluten.png" width="70px"
+                                                            src="./img/alergeno_gluten.png" width="70px"
                                                             height="70px" alt="Contiene Gluten"
                                                             style="display: inline; width: 70px; height: 70px;">
-                                                        <img id="aler2" src="./src/img/alergeno_crustaceos.png"
+                                                        <img id="aler2" src="./img/alergeno_crustaceos.png"
                                                             width="70px" height="70px" alt="Contiene Crustáceos"
                                                             style="display: inline; width: 70px; height: 70px;">
-                                                        <img id="aler3" src="./src/img/alergeno_huevos.png" width="70px"
+                                                        <img id="aler3" src="./img/alergeno_huevos.png" width="70px"
                                                             height="70px" alt="Contiene Huevo"
                                                             style="display: inline; width: 70px; height: 70px;">
-                                                        <img id="aler4" src="./src/img//alergeno_pescado.png"
+                                                        <img id="aler4" src="./img//alergeno_pescado.png"
                                                             width="70px" height="70px" alt="Contiene Pescado"
                                                             style="display: inline; width: 70px; height: 70px;">
-                                                        <img id="aler5" src="./src/img/alergeno_cacahuetes.png"
+                                                        <img id="aler5" src="./img/alergeno_cacahuetes.png"
                                                             width="70px" height="70px" alt="Contiene Cacahuetes"
                                                             style="display: inline; width: 70px; height: 70px;">
-                                                        <img id="aler6" src="./src/img/alergeno_soja.png" width="70px"
+                                                        <img id="aler6" src="./img/alergeno_soja.png" width="70px"
                                                             height="70px" alt="Contiene Soja"
                                                             style="display: inline; width: 70px; height: 70px;">
-                                                        <img id="aler7" src="./src/img/alergeno_lacteos.png"
+                                                        <img id="aler7" src="./img/alergeno_lacteos.png"
                                                             width="70px" height="70px" alt="Contiene Lácteos"
                                                             style="display: inline; width: 70px; height: 70px;">
-                                                        <img id="aler8" src="./src/img/alergeno_frutos_cascara.png"
+                                                        <img id="aler8" src="./img/alergeno_frutos_cascara.png"
                                                             width="70px" height="70px" alt="Contiene Frutos con cÁscara"
                                                             style="display: inline; width: 70px; height: 70px;">
-                                                        <img id="aler9" src="./src/img/alergeno_apio.png" width="70px"
+                                                        <img id="aler9" src="./img/alergeno_apio.png" width="70px"
                                                             height="70px" alt="Contiene Apio"
                                                             style="display: inline; width: 70px; height: 70px;">
-                                                        <img id="aler10" src="./src/img/alergeno_mostaza.png"
+                                                        <img id="aler10" src="./img/alergeno_mostaza.png"
                                                             width="70px" height="70px" alt="Contiene Mostaza"
                                                             style="display: inline; width: 70px; height: 70px;">
-                                                        <img id="aler11" src="./src/img/alergeno_sesamo.png"
+                                                        <img id="aler11" src="./img/alergeno_sesamo.png"
                                                             width="70px" height="70px" alt="Contiene Sésamo"
                                                             style="display: inline; width: 70px; height: 70px;">
-                                                        <img id="aler12" src="./src/img/alergeno_sulfitos.png"
+                                                        <img id="aler12" src="./img/alergeno_sulfitos.png"
                                                             width="70px" height="70px" alt="Contiene Sulfito"
                                                             style="display: inline; width: 70px; height: 70px;">
-                                                        <img id="aler13" src="./src/img/alergeno_altramuces.png"
+                                                        <img id="aler13" src="./img/alergeno_altramuces.png"
                                                             width="70px" height="70px" alt="Contiene Altramuces"
                                                             style="display: inline; width: 70px; height: 70px;">
-                                                        <img id="aler14" src="./src/img/alergeno_moluscos.png"
+                                                        <img id="aler14" src="./img/alergeno_moluscos.png"
                                                             width="70px" height="70px" alt="Contiene Moluscos"
                                                             style="display: inline; width: 70px; height: 70px;">
                                                     </div>

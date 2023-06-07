@@ -971,4 +971,120 @@ svg {
   text-align: center;
   max-height: 7vh;
 }
+#central {
+  height: 71vh;
+  max-height: 71vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
 
+#panel_info {
+  max-height: 32vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+  scrollbar-width: thin;
+}
+
+#panel_info::-webkit-scrollbar,
+#central::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+#panel_info::-webkit-scrollbar:vertical,
+#central::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+
+#panel_info::-webkit-scrollbar-button:increment,
+#central::-webkit-scrollbar-button:increment {
+  display: none;
+}
+
+#panel_info::-webkit-scrollbar:horizontal,
+#central::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+#panel_info::-webkit-scrollbar-thumb,
+#central::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+}
+
+#panel_info::-webkit-scrollbar-track,
+#central::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+#ean {
+  margin-left: 26%;
+}
+
+.nutrientes {
+  flex-basis: 100%;
+  margin-left: 5%;
+  margin-bottom: 15px;
+  width: 90%;
+  height: 10%;
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+
+.nutrientes p {
+  margin-top: 100% !important;
+  text-align: center !important;
+  color: white !important;
+  font-weight: bold;
+}
+
+
+.divcalorias {
+  background-image: url(../img/valor_nutricional_energía_vacio.png);
+  background-repeat: no-repeat;
+  background-size: 80px, 120px;
+  min-height: 120px;
+  min-width: 80px;
+}
+
+.divproteinas {
+  background-image: url(../img/valor_nutricional_proteinas_vacio.png);
+  background-repeat: no-repeat;
+  background-size: 80px, 120px;
+  min-height: 120px;
+  min-width: 80px;
+}
+
+.divgrasas {
+  background-image: url(../img/valor_nutricional_grasas_vacio.png);
+  background-repeat: no-repeat;
+  background-size: 80px, 120px;
+  min-height: 120px;
+  min-width: 80px;
+}
+
+.divsatu {
+  background-image: url(../img/valor_nutricional_saturadas_vacio.png);
+  background-repeat: no-repeat;
+  background-size: 80px, 120px;
+  min-height: 120px;
+  min-width: 80px;
+}
+
+.divhidratos {
+  background-image: url(../img/valor_nutricional_hidratos_vacio.png);
+  background-repeat: no-repeat;
+  background-size: 80px, 120px;
+  min-height: 120px;
+  min-width: 80px;
+}
+
+.card {
+
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}

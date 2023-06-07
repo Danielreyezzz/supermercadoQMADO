@@ -57,11 +57,18 @@ next.addEventListener('click', ()=>{
     // cat=jsonFamilias[pos].id_categoria;
     // sub=jsonFamilias[pos].id_subcategoria;
     
+    next.setAttribute('hidden', 'true');
+    previous.setAttribute('hidden', 'true');
     let tl = gsap.timeline();
     tl.fromTo(".anim-products", {x: 0}, {x: -1920, duration: 1})
     tl.fromTo(".anim-products", {opacity: 1}, {opacity: 0, duration: 0.2},">")
     tl.to(".anim-products", {x: 1920, duration: 0.2},">")
     tl.to(".anim-products", {opacity: 1, duration: 0.2},">")
+    setTimeout(function () {
+        // cargarPag();
+        next.removeAttribute('hidden');
+        previous.removeAttribute('hidden');
+    }, 1600);
     tl.to(".anim-products", {x: 0, duration: 1},">")
     // cargarPag();
 })
@@ -76,13 +83,21 @@ previous.addEventListener('click', ()=>{
     // }
     // cat=jsonFamilias[pos].id_categoria;
     // sub=jsonFamilias[pos].id_subcategoria;
+
+    next.setAttribute('hidden', 'true');
+    previous.setAttribute('hidden', 'true');
     let tl = gsap.timeline();
     tl.fromTo(".anim-products", {x: 0}, {x: 1920, duration: 1})
     tl.fromTo(".anim-products", {opacity: 1}, {opacity: 0, duration: 0.2},">")
     tl.to(".anim-products", {x: -1920, duration: 0.2},">")
     tl.to(".anim-products", {opacity: 1, duration: 0.2},">")
+    setTimeout(function () {
+        // cargarPag();
+        next.removeAttribute('hidden');
+        previous.removeAttribute('hidden');
+    }, 1600);
     tl.to(".anim-products", {x: 0, duration: 1},">")
-    // cargarPag();
+    
 })
 
 
