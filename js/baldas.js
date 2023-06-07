@@ -38,21 +38,24 @@ function hide_eye(slot) {
     }
 }
 
+// !quitar despues
+cargarSlots(); 
+
 // animation 
 
 const next = document.getElementById('nextPage')
 const previous = document.getElementById('previousPage')
 
 next.addEventListener('click', ()=>{
-    if(pos!=-1 && pos+1==jsonFamilias.length){
-        pos=0;
+    // if(pos!=-1 && pos+1==jsonFamilias.length){
+    //     pos=0;
         
 
-    }else{
-        pos=pos+1;
-    }
-    cat=jsonFamilias[pos].id_categoria;
-    sub=jsonFamilias[pos].id_subcategoria;
+    // }else{
+    //     pos=pos+1;
+    // }
+    // cat=jsonFamilias[pos].id_categoria;
+    // sub=jsonFamilias[pos].id_subcategoria;
     
     let tl = gsap.timeline();
     tl.fromTo(".anim-products", {x: 0}, {x: -1920, duration: 1})
@@ -60,26 +63,26 @@ next.addEventListener('click', ()=>{
     tl.to(".anim-products", {x: 1920, duration: 0.2},">")
     tl.to(".anim-products", {opacity: 1, duration: 0.2},">")
     tl.to(".anim-products", {x: 0, duration: 1},">")
-    cargarPag();
+    // cargarPag();
 })
 previous.addEventListener('click', ()=>{
-    if(pos!=-1 && pos-1==-1){
-        pos=jsonFamilias.length-1;
-        console.log(pos+" el"+jsonFamilias[pos].id_subcategoria);
+    // if(pos!=-1 && pos-1==-1){
+    //     pos=jsonFamilias.length-1;
+    //     console.log(pos+" el"+jsonFamilias[pos].id_subcategoria);
         
 
-    }else{
-        pos=pos-1;
-    }
-    cat=jsonFamilias[pos].id_categoria;
-    sub=jsonFamilias[pos].id_subcategoria;
+    // }else{
+    //     pos=pos-1;
+    // }
+    // cat=jsonFamilias[pos].id_categoria;
+    // sub=jsonFamilias[pos].id_subcategoria;
     let tl = gsap.timeline();
     tl.fromTo(".anim-products", {x: 0}, {x: 1920, duration: 1})
     tl.fromTo(".anim-products", {opacity: 1}, {opacity: 0, duration: 0.2},">")
     tl.to(".anim-products", {x: -1920, duration: 0.2},">")
     tl.to(".anim-products", {opacity: 1, duration: 0.2},">")
     tl.to(".anim-products", {x: 0, duration: 1},">")
-    cargarPag();
+    // cargarPag();
 })
 
 
