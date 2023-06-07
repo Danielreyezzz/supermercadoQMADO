@@ -835,6 +835,12 @@ svg {
   width: 75%;
 }
 
+#keypad{
+  z-index: 1000 !important;
+  position: relative !important;
+  top: 50% !important;
+}
+
 
 /* .carrito:hover{
  background-image: url(../img/cart.png);
