@@ -922,7 +922,7 @@ svg {
 .drop{
   margin-top: 10px!important;
   left: -10px!important;
-  width: 2rem!important;;
+  width: 2rem!important;
 }
 .actual{
   color: red!important;
@@ -952,3 +952,7 @@ svg {
   max-height: 7vh;
 }
 
+.div-img{
+  width: 140%;
+  height: auto;
+}
