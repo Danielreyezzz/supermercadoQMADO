@@ -37,6 +37,9 @@ footer {
   height: 35px !important;
   z-index: 9999 !important;
 }
+#footerWeb{
+  z-index: 1000;
+}
 
 #containerPanel {
   height: calc(100vh - (172px)) !important;
@@ -865,6 +868,11 @@ svg {
 
 .opacity-0{
   opacity: 0;
+}
+
+#Bigcart{
+  bottom: 30px !important;
+  z-index: 0;
 }
 
 
