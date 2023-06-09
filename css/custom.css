@@ -452,12 +452,6 @@ svg {
   height: 25rem !important;
 }
 
-.precio {
-  position: relative;
-  left: 13%;
-  top: 13%;
-  font-size: 150%;
-}
 
 .imgetiqueta {
   position: absolute;
@@ -927,6 +921,7 @@ svg {
 
 .desplegable{
   font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif !important;
   background-color: #FFFFFF;
 
 }
