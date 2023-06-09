@@ -1,0 +1,805 @@
+/*--GLOBALES-- */
+:root {
+    --red: #ff003f;
+    --black: #0d0813;
+    --grey: #474c59;
+    --white: #d5dbe5;
+    --pureBlack: #000000;
+  }
+  
+  .w-25{
+    width: 35%!important;
+  }
+  
+  * {
+    font-family: var(--tituloFont);
+  }
+  
+  body {
+    background-color: white;
+    height: 100dvh !important;
+    overflow-x: hidden !important;
+  }
+  
+  a,
+  button {
+    font-size: 2em;
+    font-family: var(--tituloFont);
+    text-decoration: none;
+  }
+  
+  header {
+    height: 76px;
+    z-index: 999 !important;
+  }
+  
+  footer {
+    height: 35px !important;
+    z-index: 9999 !important;
+  }
+  #footerWeb{
+    z-index: 1;
+  }
+  
+  @media (max-width: 780px) {
+      .footer{
+        display: none!important;
+      }
+      #footerWeb{
+        display: none!important;
+      }
+      
+    }
+  #containerPanel {
+    height: calc(100vh - (126px)) !important;
+  }
+
+  
+  .cate {
+    font-size: 1em !important;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .cate:hover {
+    background-color: white;
+    cursor: pointer;
+    color: red;
+  }
+  
+  .goticColor {
+    background-color: #ff003f !important;
+  }
+  
+  
+  /*--HEADER Y NAV-- */
+  
+  .logo {
+    width: 15%;
+    height: auto;
+    margin: 2% 0;
+  }
+  
+  .logo-nav {
+    width: 256px !important;
+  }
+  
+  #searchNav {
+    outline: none !important;
+  }
+  
+  /*--MAIN-- */
+  
+  main {
+    background-color: aliceblue;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden auto;
+  }
+  
+  main img {
+    width: 65%;
+    border-radius: 2em;
+  }
+  
+  main a:hover,
+  main button:hover {
+    background-color: #ffeaeb;
+  }
+  
+  .cartaBorde {
+    border: 0 !important;
+    padding: 0 !important;
+    margin: 1em !important;
+  }
+  
+  .formulario {
+    border-radius: 1em;
+  }
+  
+  /*--MEDIA QUERIES-- */
+  
+  @media screen and (max-width: 780px) {
+    .logo {
+      width: 80% !important;
+    }
+  
+    main img {
+      width: 80%;
+    }
+  
+    .formulario {
+      width: 95% !important;
+    }
+  }
+  
+  #carousel {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  #carousel div {
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 1;
+  }
+  
+  .carousel-image {
+    opacity: 0.5;
+    transition: opacity 0.2s;
+  }
+  
+  #carousel div img {
+    width: 400px;
+    transition: width 1s;
+  }
+  
+  #carousel div.hideLeft {
+    left: 0%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+  }
+  
+  #carousel div.hideLeft img {
+    width: 200px;
+  }
+  
+  #carousel div.hideRight {
+    left: 100%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+  }
+  
+  #carousel div.hideRight img {
+    width: 200px;
+  }
+  
+  #carousel div.prev {
+    z-index: 5;
+    left: 30%;
+    transform: translateY(50px) translateX(-50%);
+  }
+  
+  #carousel div.prev img {
+    width: 300px;
+  }
+  
+  #carousel div.prevLeftSecond {
+    z-index: 4;
+    left: 15%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+  }
+  
+  #carousel div.prevLeftSecond img {
+    width: 200px;
+  }
+  
+  #carousel div.selected {
+    z-index: 10;
+    left: 50%;
+    transform: translateY(0px) translateX(-50%);
+  }
+  
+  #carousel div.next {
+    z-index: 5;
+    left: 70%;
+    transform: translateY(50px) translateX(-50%);
+  }
+  
+  #carousel div.next img {
+    width: 300px;
+  }
+  
+  #carousel div.nextRightSecond {
+    z-index: 4;
+    left: 85%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+  }
+  
+  #carousel div.nextRightSecond img {
+    width: 200px;
+  }
+  
+  .buttons {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+  }
+  
+  .imgcategorias {
+    height: 50px;
+    width: 50px;
+  }
+  
+  #despensa-tabla {
+    display: NONE;
+  }
+  
+  .boxshadow {
+    -webkit-box-shadow: 10px 10px 5px -3px rgba(96, 130, 167, 0.51);
+    -moz-box-shadow: 10px 10px 5px -3px rgba(96, 130, 167, 0.51);
+    box-shadow: 10px 10px 5px -3px rgba(46, 15, 15, 0.51);
+  }
+  
+  .categoria:hover {
+    -webkit-box-shadow: 10px 10px 5px -3px rgba(96, 130, 167, 0.51);
+    -moz-box-shadow: 10px 10px 5px -3px rgba(96, 130, 167, 0.51);
+    box-shadow: 10px 10px 4px -1px rgba(139, 12, 12, 0.51);
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  button {
+    border: 0 !important;
+    width: 100%;
+  }
+  
+  .selected {
+    position: relative;
+    /* Agregar posición relativa */
+  }
+  
+  .selected:hover img {
+    opacity: 0.7;
+  }
+  
+  .botones-ocultos:hover svg:hover {
+    background-color: rgb(0, 0, 0) !important;
+    cursor: pointer;
+  }
+  
+  .botones-ocultos {
+    opacity: 0;
+    transition: opacity 0.3s;
+    transform: translate(-50%, -50%);
+    /* Alinear en el centro exacto */
+  }
+  
+  .botones-ocultos.mostrar {
+    opacity: 1;
+  }
+  
+  .botones-ocultos:not(.mostrar) {
+    opacity: 0;
+    transition: opacity 0.3s;
+    transform: translate(-50%, -50%);
+  }
+  
+  .tomate .botones-ocultos {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    margin: 50% 20% !important;
+    gap: 8rem;
+  }
+  
+  .circulo {
+    border-radius: 50%;
+  }
+  
+  .section {
+    position: relative;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    height: 30vh !important;
+  }
+  
+  .shop-line {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 50vh;
+    z-index: 2;
+  }
+  
+  .shop-line .shop-line_views-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: calc(100vw - 400px);
+    height: 50vh;
+    z-index: 2;
+    transform: translate3d(-50%, 0, 0);
+  }
+  
+  .shop-line .rack {
+    width: 100%;
+    height: 510px;
+    margin: 0 auto;
+    margin-top: 180px;
+    margin-left: 0px;
+    z-index: 2;
+  }
+  
+  .shop-line .rack .center {
+    position: absolute;
+    display: inline-block;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: 79px;
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: top left;
+  }
+  
+  .shop-line .rack .left {
+    left: -60px;
+  }
+  
+  .shop-line .rack .right {
+    right: -60px;
+  }
+  
+  .shop-line .rack .left,
+  .shop-line .rack .right {
+    position: absolute;
+    width: 50px;
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  
+  .shop-line .shop-line_view.current {
+    left: 0;
+  }
+  
+  .shop-line .shop-line_view {
+    position: absolute;
+    width: 100%;
+    min-width: 10px;
+    height: auto;
+    min-height: 100px;
+    top: 52%;
+    z-index: 2;
+    transform: translate3d(0, -50%, 0);
+  }
+  
+  .shop-line .prods {
+    position: absolute;
+    width: 90% !important;
+    min-width: 310px;
+    height: 245px !important;
+    margin-top: -80px;
+    margin-left: -3% !important;
+    display: table;
+    table-layout: fixed;
+    z-index: 10;
+    border-spacing: 0;
+    /* Ajusta el espaciado entre celdas a 0 */
+  }
+  
+  .rack-product {
+    position: relative;
+    display: table-cell;
+    text-align: center;
+    vertical-align: bottom;
+    pointer-events: all;
+    width: auto;
+    max-width: 200px;
+    min-width: 98%;
+  }
+  
+  .rack-product .product-image {
+    position: absolute;
+    left: 50%;
+    width: 95%;
+    max-width: 95%;
+    z-index: 0;
+  }
+  
+  svg {
+    border-radius: 50% !important;
+  }
+  
+  .product-image {
+    display: inline-block;
+  }
+  
+  #fondomain {
+    background-image: url(../img/Fondo_Blanco.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  #contenedorestantecristal {
+    background-image: url(../img/Balda_Naranja.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0;
+  }
+  
+  #contenedorestantemetacrilato {
+    background-image: url(../img/Balda_metacrilato.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0;
+  }
+  
+  #tomate {
+    background-image: url(../img/12-bandeja-ensalada-pasta-600x533.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 7rem !important;
+  }
+  
+  .fila {
+    width: 80%;
+    padding: 2rem 0;
+    position: relative;
+    margin-top: 8% !important;
+    z-index: 10;
+  }
+  
+  .margines {
+    height: 25rem !important;
+  }
+  
+  
+  .imgetiqueta {
+    position: absolute;
+    width: 6%;
+    margin-left: 1.5rem;
+  }
+  
+  .imgbalda {
+    width: 100%;
+    position: absolute;
+    top: -5px;
+  
+    z-index: 1;
+  }
+  
+  .contenedoretiqueta {
+    margin-left: 5rem;
+  }
+  
+  .rack-product .shadow {
+    position: absolute;
+    bottom: -10px;
+    left: -20px;
+    width: 95%;
+    max-width: 95%;
+    opacity: 0.4;
+    filter: blur(10px);
+    z-index: -1;
+  }
+  
+  .product-shadow {
+    max-width: 100%;
+    transform: rotate3d(1, 0, 0, 45deg);
+    filter: brightness(0);
+  }
+  
+  .rack-product .product-image img.prod {
+    max-width: 100%;
+  }
+  
+  .rack-product .price-tag {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    width: 60px;
+    height: 25px;
+    z-index: 1;
+  }
+  
+  .rack-product .price-tag p {
+    display: inline-block;
+  }
+  
+  .rack-product .price-tag img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    border-radius: 0;
+  }
+  
+  .btn-cart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .rack-product .position-relative {
+    transition: opacity 0.3s;
+  }
+  
+  .rack-product .position-relative:hover img {
+    opacity: 0.7;
+    /* Cambiar la opacidad de la imagen */
+  }
+  
+  .rack-product .position-relative:hover .btn-cart {
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+  
+  .rack-product .position-relative:not(hover) .btn-cart {
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .product-overlay {
+    position: absolute;
+    top: -20px !important;
+    /* Espacio desde la parte superior */
+    left: -20px !important;
+    /* Espacio desde la parte izquierda */
+    z-index: 1;
+    border-radius: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .product-overlay:hover {
+    background-color: white !important;
+    transition: opacity 0.3s;
+  }
+  
+  .btn-eye {
+    border: none;
+    border-radius: 2rem;
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .modal-header img {
+    width: 10%;
+  }
+  
+  
+  
+  .show .accordion-header {
+    font-weight: bold !important;
+  }
+  
+  
+  .carousel-item {
+    transition: transform 2s ease-in-out !important;
+  }
+  
+  .carousel-fade .active.carousel-item-start,
+  .carousel-fade .active.carousel-item-end {
+    transition: opacity 0.2s 0s !important;
+  }
+  
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    background-color: transparent !important;
+  }
+  
+  .product-overlay:hover {
+    background-color: white;
+  }
+  
+  .position-relative:hover .btn-eye {
+    opacity: 1;
+    color: black;
+  }
+  
+  .position-relative:hover .product-overlay {
+    opacity: 1;
+  }
+  
+  .shop-line .shop-line_controlls {
+    position: absolute;
+    width: 100vw;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translate3d(0, -50%, 0);
+    -moz-transform: translate3d(0, -50%, 0);
+    -ms-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+    z-index: 3;
+    pointer-events: none;
+  }
+  
+  .shop-line .shop-line_controlls .prev {
+    float: left;
+    left: 40px;
+  }
+  
+  .shop-line_controlls .next {
+    float: right;
+    right: 40px;
+  }
+  
+  .shop-line_controlls .prev,
+  .shop-line .shop-line_controlls .next {
+    position: relative;
+    pointer-events: all;
+  }
+  
+  .btn.icon.fab {
+    width: 50px;
+    max-width: 50px;
+    height: 50px;
+    max-height: 50px;
+    padding: 6px;
+    border-radius: 50%;
+  }
+  
+  #textaa {
+    background-image: url("../img/Balda_Naranja.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+  }
+  
+  .carousel-item {
+    transition: transform 2s ease-in-out !important;
+  }
+  
+  .carousel-fade .active.carousel-item-start,
+  .carousel-fade .active.carousel-item-end {
+    transition: opacity 0.2s 0s !important;
+  }
+  
+  .carousel-control-prev {
+    left: -100px !important;
+  }
+  
+  .carousel-control-next {
+    right: -100px !important;
+  }
+  
+  /* Navbar mediaQuery */
+  
+  @media (max-width: 1054px) {
+    #navbar {
+      justify-content: center !important;
+    }
+  
+    #menu-logo {
+      margin-inline-end: auto !important;
+    }
+  
+    header {
+      height: 120px;
+    }
+  }
+  
+  @media (max-width: 778px) {
+    header {
+      height: 126px;
+    }
+  
+    #navbar {
+      justify-content: center !important;
+    }
+  
+    #navbar > a {
+      justify-content: center !important;
+    }
+  }
+  
+  @media (max-width: 526px) {
+    header {
+      height: 185px !important;
+    }
+  }
+  
+  /* Custom bootstrap class */
+  
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  
+  .text-justify {
+    text-align: justify;
+  }
+  
+  .banner {
+    height: 55% !important;
+  }
+  
+  .img-thumbnail {
+    padding: 0.25rem;
+    max-width: 100%;
+    height: auto;
+    border: 0;
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0 !important;
+  }
+  
+  .boton {
+    background-color: #ffffff;
+    border: 0 !important;
+    padding: 0;
+  }
+  
+  .boton:hover {
+    width: 103%;
+    transition: 0.3s;
+    background-color: #ffffff;
+  }
+  
+  .boton:not(hover) {
+    width: 100%;
+    transition: 0.3s;
+    background-color: #ffffff;
+  }
+  
+  img,
+  svg {
+    vertical-align: middle;
+  }
+  
+  .row > .container {
+    max-width: 0 !important;
+  }
+  
+  .carro .item {
+    height: 460px !important;
+  }
+  
+  .item img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    min-height: 460px;
+  }
+  
+  #cart {
+    background-image: url(../img/cart.png);
+    background-size: 100% 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: transparent !important;
+  }
+  #cart:hover {
+    background-image: url(../img/cart_hover.png);
+  }
+  
+  
+  .indicadores{
+    background-color: white;
+    padding: 1rem 0;
+    border-radius: 1rem;
+    margin-left: 55rem!important;
+    margin-right: 55rem!important;
+  }
+  
+  .fuente{
+    font-family: Arial, Helvetica, sans-serif;
+  }
