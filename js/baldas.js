@@ -135,41 +135,42 @@ const products = [];
 function cargarProductos() {
     for (let i = 1; i <= 24; i++) {
         const producto = document.getElementById(`producto_${i}`);
-    const buyButton = document.getElementById(`buy_producto_${i}`);
-    
-    products.push({
-        producto: producto,
-        buyButton: buyButton
-    });
-    
-    buyButton.addEventListener("click", function () {
-        animateToCenter(producto);
-    });
-}
-function animateToCenter(element) {
-    let tl = gsap.timeline();
-    // Dimensiones Panel contenedor
-    let container = document.getElementById("containerPanel");
-    let containerRect = container.getBoundingClientRect();
-    let elementRect = element.getBoundingClientRect();
-    let centerX = containerRect.left + containerRect.width / 2 - elementRect.width / 2;
-    let centerY = containerRect.top + containerRect.height / 2 - elementRect.height / 2;
-  
-    let initialX = elementRect.left - containerRect.left + elementRect.width / 2; // Ubicacion elem lateral
-    let initialY = elementRect.top - containerRect.top + elementRect.height / 2; // Ubicacion elem vertical
-  
-    let deltaX = centerX - initialX;  // Desplazamiento lateral
-    let deltaY = centerY - initialY + elementRect.height * 2.5; // Desplazamiento vertical
-  
-    tl.to(element, { x: "+=" + deltaX, y: "+=" + deltaY, duration: 1.2 })
-      .to(element, { opacity: 0, duration: 0.2 }, ">")
-      .call(resetPosition);
-  
-    function resetPosition() {
-      tl.to(element, { x: 0, y: 0, duration: 0.1 })
-        .to(element, { opacity: 1, duration: 0.1 }, ">");
+        const buyButton = document.getElementById(`buy_producto_${i}`);
+
+        products.push({
+            producto: producto,
+            buyButton: buyButton
+        });
+
+        buyButton.addEventListener("click", function () {
+            animateToCenter(producto);
+        });
     }
-  }
+    function animateToCenter(element) {
+        let tl = gsap.timeline();
+        // Dimensiones Panel contenedor
+        let container = document.getElementById("containerPanel");
+        let containerRect = container.getBoundingClientRect();
+        let elementRect = element.getBoundingClientRect();
+        let centerX = containerRect.left + containerRect.width / 2 - elementRect.width / 2;
+        let centerY = containerRect.top + containerRect.height / 2 - elementRect.height / 2;
+
+        let initialX = elementRect.left - containerRect.left + elementRect.width / 2; // Ubicacion elem lateral
+        let initialY = elementRect.top - containerRect.top + elementRect.height / 2; // Ubicacion elem vertical
+
+        let deltaX = centerX - initialX;  // Desplazamiento lateral
+        let deltaY = centerY - initialY + elementRect.height * 2.5; // Desplazamiento vertical
+        element.classList.add('position-absolute', 'anim-z');
+        tl.to(element, { x: "+=" + deltaX, y: "+=" + deltaY, duration: 1.2 })
+            .to(element, { opacity: 0, duration: 0.2 }, ">")
+            .call(resetPosition);
+
+        function resetPosition() {
+            element.classList.remove('position-absolute', 'anim-z');
+            tl.to(element, { x: 0, y: 0, duration: 0.1 })
+                .to(element, { opacity: 1, duration: 0.1 }, ">");
+        }
+    }
 }
 
 cargarProductos()

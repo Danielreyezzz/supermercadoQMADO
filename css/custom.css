@@ -994,6 +994,10 @@ svg {
   background-color: var(--bs-danger) !important;
 }
 
+.anim-z{
+  z-index: 999 !important;
+}
+
 #panel_info::-webkit-scrollbar,
 #central::-webkit-scrollbar {
   -webkit-appearance: none;
