@@ -36,7 +36,6 @@
   footer {
     height: 35px !important;
     z-index: 9999 !important;
-   
   }
   #footerWeb{
     z-index: 1;
@@ -52,7 +51,7 @@
       
     }
   #containerPanel {
-    height: calc(100vh - (120px)) !important;
+    height: calc(100vh - (118px)) !important;
   }
 
   
