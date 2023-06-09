@@ -990,6 +990,9 @@ svg {
   scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
   scrollbar-width: thin;
 }
+.active{
+  background-color: var(--bs-danger) !important;
+}
 
 #panel_info::-webkit-scrollbar,
 #central::-webkit-scrollbar {
