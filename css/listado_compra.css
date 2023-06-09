@@ -1,0 +1,139 @@
+i {
+    font-size: 1.2em;
+}
+
+.product_preview2 {
+    height: 100px;
+}
+
+#listadoCompra{
+   
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    
+  }
+  
+  .descriptionList{
+    text-align: justify !important;
+  }
+
+@media (max-width: 768px) {
+    .product_preview2 {
+        height: 80px;
+    }
+}
+
+.pulsate-fwd {
+    -webkit-animation: pulsate-fwd 1s ease-in-out infinite both;
+    animation: pulsate-fwd 1s ease-in-out infinite both;
+}
+
+.focus-in-expand-fwd {
+	-webkit-animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+#product_list::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+#product_list::-webkit-scrollbar:vertical {
+    width: 10px;
+}
+
+
+#product_list::-webkit-scrollbar-button:increment{
+    display: none;
+}
+
+#product_list::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+#product_list::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+#product_list::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+#product_list {
+    max-height: 62vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+@-webkit-keyframes pulsate-fwd {
+    0% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+    }
+
+    50% {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    }
+
+    100% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+    }
+}
+
+@keyframes pulsate-fwd {
+    0% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+    }
+
+    50% {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    }
+
+    100% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+    }
+}
+
+@-webkit-keyframes focus-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-800px);
+              transform: translateZ(-800px);
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @keyframes focus-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-800px);
+              transform: translateZ(-800px);
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  
