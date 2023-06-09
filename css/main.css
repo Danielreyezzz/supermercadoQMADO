@@ -51,7 +51,7 @@
       
     }
   #containerPanel {
-    height: calc(100vh - (126px)) !important;
+    height: calc(100vh - (118px)) !important;
   }
 
   
@@ -802,4 +802,11 @@
   
   .fuente{
     font-family: Arial, Helvetica, sans-serif;
+  }
+  .carrusel-cosas{
+    height: 20rem!important;
+    
+  }
+  .carrusel-cosas img{
+    height:  100%;
   }
