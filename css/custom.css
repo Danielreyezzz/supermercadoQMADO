@@ -38,7 +38,7 @@ footer {
   z-index: 9999 !important;
 }
 #footerWeb{
-  z-index: 1000;
+  z-index: 1;
 }
 
 #containerPanel {
@@ -874,22 +874,6 @@ svg {
   bottom: 30px !important;
   z-index: 0;
 }
-
-
-
-/* .carrito:hover{
- background-image: url(../img/cart.png);
- background-position: center;
- background-repeat: no-repeat;
- background-size: 40%;
- z-index: 100 !important;
- 
-
-}
-.img-producto:hover {
-  transition: opacity 0.5s ease-in-out;
-  opacity: 0.2;
-} */
 
 /* Media query */
 

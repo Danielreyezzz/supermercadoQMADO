@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/listado_compra.css" />
+    <!-- <link rel="stylesheet" href="css/plantilla.css" /> -->
+    <script defer src="js/bootstrap.bundle.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/asidenav.css" />
+    <script defer src="js/custom.js"></script>
+    <script defer src="js/baldas.js"></script>
+    <script defer src="js/productos_gsap.js"></script>
+    <title>Supermercado</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+        integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function () {
+            $("#navBarWeb").load("navbar.html");
+            $("#asideMenu").load("asidemenu.html", function () {
+                loadCustomScript();
+            });
+            $("#footerWeb").load("footer.html");
+        });
+        function loadCustomScript() {
+            let script = document.createElement("script");
+            script.src = "./js/asidenav.js";
+            script.defer = true;
+            document.head.appendChild(script);
+        }
+    </script>
+</head>
+
+<body class="overflow-x-hidden container-fluid px-0 mx-0">
+    <div id="navBarWeb"></div>
+    <div id="asideMenu" class="col-12 col-md-3 col-xl-2 px-sm-0 px-0 bg-dark position-absolute d-none fade-in-left">
+    </div>
+    <div class="desplegables rounded-bottom fw-bold">
+        <div class="dropdown rounded-bottom bg-cum ">
+            <button class="desplegable enlace-desplegable rounded-bottom actual fw-bold" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <span class="text-dark me-3">Estás en: </span>
+                congelados
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black"
+                    class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z" />
+                </svg>
+            </button>
+            <ul class="dropdown-menu desplegable-menu bg-white enlace-desplegable drop-estas flex-wrap flex-column ">
+                <li><a class="dropdown-item enlace-desplegable xd" href="#">Helados</a> </li>
+                <li><a class="dropdown-item enlace-desplegable xd" href="#">Precocinados</a></li>
+                <li><a class="dropdown-item enlace-desplegable xd" href="#">Pescado</a></li>
+                <li><a class="dropdown-item enlace-desplegable xd" href="#">Marisco</a></li>
+            </ul>
+        </div>
+        <div>
+            /
+        </div>
+        <div class="dropdown">
+            <button class="desplegable bg-white enlace-desplegable fw-bold" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Helados <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z" />
+                </svg>
+            </button>
+
+            <ul class="dropdown-menu desplegable-menu bg-white enlace-desplegable drop flex-wrap flex-column">
+                <li><a class="dropdown-item  enlace-desplegable xd" href="#">Vainilla</a></li>
+                <li><a class="dropdown-item  enlace-desplegable xd" href="#">Fresa</a></li>
+                <li><a class="dropdown-item  enlace-desplegable xd" href="#">Chocolate</a></li>
+                <li><a class="dropdown-item  enlace-desplegable xd" href="#">Mezclas</a></li>
+                <li><a class="dropdown-item  enlace-desplegable xd" href="#">Tuttifrutti</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="containerPanel"
+        class="d-flex flex-column py-3 overflow-y-auto overflow-x-hidden aside-menu px-0 pt-0 pb-0 bg-gradient">
+        <!-- PÁGINA -->
+        <!-- PANEL LISTADO DE LA COMPRA-->
+        <div id="listadoCompra"
+            class="col-12 p-0 p-lg-3 px-2 my-2 bg-white">
+            <span class="text-center">
+                <h2
+                    class="bg-dark my-4 mt-2 border-bottom border-danger text-white rounded rounded-3 shadow focus-in-expand py-2 focus-in-expand-fwd">
+                    LISTADO DE LA COMPRA</h2>
+            </span>
+            <article class="container-fluid p-0">
+                <div id="product_list" class="list-group">
+                    <!-- Tarjeta de producto -->
+                    <section class="py-0 list-group-item list-group-item-action">
+                        <div class="p-0 d-flex justify-content-around row">
+
+                            <div class="align-self-center text-center px-lg-2 px-sm-0 px-md-1 flex-fill col-4 col-lg-1">
+                                <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fvignette2.wikia.nocookie.net%2Fdayz-standalone%2Fimages%2F8%2F86%2FCanned_Baked_Beans_%2528Open%2529.png%2Frevision%2Flatest%3Fcb%3D20150628022625&f=1&nofb=1&ipt=cf19ec35a0ee8ba6b88fa28a0afd77e441848b0ca3879941c8783641c976d4ab&ipo=images"
+                                    alt="imagen producto"
+                                    class="rounded-circle flex-shrink-0 product_preview2 m-0 m-lg-3">
+                            </div>
+                            <div class="align-self-center px-lg-2 px-sm-0 px-md-1 flex-fill col-8 col-lg-4 p-lg-3">
+                                <h6 class="mb-0">Alimento envasado</h6>
+                                <p class="mb-0 opacity-75 descriptionList">Esto es una descripción breve del producto ur
+                                    ducimus distinctio officia deleniti perspiciatis dicta doloribus.
+                                </p>
+                            </div>
+                            <div
+                                class="align-self-center px-lg-2 py-3 px-sm-0 px-md-1 flex-fill col-6 col-lg-2 d-flex justify-content-center">
+                                <p class="align-self-lg-center p-0 m-0">Precio Ud 12.12€</p>
+                            </div>
+                            <div
+                                class="align-self-center px-lg-2 px-sm-0 px-md-1 flex-fill col-6 col-lg-2 d-flex justify-content-center">
+                                <p class="align-self-lg-center p-0 m-0">Total 12.12€</p>
+                            </div>
+                            <div
+                                class="align-self-center px-lg-2 px-sm-0 px-md-1 flex-fill col-6 col-lg-2 d-flex justify-content-center">
+                                <a class="btn btn-primary bg-transparent border-0 p-3 align-self-lg-center"><i
+                                        class="bi bi-dash-circle text-danger"></i></a>
+                                <p class="align-self-lg-center p-3 px-0 m-0">1</p>
+                                <a class="btn btn-primary bg-transparent border-0 p-3 align-self-lg-center "><i
+                                        class="bi bi-plus-circle text-success"></i></a>
+                            </div>
+                            <div
+                                class="align-self-center px-lg-2 px-sm-0 px-md-1 flex-fill col-2 col-lg-1 d-flex justify-content-center">
+                                <a class="btn btn-primary bg-transparent border-0 align-self-lg-center p-3 text-dark"><i
+                                        class="bi bi-x-circle text-danger"></i></a>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="py-0 list-group-item list-group-item-action">
+                        <div class="p-0 d-flex justify-content-around row">
+
+                            <div class="align-self-center text-center px-lg-2 px-sm-0 px-md-1 flex-fill col-4 col-lg-1">
+                                <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fvignette2.wikia.nocookie.net%2Fdayz-standalone%2Fimages%2F8%2F86%2FCanned_Baked_Beans_%2528Open%2529.png%2Frevision%2Flatest%3Fcb%3D20150628022625&f=1&nofb=1&ipt=cf19ec35a0ee8ba6b88fa28a0afd77e441848b0ca3879941c8783641c976d4ab&ipo=images"
+                                    alt="imagen producto"
+                                    class="rounded-circle flex-shrink-0 product_preview2 m-0 m-lg-3">
+                            </div>
+                            <div class="align-self-center px-lg-2 px-sm-0 px-md-1 flex-fill col-8 col-lg-4 p-lg-3">
+                                <h6 class="mb-0">Alimento envasado</h6>
+                                <p class="mb-0 opacity-75 descriptionList">Esto es una descripción breve del producto ur
+                                    ducimus distinctio officia deleniti perspiciatis dicta doloribus.
+                                </p>
+                            </div>
+                            <div
+                                class="align-self-center px-lg-2 py-3 px-sm-0 px-md-1 flex-fill col-6 col-lg-2 d-flex justify-content-center">
+                                <p class="align-self-lg-center p-0 m-0">Precio Ud 12.12€</p>
+                            </div>
+                            <div
+                                class="align-self-center px-lg-2 px-sm-0 px-md-1 flex-fill col-6 col-lg-2 d-flex justify-content-center">
+                                <p class="align-self-lg-center p-0 m-0">Total 12.12€</p>
+                            </div>
+                            <div
+                                class="align-self-center px-lg-2 px-sm-0 px-md-1 flex-fill col-6 col-lg-2 d-flex justify-content-center">
+                                <a class="btn btn-primary bg-transparent border-0 p-3 align-self-lg-center"><i
+                                        class="bi bi-dash-circle text-danger"></i></a>
+                                <p class="align-self-lg-center p-3 px-0 m-0">1</p>
+                                <a class="btn btn-primary bg-transparent border-0 p-3 align-self-lg-center "><i
+                                        class="bi bi-plus-circle text-success"></i></a>
+                            </div>
+                            <div
+                                class="align-self-center px-lg-2 px-sm-0 px-md-1 flex-fill col-2 col-lg-1 d-flex justify-content-center">
+                                <a class="btn btn-primary bg-transparent border-0 align-self-lg-center p-3 text-dark"><i
+                                        class="bi bi-x-circle text-danger"></i></a>
+                            </div>
+                        </div>
+                    </section>
+
+
+                </div>
+
+            </article>
+            <div
+                class="col-12 order-lg-1 px-2 px-lg-0 border-top mt-1 p-2 py-0 d-flex justify-content-end border-danger">
+                <p class="fw-bolder fs-5 p-2 focus-in-expand-fwd" id="totalPedido">Total: 123'12 €</p>
+            </div>
+            <div class="row col-12 m-0 p-0 my-1 d-flex justify-content-end">
+                <div class="col-5 col-md-3 col-lg-2 px-0 px-lg-0 d-flex justify-content-start">
+                    <button class="text-white btn btn-secondary border border-danger mx-1 mx-lg-1"
+                        onclick="ocultarListado();">Continuar
+                        comprando</button>
+                </div>
+                <div class="col-5 col-md-3 col-lg-2 ms-5 me-3 px-0 px-lg-0  d-flex justify-content-end">
+                    <button class="text-white btn btn-success border border-dark mx-2 mx-lg-0 pulsate-fwd"
+                        onclick="tramitarPedido()">Tramitar
+                        pedido</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div id="footerWeb" class="container-fluid mx-0 px-0 position-fixed bg-white"></div>
+</body>
+
+</html>
