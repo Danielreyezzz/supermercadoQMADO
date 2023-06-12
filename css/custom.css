@@ -720,9 +720,10 @@ svg {
 
 .img-thumbnail {
   padding: 0.25rem;
-  max-width: 100%;
+  max-width: 120%;
   height: auto;
   border: 0;
+
 }
 
 .img-fluid {
@@ -1111,4 +1112,8 @@ svg {
 .info{
   left: 42.5% !important;
   top: 95% !important;
+ }
+
+ .marginas{
+  margin: 0 .3rem;
  }
