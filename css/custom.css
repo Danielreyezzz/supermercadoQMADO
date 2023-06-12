@@ -720,9 +720,10 @@ svg {
 
 .img-thumbnail {
   padding: 0.25rem;
-  max-width: 100%;
+  max-width: 120%;
   height: auto;
   border: 0;
+
 }
 
 .img-fluid {
@@ -866,9 +867,11 @@ svg {
 }
 
 #Bigcart{
-  bottom: 30px !important;
+  bottom: 40px !important;
   z-index: 0;
+  left: -53px;
 }
+
 
 /* Media query */
 
@@ -1116,4 +1119,8 @@ svg {
 .info{
   left: 42.5% !important;
   top: 95% !important;
+ }
+
+ .marginas{
+  margin: 0 .3rem;
  }
