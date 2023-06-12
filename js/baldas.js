@@ -67,67 +67,69 @@ cargarSlots();
 
 const next = document.getElementById('nextPage')
 const previous = document.getElementById('previousPage')
+// Las tres baldas que existen
+const rack_1 = document.getElementById('balda_1');
+const rack_2 = document.getElementById('balda_2');
+const rack_3 = document.getElementById('balda_3');
 
 next.addEventListener('click', () => {
-    // if(pos!=-1 && pos+1==jsonFamilias.length){
-    //     pos=0;
-
-
-    // }else{
-    //     pos=pos+1;
-    // }
-    // cat=jsonFamilias[pos].id_categoria;
-    // sub=jsonFamilias[pos].id_subcategoria;
-
+    prepareRack('anim');
     next.setAttribute('hidden', 'true');
     previous.setAttribute('hidden', 'true');
-    let tl = gsap.timeline();
+
+    let tl = gsap.timeline({
+        onComplete: () => {
+            prepareRack('ready');
+            next.removeAttribute('hidden');
+            previous.removeAttribute('hidden');
+        },
+        onStart: () => {
+            prepareRack('anim');
+        }
+    });
+
     tl.fromTo(".anim-products", { x: 0 }, { x: -1920, duration: 1 })
-    tl.fromTo(".anim-products", { opacity: 1 }, { opacity: 0, duration: 0.2 }, ">")
-    tl.to(".anim-products", { x: 1920, duration: 0.2 }, ">")
-    tl.to(".anim-products", { opacity: 1, duration: 0.2 }, ">")
-    setTimeout(function () {
-        // cargarPag();
-        next.removeAttribute('hidden');
-        previous.removeAttribute('hidden');
-    }, 1600);
-    tl.to(".anim-products", { x: 0, duration: 1 }, ">")
-    // cargarPag();
-})
+        .fromTo(".anim-products", { opacity: 1 }, { opacity: 0, duration: 0.2 }, ">")
+        .to(".anim-products", { x: 1920, duration: 0.2 }, ">")
+        .to(".anim-products", { opacity: 1, duration: 0.2 }, ">")
+        .to(".anim-products", { x: 0, duration: 1 }, ">")
+});
+
 previous.addEventListener('click', () => {
-    // if(pos!=-1 && pos-1==-1){
-    //     pos=jsonFamilias.length-1;
-    //     console.log(pos+" el"+jsonFamilias[pos].id_subcategoria);
-
-
-    // }else{
-    //     pos=pos-1;
-    // }
-    // cat=jsonFamilias[pos].id_categoria;
-    // sub=jsonFamilias[pos].id_subcategoria;
-
     next.setAttribute('hidden', 'true');
     previous.setAttribute('hidden', 'true');
-    let tl = gsap.timeline();
+
+    let tl = gsap.timeline({
+        onComplete: () => {
+            prepareRack('ready');
+            next.removeAttribute('hidden');
+            previous.removeAttribute('hidden');
+        },
+        onStart: () => {
+            prepareRack('anim');
+        }
+    });
+
     tl.fromTo(".anim-products", { x: 0 }, { x: 1920, duration: 1 })
-    tl.fromTo(".anim-products", { opacity: 1 }, { opacity: 0, duration: 0.2 }, ">")
-    tl.to(".anim-products", { x: -1920, duration: 0.2 }, ">")
-    tl.to(".anim-products", { opacity: 1, duration: 0.2 }, ">")
-    setTimeout(function () {
-        // cargarPag();
-        next.removeAttribute('hidden');
-        previous.removeAttribute('hidden');
-    }, 1600);
-    tl.to(".anim-products", { x: 0, duration: 1 }, ">")
-
-})
+        .fromTo(".anim-products", { opacity: 1 }, { opacity: 0, duration: 0.2 }, ">")
+        .to(".anim-products", { x: -1920, duration: 0.2 }, ">")
+        .to(".anim-products", { opacity: 1, duration: 0.2 }, ">")
+        .to(".anim-products", { x: 0, duration: 1 }, ">")
+});
 
 
-// let tl = gsap.timeline();
-// let pro_1 = document.getElementById("#producto_1");
-// let pro_7 = document.getElementById("#producto_7");
-
-// tl.to(pro_1, {y: 500, duration: 1.2})
+function prepareRack(action) {
+    if (action == "ready") {
+        rack_1.classList.add('reset_transform')
+        rack_2.classList.add('reset_transform')
+        rack_3.classList.add('reset_transform')
+    }
+    else {
+        rack_1.classList.remove('reset_transform')
+        rack_2.classList.remove('reset_transform')
+        rack_3.classList.remove('reset_transform')
+    }
+}
 
 
 const products = [];
@@ -176,11 +178,6 @@ function cargarProductos() {
 }
 
 cargarProductos()
-
-// let pro_1 = document.getElementById("producto_1");
-// const buy_pro_1 = document.getElementById("buy_producto_1");
-
-// buy_pro_1.addEventListener("click", () => { animateToCenter(pro_1) });
 
 
 
