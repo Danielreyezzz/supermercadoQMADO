@@ -867,9 +867,11 @@ svg {
 }
 
 #Bigcart{
-  bottom: 30px !important;
+  bottom: 40px !important;
   z-index: 0;
+  left: -53px;
 }
+
 
 /* Media query */
 
