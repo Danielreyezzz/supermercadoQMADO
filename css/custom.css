@@ -812,7 +812,7 @@ svg {
   background-position: center;
   background-repeat: no-repeat;
   z-index: 0;
-  min-height: 100% !important;
+  /* min-height: 100% !important; */
 }
 
 .img-shadow {
@@ -840,15 +840,15 @@ svg {
   width: 75%;
 }
 
-#keypad{
+/* #keypad{
   z-index: 1000 !important;
   position: relative !important;
   top: 50% !important;
-}
+} */
 
 .col-1-balda {
   flex: 0 0 auto !important;
-  width: 10.33333333% !important;
+  width: 21.33333333% !important;
 }
 
 .showmore{
@@ -881,13 +881,13 @@ svg {
 
 @media screen and (max-width: 1450px) {
   .tag {
-    top: 115%;
+    top: 100%;
   }
 }
 
 @media screen and (max-width: 1350px) {
   .tag {
-    top: 110%;
+    top: 100%;
   }
 }
 
@@ -910,11 +910,24 @@ svg {
   #containerPanel{
     height: calc(100vh - (300px))!important;
   }
-
+  .balda{
+    margin-top: 1.5% !important;
+  }
 }
-@media screen and (max-width: 528px) {
+@media screen and (max-width: 527px) {
   #containerPanel{
     height: calc(100vh - (360px))!important;
+  }
+  .col-1-balda{
+    width: 30.333333% !important;
+  }
+  .balda{
+    margin-top: 2% !important;
+  }
+
+  .tag, .quantity-sm {
+    font-size: smaller  !important;
+    top: 100%;
   }
 
 }
