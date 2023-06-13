@@ -683,13 +683,13 @@ svg {
   }
 
   header {
-    height: 120px;
+    height: 86px;
   }
 }
 
 @media (max-width: 778px) {
   header {
-    height: 126px;
+    height: 86px;
   }
 
   #navbar {
@@ -703,7 +703,7 @@ svg {
 
 @media (max-width: 526px) {
   header {
-    height: 185px !important;
+    height: 86px !important;
   }
 }
 
@@ -1153,6 +1153,10 @@ svg {
   border: 1px solid black;
   border-radius: 5px;
   padding: 10px;
-  filter:opacity(0.8)
+  filter:opacity(0.8);
+  color:#FE2C18
+ }
 
+ .nav{
+  margin-right: 1.5rem!important;
  }
