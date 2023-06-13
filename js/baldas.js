@@ -19,31 +19,38 @@ function cargarSlots() {
 function show_eye(slot) {
     let eye = slot.lastElementChild;
     let cart = eye.previousElementSibling;
+    let text = cart.previousElementSibling;
 
     eye.style.transition = 'opacity 0.3s ease'; // Transición de 0.3 segundos con un efecto de transición "ease"
-    cart.style.transition = 'opacity 0.3s ease'; // Transición de 0.3 segundos con un efecto de transición "ease"
+    cart.style.transition = 'opacity 0.3s ease';
+    text.style.transition = 'opacity 0.3s ease'; // Transición de 0.3 segundos con un efecto de transición "ease"
+
     eye.style.opacity = '1'; // Establecer opacidad a 1
     cart.style.opacity = '1'; // Establecer opacidad a 1
+    text.style.opacity = '1';
 
     eye.classList.remove('d-none');
     cart.classList.remove('d-none');
+    text.classList.remove('d-none');
 }
 
 function hide_eye(slot) {
     let eye = slot.lastElementChild;
     let cart = eye.previousElementSibling;
+    let text = cart.previousElementSibling;
 
     eye.style.transition = 'opacity 0.3s ease'; // Transición de 0.3 segundos con un efecto de transición "ease"
     cart.style.transition = 'opacity 0.3s ease'; // Transición de 0.3 segundos con un efecto de transición "ease"
-
+    text.style.transition = 'opacity 0.3s ease';
     // Agregar evento para ocultar los elementos cuando el ratón sale de ellos
     slot.addEventListener('mouseleave', function () {
         eye.style.opacity = '0'; // Reducir gradualmente la opacidad a 0
         cart.style.opacity = '0'; // Reducir gradualmente la opacidad a 0
-
+        text.style.opacity = '0';
         setTimeout(function () {
             eye.classList.add('d-none');
             cart.classList.add('d-none');
+            text.classList.add('d-none');
         }, 300); // Esperar 300 milisegundos (duración de la transición) antes de ocultar los elementos
     });
 
@@ -51,13 +58,16 @@ function hide_eye(slot) {
     slot.addEventListener('mouseenter', function () {
         eye.style.opacity = '1'; // Aumentar gradualmente la opacidad a 1
         cart.style.opacity = '1'; // Aumentar gradualmente la opacidad a 1
+        text.style.opacity = '1';
 
         eye.classList.remove('d-none');
         cart.classList.remove('d-none');
+        text.classList.remove('d-none');
     });
 
     eye.classList.remove('d-none');
     cart.classList.remove('d-none');
+    text.classList.remove('d-none');
 }
 
 // !quitar despues
