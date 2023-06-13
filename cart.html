@@ -146,21 +146,19 @@
                 class="col-12 order-lg-1 px-2 px-lg-0 border-top mt-1 p-2 py-0 d-flex justify-content-end border-danger">
                 <p class="fw-bolder fs-5 p-2 focus-in-expand-fwd" id="totalPedido">Total: 123'12 €</p>
             </div>
-            <div class="row col-12 m-0 p-0 my-1 d-flex justify-content-end">
-                <div class="col-5 col-md-3 col-lg-2 px-0 px-lg-0 d-flex justify-content-start">
-                    <button class="text-white btn btn-secondary border border-danger mx-1 mx-lg-1"
-                        onclick="ocultarListado();">Continuar
-                        comprando</button>
-                </div>
-                <div class="col-5 col-md-3 col-lg-2 ms-5 me-3 px-0 px-lg-0  d-flex justify-content-end">
-                    <button class="text-white btn btn-success border border-dark mx-2 mx-lg-0 pulsate-fwd"
-                        onclick="tramitarPedido()">Tramitar
-                        pedido</button>
+            <div class="container-fluid m-0 p-0 my-1 d-flex flex-row justify-content-end pe-3">
+    
+                <a class="text-white btn btn-dark border border-dark px-2 me-3"
+                    onclick="ocultarListado();">Continuar
+                    comprando</a>
+                <a type="button" class="text-white btn btn-dark border border-dark pulsate-fwd px-2 ms-4"
+                    onclick="tramitarPedido()">Tramitar
+                    pedido</a>
+    
                 </div>
             </div>
+            <div id="footerWeb" class="container-fluid mx-0 px-0 pb-3 position-fixed bottom-0 me-0"></div>
         </div>
-        <div id="footerWeb" class="container-fluid mx-0 position-fixed bottom-0 px-0 bg-white pb-3"></div>
-    </div>
 </body>
 
 </html>

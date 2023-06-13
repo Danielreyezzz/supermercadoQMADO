@@ -41,7 +41,7 @@ footer {
   z-index: 9999 !important;
 }
 #footerWeb{
-  z-index: 1;
+  z-index: 1000;
 }
 
 #containerPanel {
@@ -870,9 +870,10 @@ svg {
 }
 
 #Bigcart{
-  bottom: 40px !important;
+  bottom: 30px !important;
   z-index: 0;
-  left: -53px;
+
+  
 }
 
 
@@ -890,21 +891,34 @@ svg {
   }
 }
 
-@media screen and (max-width: 1150px) {
-  .tag {
-    top: 105%;
-    width: 100%;
-    font-size: 14px;
+
+
+@media screen and (max-width: 1056px) {
+  #containerPanel{
+    height: calc(100vh -215px)!important;
   }
+
+}
+@media screen and (max-width: 814px) {
+  #containerPanel{
+    height: calc(100vh -240px)!important;
+  }
+
 }
 
-@media screen and (max-width: 1050px) {
-  .tag {
-    top: 100%;
-    width: 100%;
-    font-size: 12px;
+@media screen and (max-width: 767px) {
+  #containerPanel{
+    height: calc(100vh -300px)!important;
   }
+
 }
+@media screen and (max-width: 528px) {
+  #containerPanel{
+    height: calc(100vh -360px)!important;
+  }
+
+}
+
 
 
 /* desplegable */
