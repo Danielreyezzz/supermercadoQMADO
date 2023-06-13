@@ -38,7 +38,7 @@ footer {
   z-index: 9999 !important;
 }
 #footerWeb{
-  z-index: 1;
+  z-index: 1000;
 }
 
 #containerPanel {
@@ -867,9 +867,10 @@ svg {
 }
 
 #Bigcart{
-  bottom: 40px !important;
+  bottom: 30px !important;
   z-index: 0;
-  left: -53px;
+
+  
 }
 
 
