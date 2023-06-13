@@ -890,13 +890,7 @@ svg {
   }
 }
 
-@media screen and (max-width: 1150px) {
-  .tag {
-    top: 105%;
-    width: 100%;
-    font-size: 14px;
-  }
-}
+
 
 @media screen and (max-width: 1056px) {
   #containerPanel{
