@@ -1141,3 +1141,12 @@ svg {
  .marginas{
   margin: 0 .3rem;
  }
+
+
+ .descripcion{
+  font-family: 'roboto';
+  left: 100px;
+  font-size: 1rem!important;
+  color: white!important;
+  font-weight: bold!important;
+ }
