@@ -895,13 +895,32 @@ svg {
   }
 }
 
-@media screen and (max-width: 1050px) {
-  .tag {
-    top: 100%;
-    width: 100%;
-    font-size: 12px;
+@media screen and (max-width: 1056px) {
+  #containerPanel{
+    height: calc(100vh -215px)!important;
   }
+
 }
+@media screen and (max-width: 814px) {
+  #containerPanel{
+    height: calc(100vh -240px)!important;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  #containerPanel{
+    height: calc(100vh -300px)!important;
+  }
+
+}
+@media screen and (max-width: 528px) {
+  #containerPanel{
+    height: calc(100vh -360px)!important;
+  }
+
+}
+
 
 
 /* desplegable */
