@@ -1145,8 +1145,14 @@ svg {
 
  .descripcion{
   font-family: 'roboto';
-  left: 100px;
+  left: 110px;
   font-size: 1rem!important;
-  color: white!important;
   font-weight: bold!important;
+  z-index: 9999;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  filter:opacity(0.8)
+
  }
