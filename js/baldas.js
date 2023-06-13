@@ -154,9 +154,9 @@ function cargarProductos() {
         let container = document.getElementById("containerPanel");
         let containerRect = container.getBoundingClientRect();
         let elementRect = element.getBoundingClientRect();
-        // ? La siguiente linea comentada pertenece a la animación donde los productos iban al centro
-        // let centerX = containerRect.left + containerRect.width / 2 - elementRect.width / 2;
-        let centerX = containerRect.left + containerRect.width - elementRect.width;
+        // ? La siguiente linea comentada pertenece a la animación donde los productos iban a la derecha
+        // let centerX = containerRect.left + containerRect.width - elementRect.width;
+        let centerX = containerRect.left + containerRect.width / 2 - elementRect.width / 2;
         let centerY = containerRect.top + containerRect.height / 2 - elementRect.height / 2;
 
         let initialX = elementRect.left - containerRect.left + elementRect.width / 2; // Ubicacion elem lateral

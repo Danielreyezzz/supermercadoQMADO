@@ -38,7 +38,7 @@
     z-index: 9999 !important;
   }
   #footerWeb{
-    z-index: 1;
+    z-index: 0;
   }
   
   @media (max-width: 780px) {
