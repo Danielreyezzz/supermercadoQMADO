@@ -705,7 +705,7 @@ svg {
     height: 86px !important;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 362px) {
   .nav-margin {
     width: 20% !important;
     display: grid !important;
