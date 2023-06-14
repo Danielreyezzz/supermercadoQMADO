@@ -706,7 +706,7 @@ svg {
   }
 }
 @media (max-width: 320px) {
-  .nav {
+  .nav-margin {
     width: 20% !important;
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
@@ -1334,7 +1334,7 @@ svg {
   filter: opacity(0.8);
   color: #fe2c18;
 }
-.nav {
+.nav-margin {
   margin-right: 1.5rem !important;
 }
 
@@ -1362,4 +1362,12 @@ svg {
     width: 60% !important;
     top: -50px !important;
   }
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url(../fonts/RobotoSerif-Regular.ttf) format(“opentype”);
+}
+.w-25 {
+  width: 35% !important;
 }
