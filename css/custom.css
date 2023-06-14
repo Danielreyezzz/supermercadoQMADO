@@ -1107,10 +1107,6 @@ svg {
 }
 
 .desplegables {
-  display: flex;
-  align-items: center;
-  background-color: #FEFEFE;
-  padding-left: 1rem;
   height: 51px !important;
 }
 
