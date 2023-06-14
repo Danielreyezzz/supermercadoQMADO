@@ -41,3 +41,10 @@ footer {
 .cursor-pointer{
     cursor: pointer;
 }
+
+.cuadrodivdir {
+    min-width: 26vh;
+}
+.shadow {
+    box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb),.15)!important;
+}
