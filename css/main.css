@@ -684,11 +684,11 @@
     #navbar {
       justify-content: center !important;
     }
-  
+    
     #menu-logo {
       margin-inline-end: auto !important;
     }
-  
+    
     header {
       height: 120px;
     }
@@ -698,11 +698,11 @@
     header {
       height: 126px;
     }
-  
+    
     #navbar {
       justify-content: center !important;
     }
-  
+    
     #navbar > a {
       justify-content: center !important;
     }
@@ -710,7 +710,12 @@
   
   @media (max-width: 526px) {
     header {
-      height: 185px !important;
+      height: 85px !important;
+    }
+  }
+  @media (max-width: 320px) {
+    header{
+      height: 60px!important;
     }
   }
   
