@@ -6,19 +6,6 @@
   --white: #d5dbe5;
   --pureBlack: #000000;
 }
-.accordion-button:is(.collapsed)::after {
-  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;    
-}
-.accordion-button:not(.collapsed)::after {
-  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;    
-}
-@font-face {
-  font-family: "roboto";
-  src: url(../fonts/RobotoSerif-Regular.ttf) format(“opentype”);
-}
-.w-25 {
-  width: 35% !important;
-}
 
 * {
   font-family: var(--tituloFont);
@@ -43,17 +30,27 @@ header {
 }
 
 footer {
-  height: 35px !important;
+  /* height: 35px !important; */
   z-index: 90 !important;
 }
-#footerWeb{
+
+#footerWeb {
   z-index: 99;
 }
 
-#containerPanel {
+/* #containerPanel {
   height: calc(100vh - (172px)) !important;
+} */
+
+.hidden-footer {
+  height: calc(100vh - (170px)) !important;
+  transition: height .5s ease-in;
 }
 
+.display-footer {
+  height: calc(100vh - (170px)) !important;
+  transition: height .5s ease-in;
+}
 
 .cate {
   font-size: 1em !important;
@@ -698,7 +695,7 @@ svg {
     justify-content: center !important;
   }
 
-  #navbar > a {
+  #navbar>a {
     justify-content: center !important;
   }
 }
@@ -773,7 +770,7 @@ svg {
   
 }
 
-.row > .container {
+.row>.container {
   max-width: 0 !important;
 }
 
@@ -796,6 +793,7 @@ svg {
   background-repeat: no-repeat;
   color: transparent !important;
 }
+
 #cart:hover {
   background-image: url(../img/cart_hover.png);
 }
@@ -810,11 +808,13 @@ svg {
   position: relative;
   z-index: 0;
 }
-.rack-position-left{
+
+.rack-position-left {
   position: relative !important;
   z-index: 20 !important;
 }
-.rack-position-right{
+
+.rack-position-right {
   position: relative !important;
   z-index: 10 !important;
 }
@@ -890,10 +890,18 @@ svg {
   opacity: 0;
 }
 
-#Bigcart {
-  bottom: 30px !important;
-  z-index: 0;
+.Bigcart_nofooter {
+  bottom: 40px !important;
+  z-index: 30;
+  transition: bottom .5s ease-in;
 }
+
+.Bigcart_footer {
+  bottom: 40px !important;
+  z-index: 30;
+  transition: bottom .5s ease-in;
+}
+
 
 .cesta_img {
   width: 20% !important;
@@ -914,42 +922,118 @@ svg {
 }
 
 @media screen and (max-width: 1056px) {
-  #containerPanel {
-    height: calc(100vh - (215px)) !important;
-  }
+
+  /* #containerPanel {
+    height: calc(100vh - (215px))!important;
+  } */
+
   .cesta_img {
     width: 40% !important;
   }
-}
-@media screen and (max-width: 814px) {
-  #containerPanel {
-    height: calc(100vh - (240px)) !important;
+
+  .hidden-footer {
+    height: calc(100vh - (180px)) !important;
+    transition: height .5s ease-in;
   }
-  #Bigcart {
+
+  .display-footer {
+    height: calc(100vh - (180px)) !important;
+    transition: height .5s ease-in;
+  }
+
+}
+@media screen and (max-width: 992px) {
+  .hidden-footer {
+    height: calc(100vh - (165px)) !important;
+    transition: height .5s ease-in;
+  }
+
+  .display-footer {
+    height: calc(100vh - (210px)) !important;
+    transition: height .5s ease-in;
+  }
+  .Bigcart_nofooter {
+    bottom: 25px !important;
+    z-index: 30;
+    transition: bottom .5s ease-in;
+  }
+  
+  .Bigcart_footer {
     bottom: 45px !important;
-    z-index: 0;
+    z-index: 30;
+    transition: bottom .5s ease-in;
   }
 }
 
-@media screen and (max-width: 767px) {
-  #containerPanel {
-    height: calc(100vh - (300px)) !important;
+@media screen and (max-width: 814px) {
+  /* #containerPanel {
+    height: calc(100vh - (240px))!important;
+  } */
+
+  .hidden-footer {
+    height: calc(100vh - (165px)) !important;
+    transition: height .5s ease-in;
   }
+
+  .display-footer {
+    height: calc(100vh - (230px)) !important;
+    transition: height .5s ease-in;
+  }
+  .Bigcart_nofooter {
+    bottom: 25px !important;
+    z-index: 30;
+    transition: bottom .5s ease-in;
+  }
+  
+  .Bigcart_footer {
+    bottom: 85px !important;
+    z-index: 30;
+    transition: bottom .5s ease-in;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  /* #containerPanel {
+    height: calc(100vh - (300px)) !important;
+  } */
+
   .balda {
     margin-top: 1.5% !important;
   }
-  #Bigcart {
-    bottom: 105px !important;
-    z-index: 0;
+
+  .Bigcart_nofooter {
+    bottom: 25px !important;
+    z-index: 30;
+    transition: bottom .5s ease-in;
+  }
+  
+  .Bigcart_footer {
+    bottom: 155px !important;
+    z-index: 30;
+    transition: bottom .5s ease-in;
+  }
+
+  .hidden-footer{
+    height: calc(100vh - (165px)) !important;
+    transition: height .5s ease-in;
+  }
+  .display-footer{
+    height: calc(100vh - (295px)) !important;
+    transition: height .5s ease-in;
   }
 }
+
 @media screen and (max-width: 527px) {
-  #containerPanel {
-    height: calc(100vh - (360px)) !important;
-  }
+  /* #containerPanel {
+    height: calc(100vh) !important;
+  } */
+
   .col-1-balda {
     width: 30.333333% !important;
   }
+
+
   .balda {
     margin-top: 2% !important;
   }
@@ -959,15 +1043,52 @@ svg {
     font-size: smaller !important;
     top: 100%;
   }
+
   .cesta_img {
     width: 50% !important;
   }
-  #Bigcart {
-    bottom: 115px !important;
-    z-index: 0;
-  }
+
+.Bigcart_nofooter {
+  bottom: 25px !important;
+  z-index: 30;
+  transition: bottom .5s ease-in;
 }
 
+.Bigcart_footer {
+  bottom: 155px !important;
+  z-index: 30;
+  transition: bottom .5s ease-in;
+}
+  .hidden-footer{
+    height: calc((100vh) - (165px)) !important;
+    transition: height .5s ease-in;
+  }
+  .display-footer{
+    height: calc(100vh - (295px)) !important;
+    transition: height .5s ease-in;
+  }
+}
+@media screen and (max-width: 320px) {
+  .Bigcart_nofooter {
+    bottom: 25px !important;
+    z-index: 30;
+    transition: bottom .5s ease-in;
+  }
+  
+  .Bigcart_footer {
+    bottom: 150px !important;
+    z-index: 30;
+    transition: bottom .5s ease-in;
+  }
+  .hidden-footer{
+    height: calc((100vh) - (100px)) !important;
+    transition: height .5s ease-in;
+  }
+  .display-footer{
+    height: calc(100vh - (225px)) !important;
+    transition: height .5s ease-in;
+  }
+}
 /* desplegable */
 
 .desplegable {
@@ -975,23 +1096,28 @@ svg {
   font-family: "roboto";
   background-color: #ffffff;
 }
+
+
 .desplegable-menu {
-  border-radius: 0px 0px 0.5rem 0px !important;
+
+  border-radius: 0px 0px .5rem 0px !important;
   margin-top: 14.9px !important;
   border-top: 0px;
   font-family: "Roboto Serif", serif !important;
 }
+
 .desplegables {
   display: flex;
   align-items: center;
-  background-color: #fefefe;
-  margin-left: 1rem;
+  background-color: #FEFEFE;
+  padding-left: 1rem;
   height: 51px !important;
 }
 
 .desplegable {
   font-size: 1rem;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
+
 }
 
 .enlace-desplegable {
@@ -1002,18 +1128,23 @@ svg {
 }
 
 .bg-cum {
-  background-color: #fefefe;
+
+  background-color: #FEFEFE;
 }
+
+
 .drop {
   margin-top: 10px !important;
   left: -10px !important;
   padding: auto;
 }
+
 .drop-estas {
   margin-top: 10px !important;
   left: 35% !important;
   padding: auto;
 }
+
 .actual {
   color: red !important;
 }
@@ -1041,6 +1172,7 @@ svg {
   text-align: center;
   max-height: 7vh;
 }
+
 #central {
   height: 71vh;
   max-height: 71vh;
@@ -1055,6 +1187,7 @@ svg {
   scrollbar-color: rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0);
   scrollbar-width: thin;
 }
+
 .active {
   background-color: var(--bs-danger) !important;
 }
@@ -1063,6 +1196,7 @@ svg {
   position: absolute !important;
   z-index: 1000 !important;
 }
+
 .reset_transform {
   transform: unset !important;
 }
@@ -1098,6 +1232,7 @@ svg {
 #central::-webkit-scrollbar-track {
   border-radius: 10px;
 }
+
 #ean {
   margin-left: 26%;
 }
@@ -1166,6 +1301,7 @@ svg {
   background-color: rgba(0, 0, 0, 0);
   border: none;
 }
+
 .indicadores {
   background-color: white;
   padding: 1rem 0;
@@ -1180,11 +1316,13 @@ svg {
 }
 
 .marginas {
-  margin: 0 0.3rem;
+  margin: 0 .3rem;
 }
 
+
 .descripcion {
-  font-family: "roboto";
+  font-family: 'roboto';
+
   left: 85%;
   font-size: 1rem !important;
   font-weight: bold !important;
