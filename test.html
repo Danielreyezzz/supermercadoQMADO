@@ -35,6 +35,7 @@
             $("#navBarWeb").load("navbar.html");
             $("#asideMenu").load("asidemenu.html", function () {
                 loadCustomScript();
+                loadCustomScriptfooter();
             });
             $("#footerWeb").load("footer-balda.html");
         });
@@ -44,7 +45,7 @@
             script.defer = true;
             document.head.appendChild(script);
         }
-        function loadCustomScript() {
+        function loadCustomScriptfooter() {
             let script = document.createElement("script");
             script.src = "./js/footer.js";
             script.defer = true;
