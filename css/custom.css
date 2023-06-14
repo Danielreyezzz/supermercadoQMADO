@@ -1068,7 +1068,27 @@ svg {
     transition: height .5s ease-in;
   }
 }
-
+@media screen and (max-width: 320px) {
+  .Bigcart_nofooter {
+    bottom: 25px !important;
+    z-index: 30;
+    transition: bottom .5s ease-in;
+  }
+  
+  .Bigcart_footer {
+    bottom: 150px !important;
+    z-index: 30;
+    transition: bottom .5s ease-in;
+  }
+  .hidden-footer{
+    height: calc((100vh) - (100px)) !important;
+    transition: height .5s ease-in;
+  }
+  .display-footer{
+    height: calc(100vh - (225px)) !important;
+    transition: height .5s ease-in;
+  }
+}
 /* desplegable */
 
 .desplegable {

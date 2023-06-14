@@ -173,7 +173,7 @@ function cargarProductos() {
         let initialY = elementRect.top - containerRect.top + elementRect.height / 2; // Ubicacion elem vertical
 
         let deltaX = centerX - initialX + elementRect.width * 0.7;  // Desplazamiento lateral
-        let deltaY = centerY - initialY + elementRect.height * 2.5; // Desplazamiento vertical
+        let deltaY = centerY - initialY + elementRect.height * 2; // Desplazamiento vertical
         element.classList.add('position-absolute', 'anim-z');
         tl.to(element, { x: "+=" + deltaX, y: "+=" + deltaY, duration: 1.2 })
             .to(element, { opacity: 0, duration: 0.2 }, ">")
