@@ -705,7 +705,7 @@ svg {
     height: 86px !important;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 362px) {
   .nav-margin {
     width: 20% !important;
     display: grid !important;
@@ -1367,3 +1367,17 @@ svg {
 .w-25 {
   width: 35% !important;
 }
+
+
+.acordeon-cosas{
+  background-color: #DC3545!important;
+  color: black!important;
+}
+.acordeon-cosas:active{
+  color: black!important;
+  border: #000000 solid 4px;
+}
+.acor-cum{
+  --bs-accordion-btn-focus-box-shadow: none!important;
+}
+
