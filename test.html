@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/asidenav.css" />
     <script defer src="js/custom.js"></script>
     <script defer src="js/baldas.js"></script>
+
     <script defer src="js/productos_gsap.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +36,7 @@
             $("#asideMenu").load("asidemenu.html", function () {
                 loadCustomScript();
             });
-            $("#footerWeb").load("footer.html");
+            $("#footerWeb").load("footer-balda.html");
         });
         function loadCustomScript() {
             let script = document.createElement("script");
@@ -43,10 +44,16 @@
             script.defer = true;
             document.head.appendChild(script);
         }
+        function loadCustomScript() {
+            let script = document.createElement("script");
+            script.src = "./js/footer.js";
+            script.defer = true;
+            document.head.appendChild(script);
+        }
     </script>
 </head>
 
-<body class="overflow-x-hidden container-fluid px-0 mx-0">
+<body class="overflow-x-hidden container-fluid px-0 mx-0 bg-rack">
     <div id="navBarWeb"></div>
     <div id="asideMenu" class="col-12 col-md-3 col-xl-2 px-sm-0 px-0 bg-dark position-absolute d-none fade-in-left">
     </div>
@@ -112,7 +119,7 @@
     </div>
 
     <div id="containerPanel"
-        class="d-flex flex-column py-3 overflow-y-auto overflow-x-hidden aside-menu px-0 pt-0 pb-0 bg-rack">
+        class="d-flex flex-column py-3 overflow-y-auto overflow-x-hidden px-0 pt-0 pb-0 hidden-footer">
         <!-- PÁGINA -->
 
         <div class="container-fluid">
@@ -1214,7 +1221,7 @@
             </div>
         </div>
     </div>
-    <div id="Bigcart" class="d-flex position-absolute justify-content-center align-items-center w-100 mt-3">
+    <div id="Bigcart" class="d-flex position-absolute justify-content-center align-items-center w-100 mt-3 Bigcart_nofooter">
         <img src="img/big_cart_red.png" alt="carro" class="cesta_img">
     </div>
     <div id="footerWeb" class="container-fluid mx-0 px-0 position-fixed bg-white d-flex flex-column-reverse"></div>
