@@ -38,15 +38,16 @@ header {
 
 footer {
   height: 35px !important;
-  z-index: 9999 !important;
+  z-index: 90 !important;
 }
-#footerWeb {
-  z-index: 1000;
+#footerWeb{
+  z-index: 99;
 }
 
 #containerPanel {
   height: calc(100vh - (172px)) !important;
 }
+
 
 .cate {
   font-size: 1em !important;
@@ -800,7 +801,15 @@ svg {
 .balda {
   top: -20px;
   position: relative;
-  z-index: -2;
+  z-index: 0;
+}
+.rack-position-left{
+  position: relative !important;
+  z-index: 20 !important;
+}
+.rack-position-right{
+  position: relative !important;
+  z-index: 10 !important;
 }
 
 .tag {
