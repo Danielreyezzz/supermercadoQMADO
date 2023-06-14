@@ -2,15 +2,19 @@ const slots = [];
 
 function cargarSlots() {
     // Iterar del 1 al 24 y obtener las constantes
+    let container = document.getElementById("containerPanel");
+    let containerRect = container.getBoundingClientRect();
+    let device = '';
+    (containerRect.width < '768') ? device = 'click': device = 'mouseover';
     for (let i = 1; i <= 24; i++) {
         const slot = document.getElementById(`slot_${i}`);
         slots.push(slot);
 
 
-        slot.addEventListener("mouseover", function () {
+        slot.addEventListener(device, function () {
             show_eye(slot);
         });
-        slot.addEventListener("mouseout", function () {
+        slot.addEventListener(device, function () {
             hide_eye(slot);
         });
     }
