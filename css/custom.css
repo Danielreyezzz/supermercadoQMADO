@@ -7,15 +7,6 @@
   --pureBlack: #000000;
 }
 
-@font-face {
-  font-family: "roboto";
-  src: url(../fonts/RobotoSerif-Regular.ttf) format(“opentype”);
-}
-
-.w-25 {
-  width: 35% !important;
-}
-
 * {
   font-family: var(--tituloFont);
 }
@@ -76,7 +67,6 @@ footer {
 .goticColor {
   background-color: #ff003f !important;
 }
-
 
 /*--HEADER Y NAV-- */
 
@@ -468,7 +458,6 @@ svg {
   height: 25rem !important;
 }
 
-
 .imgetiqueta {
   position: absolute;
   width: 6%;
@@ -588,12 +577,9 @@ svg {
   width: 10%;
 }
 
-
-
 .show .accordion-header {
   font-weight: bold !important;
 }
-
 
 .carousel-item {
   transition: transform 2s ease-in-out !important;
@@ -719,6 +705,19 @@ svg {
     height: 86px !important;
   }
 }
+@media (max-width: 320px) {
+  .nav {
+    width: 20% !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+  }
+  #menu-logo {
+    margin-right: 20px !important;
+  }
+  #navBarWeb {
+    height: 20px !important;
+  }
+}
 
 /* Custom bootstrap class */
 
@@ -739,7 +738,6 @@ svg {
   max-width: 120%;
   height: auto;
   border: 0;
-
 }
 
 .img-fluid {
@@ -769,6 +767,7 @@ svg {
 img,
 svg {
   vertical-align: middle;
+  
 }
 
 .row>.container {
@@ -852,11 +851,7 @@ svg {
   text-align: center !important;
   padding: 10px !important;
   border-radius: 40px !important;
-
-
-
 }
-
 .carrito img {
   opacity: 0.8 !important;
   /* background-color: #ffffff !important; */
@@ -907,10 +902,10 @@ svg {
   transition: bottom .5s ease-in;
 }
 
+
 .cesta_img {
   width: 20% !important;
 }
-
 
 /* Media query */
 
@@ -926,9 +921,8 @@ svg {
   }
 }
 
-
-
 @media screen and (max-width: 1056px) {
+
   /* #containerPanel {
     height: calc(100vh - (215px))!important;
   } */
@@ -1039,6 +1033,7 @@ svg {
     width: 30.333333% !important;
   }
 
+
   .balda {
     margin-top: 2% !important;
   }
@@ -1074,23 +1069,21 @@ svg {
   }
 }
 
-
-
 /* desplegable */
 
 .desplegable {
   font-size: 1rem;
-  font-family: 'roboto';
-  background-color: #FFFFFF;
-
+  font-family: "roboto";
+  background-color: #ffffff;
 }
+
 
 .desplegable-menu {
 
   border-radius: 0px 0px .5rem 0px !important;
   margin-top: 14.9px !important;
   border-top: 0px;
-  font-family: 'Roboto Serif', serif !important;
+  font-family: "Roboto Serif", serif !important;
 }
 
 .desplegables {
@@ -1115,8 +1108,10 @@ svg {
 }
 
 .bg-cum {
+
   background-color: #FEFEFE;
 }
+
 
 .drop {
   margin-top: 10px !important;
@@ -1169,7 +1164,7 @@ svg {
   min-height: 31vh;
   overflow-y: auto;
   overflow-x: hidden;
-  scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+  scrollbar-color: rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0);
   scrollbar-width: thin;
 }
 
@@ -1235,14 +1230,12 @@ svg {
   justify-content: center;
 }
 
-
 .nutrientes p {
   margin-top: 100% !important;
   text-align: center !important;
   color: white !important;
   font-weight: bold;
 }
-
 
 .divcalorias {
   background-image: url(../img/valor_nutricional_energía_vacio.png);
@@ -1285,7 +1278,6 @@ svg {
 }
 
 .card {
-
   background-color: rgba(0, 0, 0, 0);
   border: none;
 }
@@ -1310,6 +1302,7 @@ svg {
 
 .descripcion {
   font-family: 'roboto';
+
   left: 85%;
   font-size: 1rem !important;
   font-weight: bold !important;
@@ -1319,9 +1312,34 @@ svg {
   border-radius: 5px;
   padding: 10px;
   filter: opacity(0.8);
-  color: #FE2C18
+  color: #fe2c18;
 }
-
 .nav {
   margin-right: 1.5rem !important;
+}
+
+/* MODAL Y LOGO */
+.marca{
+  width: 30%!important;
+  top: -100px!important;
+}
+@media (max-width: 1048px) {
+  .marca {
+    width: 30% !important;
+    top: -90px !important;
+  }
+}
+
+@media (max-width: 794px) {
+  .marca {
+    width: 50% !important;
+    top: -70px !important;
+  }
+}
+
+@media (max-width: 488px) {
+  .marca {
+    width: 60% !important;
+    top: -50px !important;
+  }
 }
