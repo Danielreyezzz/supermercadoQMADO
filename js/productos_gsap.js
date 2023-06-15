@@ -99,14 +99,14 @@ function carrousel(preview){
 
 
 
-const btn = document.getElementById('buy_it');
+// const btn = document.getElementById('buy_it');
 
-btn.addEventListener('click', () =>{    
-    const tl = gsap.timeline({defaults: {duration: 1}})
-    tl.fromTo('#product_anim', {x:-100, y:-150},{x:-100,y:20})
-    // tl.fromTo('#panelPedido',{opacity: 1}, {opacity:0},'<')
-    tl.fromTo('#product_anim',{opacity: 1}, {opacity:0},'<')
-    tl.fromTo('#product_anim',{rotation: '-180deg'}, {rotation:'0deg'},'<')
-    // tl.to('#panelPedido',{display: 'none'},'<');
+// btn.addEventListener('click', () =>{    
+//     const tl = gsap.timeline({defaults: {duration: 1}})
+//     tl.fromTo('#product_anim', {x:-100, y:-150},{x:-100,y:20})
+//     // tl.fromTo('#panelPedido',{opacity: 1}, {opacity:0},'<')
+//     tl.fromTo('#product_anim',{opacity: 1}, {opacity:0},'<')
+//     tl.fromTo('#product_anim',{rotation: '-180deg'}, {rotation:'0deg'},'<')
+//     // tl.to('#panelPedido',{display: 'none'},'<');
    
-});
+// });
