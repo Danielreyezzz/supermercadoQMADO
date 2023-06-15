@@ -6,10 +6,7 @@
   --white: #d5dbe5;
   --pureBlack: #000000;
 }
-
-* {
-  font-family: var(--tituloFont);
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,300;1,400&display=swap');
 
 body {
   background-color: white;
@@ -20,7 +17,6 @@ body {
 a,
 button {
   font-size: 2em;
-  font-family: var(--tituloFont);
   text-decoration: none;
 }
 
@@ -1125,7 +1121,7 @@ svg {
 
 .desplegable {
   font-size: 1rem;
-  font-family: "roboto";
+  font-family: "roboto"!important;
   background-color: #ffffff;
 }
 
@@ -1135,7 +1131,7 @@ svg {
   border-radius: 0px 0px .5rem 0px !important;
   margin-top: 14.9px !important;
   border-top: 0px;
-  font-family: "Roboto Serif", serif !important;
+  font-family: "roboto"!important;
 }
 
 .desplegables {
@@ -1398,7 +1394,7 @@ svg {
 
 @font-face {
   font-family: "roboto";
-  src: url(../fonts/RobotoSerif-Regular.ttf) format(“opentype”);
+  src: url(../fonts/RobotoSerif-Italic.ttf) format(“opentype”);
 }
 .w-25 {
   width: 35% !important;
@@ -1415,4 +1411,10 @@ svg {
 }
 .acor-cum{
   --bs-accordion-btn-focus-box-shadow: none!important;
+}
+.nav-cum{
+  color: #000000!important;
+}
+.active{
+  color: white!important;
 }
