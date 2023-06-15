@@ -1416,3 +1416,9 @@ svg {
 .acor-cum{
   --bs-accordion-btn-focus-box-shadow: none!important;
 }
+.nav-cum{
+  color: #000000!important;
+}
+.active{
+  color: white!important;
+}
