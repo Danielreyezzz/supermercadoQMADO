@@ -167,6 +167,9 @@ function cargarProductos() {
         // Dimensiones Panel contenedor
         let container = document.getElementById("containerPanel");
         let containerRect = container.getBoundingClientRect();
+        let device;
+        (containerRect.height > 500 && containerRect.width < 1000) ? device= -1 :  device=0;
+        console.log('H:'+containerRect.height+ ' W:'+containerRect.width)
         let elementRect = element.getBoundingClientRect();
         // ? La siguiente linea comentada pertenece a la animación donde los productos iban a la derecha
         // let centerX = containerRect.left + containerRect.width - elementRect.width;
@@ -174,7 +177,7 @@ function cargarProductos() {
         let centerY = containerRect.top + containerRect.height / 2 - elementRect.height / 2;
 
         let initialX = elementRect.left - containerRect.left + elementRect.width / 2; // Ubicacion elem lateral
-        let initialY = elementRect.top - containerRect.top + elementRect.height / 2; // Ubicacion elem vertical
+        let initialY = elementRect.top - containerRect.top + elementRect.height / device; // Ubicacion elem vertical
 
         let deltaX = centerX - initialX + elementRect.width * 0.7;  // Desplazamiento lateral
         let deltaY = centerY - initialY + elementRect.height * 2; // Desplazamiento vertical
