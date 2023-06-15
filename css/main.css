@@ -823,3 +823,6 @@
   .carrusel-cosas img{
     height:  100%;
   }
+  .nav-margin {
+    margin-right: 1.5rem !important;
+  }

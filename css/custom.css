@@ -1360,27 +1360,39 @@ svg {
 /* MODAL Y LOGO */
 .logo-marca{
   width: 30%!important;
-  top: -65px!important;
+  top: -123px!important;
+}
+@media (max-width: 1440px) {
+  .logo-marca {
+    width: 30% !important;
+    top: -105px !important;
+  }
 }
 @media (max-width: 1048px) {
   .logo-marca {
     width: 30% !important;
-    top: -65px !important;
+    top: -105px !important;
   }
 }
 
 @media (max-width: 794px) {
   .logo-marca {
     width: 50% !important;
-    top: -65px !important;
+    top: -90px !important;
   }
   
 }
-
 @media (max-width: 488px) {
   .logo-marca {
     width: 60% !important;
-    top: -35px !important;
+    top: -60px !important;
+  }
+}
+
+@media (max-width: 321px) {
+  .logo-marca {
+    width: 60% !important;
+    top: -73px !important;
   }
 }
 
