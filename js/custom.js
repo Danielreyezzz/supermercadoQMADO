@@ -144,3 +144,54 @@ function moveToSelected(element) {
   })
 
 
+  function cargarBanner1() {
+    var widthPantalla = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  
+    var imagen = document.createElement("img");
+    imagen.classList.add('d-block')
+    imagen.classList.add('w-100')
+  
+    if (widthPantalla < 700) {
+      imagen.src = "img/banner-leche-movil.jpg";
+    } else {
+      imagen.src = "img/banner-leche.png";
+    }
+  
+    document.getElementById("banner1").appendChild(imagen);
+  }
+  
+  function cargarBanner2() {
+    var widthPantalla = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  
+    var imagen = document.createElement("img");
+    imagen.classList.add('d-block')
+    imagen.classList.add('w-100')
+  
+    if (widthPantalla < 700) {
+      imagen.src = "img/banner-cocacola-movil.jpg";
+    } else {
+      imagen.src = "img/banner-cocacola.png";
+    }
+  
+    document.getElementById("banner2").appendChild(imagen);
+  }
+  
+  function cargarBanner3() {
+    let widthPantalla = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  
+    let imagen = document.createElement("img");
+    imagen.classList.add('d-block')
+    imagen.classList.add('w-100')
+  
+    if (widthPantalla < 700) {
+      imagen.src = "img/banner-refrescos-movil.jpg";
+    } else {
+      imagen.src = "img/banner-refrescos.png";
+    }
+  
+    document.getElementById("banner3").appendChild(imagen);
+  }
+
+  cargarBanner1();
+  cargarBanner2();
+  cargarBanner3();
