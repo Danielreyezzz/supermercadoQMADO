@@ -15,15 +15,15 @@ function cargarSlots() {
             show_eye(slot);
         });
         slot.addEventListener(device, function () {
-            hide_eye(slot);
+            hide_eye(slot,device);
         });
     }
 }
 
 function show_eye(slot) {
-    let eye = slot.lastElementChild;
-    let cart = eye.previousElementSibling;
-    let text = cart.previousElementSibling;
+    let text = slot.lastElementChild;
+    let cart = text.previousElementSibling;
+    let eye = cart.previousElementSibling;
 
     eye.style.transition = 'opacity 0.3s ease'; // Transición de 0.3 segundos con un efecto de transición "ease"
     cart.style.transition = 'opacity 0.3s ease';
@@ -38,10 +38,10 @@ function show_eye(slot) {
     text.classList.remove('d-none');
 }
 
-function hide_eye(slot) {
-    let eye = slot.lastElementChild;
-    let cart = eye.previousElementSibling;
-    let text = cart.previousElementSibling;
+function hide_eye(slot,device) {
+    let text = slot.lastElementChild;
+    let cart = text.previousElementSibling;
+    let eye = cart.previousElementSibling;
 
     eye.style.transition = 'opacity 0.3s ease'; // Transición de 0.3 segundos con un efecto de transición "ease"
     cart.style.transition = 'opacity 0.3s ease'; // Transición de 0.3 segundos con un efecto de transición "ease"
@@ -59,7 +59,7 @@ function hide_eye(slot) {
     });
 
     // Agregar evento para mostrar los elementos cuando el ratón entra en ellos
-    slot.addEventListener('mouseenter', function () {
+    slot.addEventListener(device, function () {
         eye.style.opacity = '1'; // Aumentar gradualmente la opacidad a 1
         cart.style.opacity = '1'; // Aumentar gradualmente la opacidad a 1
         text.style.opacity = '1';
