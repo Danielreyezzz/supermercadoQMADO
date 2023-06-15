@@ -907,6 +907,20 @@ svg {
   width: 20% !important;
 }
 
+.drop {
+  top: -20px !important;
+  margin-top: 10px !important;
+  left: -20px !important;
+  padding: auto;
+}
+
+.drop-estas {
+  top: -20px !important;
+  margin-top: 10px !important;
+  left: 0% !important;
+  padding: auto;
+}
+
 /* Media query */
 
 @media screen and (max-width: 1450px) {
@@ -1022,12 +1036,30 @@ svg {
     height: calc(100vh - (295px)) !important;
     transition: height .5s ease-in;
   }
+  
+  .showmore {
+    background-color: #fb2a2ad6;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    padding: 0px 5px;
+    font-size: 1.1em !important;
+  }
 }
 
 @media screen and (max-width: 527px) {
-  /* #containerPanel {
-    height: calc(100vh) !important;
-  } */
+  .drop {
+    top: -20px !important;
+    margin-top: 10px !important;
+    left: -50px !important;
+    padding: auto;
+  }
+  
+  .drop-estas {
+    top: -20px !important;
+    margin-top: 10px !important;
+    left: 0% !important;
+    padding: auto;
+  }
 
   .col-1-balda {
     width: 30.333333% !important;
@@ -1035,7 +1067,7 @@ svg {
 
 
   .balda {
-    margin-top: 2% !important;
+    margin-top: 4% !important;
   }
 
   .tag,
@@ -1129,17 +1161,7 @@ svg {
 }
 
 
-.drop {
-  margin-top: 10px !important;
-  left: -10px !important;
-  padding: auto;
-}
 
-.drop-estas {
-  margin-top: 10px !important;
-  left: 35% !important;
-  padding: auto;
-}
 
 .actual {
   color: red !important;
@@ -1320,15 +1342,16 @@ svg {
   font-family: 'roboto';
 
   left: 85%;
-  font-size: 1rem !important;
+  font-size: .8rem !important;
   font-weight: bold !important;
   z-index: 9999;
   background-color: white;
   border: 1px solid black;
   border-radius: 5px;
-  padding: 10px;
+  min-width: 150px;
+  padding: 3px;
   filter: opacity(0.8);
-  color: #fe2c18;
+  color: #000000;
 }
 .nav-margin {
   margin-right: 1.5rem !important;
@@ -1351,6 +1374,7 @@ svg {
     width: 50% !important;
     top: -65px !important;
   }
+  
 }
 
 @media (max-width: 488px) {
