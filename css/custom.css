@@ -1358,29 +1358,29 @@ svg {
 }
 
 /* MODAL Y LOGO */
-.marca{
+.logo-marca{
   width: 30%!important;
-  top: -100px!important;
+  top: -65px!important;
 }
 @media (max-width: 1048px) {
-  .marca {
+  .logo-marca {
     width: 30% !important;
-    top: -90px !important;
+    top: -65px !important;
   }
 }
 
 @media (max-width: 794px) {
-  .marca {
+  .logo-marca {
     width: 50% !important;
-    top: -70px !important;
+    top: -65px !important;
   }
   
 }
 
 @media (max-width: 488px) {
-  .marca {
+  .logo-marca {
     width: 60% !important;
-    top: -50px !important;
+    top: -35px !important;
   }
 }
 
@@ -1404,4 +1404,3 @@ svg {
 .acor-cum{
   --bs-accordion-btn-focus-box-shadow: none!important;
 }
-
