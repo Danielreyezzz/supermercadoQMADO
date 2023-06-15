@@ -1096,7 +1096,7 @@ svg {
     transition: height .5s ease-in;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 362px) {
   .Bigcart_nofooter {
     bottom: 25px !important;
     z-index: 30;
@@ -1208,7 +1208,7 @@ svg {
 
 .anim-z {
   position: absolute !important;
-  z-index: 1000 !important;
+  z-index: 1100 !important;
 }
 
 .reset_transform {

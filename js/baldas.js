@@ -168,7 +168,7 @@ function cargarProductos() {
         let container = document.getElementById("containerPanel");
         let containerRect = container.getBoundingClientRect();
         let device;
-        (containerRect.height > 500 && containerRect.width < 1000) ? device= -1 :  device=0;
+        (containerRect.height - containerRect.width >= 80) ? device= -1 :  device=2;
         console.log('H:'+containerRect.height+ ' W:'+containerRect.width)
         let elementRect = element.getBoundingClientRect();
         // ? La siguiente linea comentada pertenece a la animación donde los productos iban a la derecha
