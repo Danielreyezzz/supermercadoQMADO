@@ -912,6 +912,12 @@ svg {
   padding: auto;
 }
 
+#nextPage:hover, #previousPage:hover{
+  background-color: white !important;
+  color: var(--red) !important;
+  transition: all .4s ease-in-out;
+}
+
 /* Media query */
 
 @media screen and (max-width: 1450px) {
