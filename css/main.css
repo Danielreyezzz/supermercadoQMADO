@@ -46,15 +46,9 @@
         display: none!important;
       }
       #footerWeb{
-        position: absolute;
+        position: relative !important;
+        margin-top: 2.5rem; 
 
-
-      }
-      main{
-        min-height: 100vh;
-        position: relative;
-        width: 100%;
-        height: 2.5rem; 
       }
       
     }
