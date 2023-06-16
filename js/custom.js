@@ -1,17 +1,17 @@
 
 function moveToSelected(element) {
     if (element == "next") {
-      var selected = $(".selected").next();
+      let selected = $(".selected").next();
     } else if (element == "prev") {
-      var selected = $(".selected").prev();
+      let selected = $(".selected").prev();
     } else {
-      var selected = element;
+      let selected = element;
     }
   
-    var next = $(selected).next();
-    var prev = $(selected).prev();
-    var prevSecond = $(prev).prev();
-    var nextSecond = $(next).next();
+    let next = $(selected).next();
+    let prev = $(selected).prev();
+    let prevSecond = $(prev).prev();
+    let nextSecond = $(next).next();
   
     $(selected).removeClass().addClass("selected");
     $(prev).removeClass().addClass("prev");
@@ -62,17 +62,17 @@ function moveToSelected(element) {
 
   function moveToSelected(element) {
     if (element == "next") {
-      var selected = $(".selected").next();
+      let selected = $(".selected").next();
     } else if (element == "prev") {
-      var selected = $(".selected").prev();
+      let selected = $(".selected").prev();
     } else {
-      var selected = element;
+      let selected = element;
     }
   
-    var next = $(selected).next();
-    var prev = $(selected).prev();
-    var prevSecond = $(prev).prev();
-    var nextSecond = $(next).next();
+    let next = $(selected).next();
+    let prev = $(selected).prev();
+    let prevSecond = $(prev).prev();
+    let nextSecond = $(next).next();
   
     $(selected).removeClass().addClass("selected");
     $(prev).removeClass().addClass("prev");
@@ -123,15 +123,15 @@ function moveToSelected(element) {
 
 
  function showButtons(element) {
-    var buttons = element.getElementsByClassName('botones-ocultos');
-    for (var i = 0; i < buttons.length; i++) {
+    let buttons = element.getElementsByClassName('botones-ocultos');
+    for (let i = 0; i < buttons.length; i++) {
       buttons[i].classList.add('mostrar');
     }
   }
 
   function hideButtons(element) {
-    var buttons = element.getElementsByClassName('botones-ocultos');
-    for (var i = 0; i < buttons.length; i++) {
+    let buttons = element.getElementsByClassName('botones-ocultos');
+    for (let i = 0; i < buttons.length; i++) {
       buttons[i].classList.remove('mostrar');
     }
   }
@@ -145,9 +145,9 @@ function moveToSelected(element) {
 
 
   function cargarBanner1() {
-    var widthPantalla = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    let widthPantalla = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
   
-    var imagen = document.createElement("img");
+    let imagen = document.createElement("img");
     imagen.classList.add('d-block')
     imagen.classList.add('w-100')
   
@@ -161,9 +161,9 @@ function moveToSelected(element) {
   }
   
   function cargarBanner2() {
-    var widthPantalla = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    let widthPantalla = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
   
-    var imagen = document.createElement("img");
+    let imagen = document.createElement("img");
     imagen.classList.add('d-block')
     imagen.classList.add('w-100')
   
