@@ -35,7 +35,7 @@ function show_eye(slot) {
 
     eye.classList.remove('d-none');
     cart.classList.remove('d-none');
-    text.classList.remove('d-none');
+    text.classList.remove('d-md-none');
 }
 
 function hide_eye(slot,device) {
@@ -54,7 +54,7 @@ function hide_eye(slot,device) {
         setTimeout(function () {
             eye.classList.add('d-none');
             cart.classList.add('d-none');
-            text.classList.add('d-none');
+            text.classList.add('d-md-none');
         }, 300); // Esperar 300 milisegundos (duración de la transición) antes de ocultar los elementos
     });
 
@@ -66,12 +66,12 @@ function hide_eye(slot,device) {
 
         eye.classList.remove('d-none');
         cart.classList.remove('d-none');
-        text.classList.remove('d-none');
+        text.classList.remove('d-md-none');
     });
 
     eye.classList.remove('d-none');
     cart.classList.remove('d-none');
-    text.classList.remove('d-none');
+    text.classList.remove('d-md-none');
 }
 
 // !quitar despues
