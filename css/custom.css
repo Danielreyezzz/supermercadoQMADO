@@ -1166,7 +1166,6 @@ svg {
 /* modal */
 
 #marcaDiv {
-  top: -55px;
   position: relative;
 }
 
@@ -1177,10 +1176,6 @@ svg {
 
 /* modal */
 
-#marcaDiv {
-  top: -125px;
-  position: relative;
-}
 
 #marco_marca {
   text-align: center;
@@ -1355,39 +1350,39 @@ svg {
 
 /* MODAL Y LOGO */
 .logo-marca{
-  width: 30%!important;
   top: -123px!important;
 }
 @media (max-width: 1440px) {
   .logo-marca {
-    width: 30% !important;
     top: -105px !important;
   }
 }
 @media (max-width: 1048px) {
   .logo-marca {
-    width: 30% !important;
-    top: -105px !important;
+    top: -95px !important;
   }
 }
 
 @media (max-width: 794px) {
   .logo-marca {
-    width: 50% !important;
-    top: -90px !important;
+    top: -70px !important;
+  }
+  
+}
+@media (max-width: 574px) {
+  .logo-marca {
+    top: -60px !important;
   }
   
 }
 @media (max-width: 488px) {
   .logo-marca {
-    width: 60% !important;
     top: -60px !important;
   }
 }
 
 @media (max-width: 321px) {
   .logo-marca {
-    width: 60% !important;
     top: -73px !important;
   }
 }
