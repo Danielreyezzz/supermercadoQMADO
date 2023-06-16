@@ -710,9 +710,7 @@ svg {
   #menu-logo {
     margin-right: 20px !important;
   }
-  #navBarWeb {
-    height: 20px !important;
-  }
+
 }
 
 /* Custom bootstrap class */
@@ -1109,7 +1107,7 @@ svg {
     transition: bottom .5s ease-in;
   }
   .hidden-footer{
-    height: calc((100vh) - (100px)) !important;
+    height: calc((100vh) - (164px)) !important;
     transition: height .5s ease-in;
   }
   .display-footer{
