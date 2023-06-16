@@ -1398,6 +1398,12 @@ svg {
 }
 @media (max-width: 760px) {
   .usu {
-    font-size: .8rem!important;
+    font-size: 0.8rem !important;
+  }
+}
+@media (max-width: 330px) {
+  .margin-nav-bar {
+    margin-right: 1rem!important;
+    margin-left: -1rem!important;
   }
 }
