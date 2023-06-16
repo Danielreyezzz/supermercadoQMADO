@@ -6,7 +6,7 @@
   --white: #d5dbe5;
   --pureBlack: #000000;
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,300;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,300;1,400&display=swap");
 
 body {
   background-color: white;
@@ -40,12 +40,12 @@ footer {
 
 .hidden-footer {
   height: calc(100vh - (170px)) !important;
-  transition: height .5s ease-in;
+  transition: height 0.5s ease-in;
 }
 
 .display-footer {
   height: calc(100vh - (170px)) !important;
-  transition: height .5s ease-in;
+  transition: height 0.5s ease-in;
 }
 
 .cate {
@@ -691,7 +691,7 @@ svg {
     justify-content: center !important;
   }
 
-  #navbar>a {
+  #navbar > a {
     justify-content: center !important;
   }
 }
@@ -710,7 +710,6 @@ svg {
   #menu-logo {
     margin-right: 20px !important;
   }
-
 }
 
 /* Custom bootstrap class */
@@ -761,10 +760,9 @@ svg {
 img,
 svg {
   vertical-align: middle;
-  
 }
 
-.row>.container {
+.row > .container {
   max-width: 0 !important;
 }
 
@@ -791,7 +789,6 @@ svg {
 #cart:hover {
   background-image: url(../img/cart_hover.png);
 }
-
 
 /*! TEST */
 .modal-xl {
@@ -888,15 +885,14 @@ svg {
 .Bigcart_nofooter {
   bottom: 40px !important;
   z-index: 30;
-  transition: bottom .5s ease-in;
+  transition: bottom 0.5s ease-in;
 }
 
 .Bigcart_footer {
   bottom: 40px !important;
   z-index: 30;
-  transition: bottom .5s ease-in;
+  transition: bottom 0.5s ease-in;
 }
-
 
 .cesta_img {
   width: 20% !important;
@@ -931,7 +927,6 @@ svg {
 }
 
 @media screen and (max-width: 1056px) {
-
   /* #containerPanel {
     height: calc(100vh - (215px))!important;
   } */
@@ -942,35 +937,34 @@ svg {
 
   .hidden-footer {
     height: calc(100vh - (180px)) !important;
-    transition: height .5s ease-in;
+    transition: height 0.5s ease-in;
   }
 
   .display-footer {
     height: calc(100vh - (180px)) !important;
-    transition: height .5s ease-in;
+    transition: height 0.5s ease-in;
   }
-
 }
 @media screen and (max-width: 992px) {
   .hidden-footer {
     height: calc(100vh - (165px)) !important;
-    transition: height .5s ease-in;
+    transition: height 0.5s ease-in;
   }
 
   .display-footer {
     height: calc(100vh - (210px)) !important;
-    transition: height .5s ease-in;
+    transition: height 0.5s ease-in;
   }
   .Bigcart_nofooter {
     bottom: 25px !important;
     z-index: 30;
-    transition: bottom .5s ease-in;
+    transition: bottom 0.5s ease-in;
   }
-  
+
   .Bigcart_footer {
     bottom: 45px !important;
     z-index: 30;
-    transition: bottom .5s ease-in;
+    transition: bottom 0.5s ease-in;
   }
 }
 
@@ -981,25 +975,24 @@ svg {
 
   .hidden-footer {
     height: calc(100vh - (165px)) !important;
-    transition: height .5s ease-in;
+    transition: height 0.5s ease-in;
   }
 
   .display-footer {
     height: calc(100vh - (230px)) !important;
-    transition: height .5s ease-in;
+    transition: height 0.5s ease-in;
   }
   .Bigcart_nofooter {
     bottom: 25px !important;
     z-index: 30;
-    transition: bottom .5s ease-in;
+    transition: bottom 0.5s ease-in;
   }
-  
+
   .Bigcart_footer {
     bottom: 85px !important;
     z-index: 30;
-    transition: bottom .5s ease-in;
+    transition: bottom 0.5s ease-in;
   }
-
 }
 
 @media screen and (max-width: 767px) {
@@ -1014,24 +1007,24 @@ svg {
   .Bigcart_nofooter {
     bottom: 25px !important;
     z-index: 30;
-    transition: bottom .5s ease-in;
+    transition: bottom 0.5s ease-in;
   }
-  
+
   .Bigcart_footer {
     bottom: 155px !important;
     z-index: 30;
-    transition: bottom .5s ease-in;
+    transition: bottom 0.5s ease-in;
   }
 
-  .hidden-footer{
+  .hidden-footer {
     height: calc(100vh - (165px)) !important;
-    transition: height .5s ease-in;
+    transition: height 0.5s ease-in;
   }
-  .display-footer{
+  .display-footer {
     height: calc(100vh - (295px)) !important;
-    transition: height .5s ease-in;
+    transition: height 0.5s ease-in;
   }
-  
+
   .showmore {
     background-color: #fb2a2ad6;
     border: 2px solid #ffffff;
@@ -1048,7 +1041,7 @@ svg {
     left: unset !important;
     padding: auto;
   }
-  
+
   .drop-estas {
     top: -20px !important;
     margin-top: 10px !important;
@@ -1059,7 +1052,6 @@ svg {
   .col-1-balda {
     width: 30.333333% !important;
   }
-
 
   .balda {
     margin-top: 4% !important;
@@ -1075,62 +1067,60 @@ svg {
     width: 50% !important;
   }
 
-.Bigcart_nofooter {
-  bottom: 25px !important;
-  z-index: 30;
-  transition: bottom .5s ease-in;
-}
-
-.Bigcart_footer {
-  bottom: 155px !important;
-  z-index: 30;
-  transition: bottom .5s ease-in;
-}
-  .hidden-footer{
-    height: calc((100vh) - (165px)) !important;
-    transition: height .5s ease-in;
+  .Bigcart_nofooter {
+    bottom: 25px !important;
+    z-index: 30;
+    transition: bottom 0.5s ease-in;
   }
-  .display-footer{
+
+  .Bigcart_footer {
+    bottom: 155px !important;
+    z-index: 30;
+    transition: bottom 0.5s ease-in;
+  }
+  .hidden-footer {
+    height: calc((100vh) - (165px)) !important;
+    transition: height 0.5s ease-in;
+  }
+  .display-footer {
     height: calc(100vh - (295px)) !important;
-    transition: height .5s ease-in;
+    transition: height 0.5s ease-in;
   }
 }
 @media screen and (max-width: 362px) {
   .Bigcart_nofooter {
     bottom: 25px !important;
     z-index: 30;
-    transition: bottom .5s ease-in;
+    transition: bottom 0.5s ease-in;
   }
-  
+
   .Bigcart_footer {
     bottom: 150px !important;
     z-index: 30;
-    transition: bottom .5s ease-in;
+    transition: bottom 0.5s ease-in;
   }
-  .hidden-footer{
+  .hidden-footer {
     height: calc((100vh) - (164px)) !important;
-    transition: height .5s ease-in;
+    transition: height 0.5s ease-in;
   }
-  .display-footer{
+  .display-footer {
     height: calc(100vh - (288px)) !important;
-    transition: height .5s ease-in;
+    transition: height 0.5s ease-in;
   }
 }
 /* desplegable */
 
 .desplegable {
   font-size: 1rem;
-  font-family: "roboto"!important;
+  font-family: "roboto" !important;
   background-color: #ffffff;
 }
 
-
 .desplegable-menu {
-
-  border-radius: 0px 0px .5rem 0px !important;
+  border-radius: 0px 0px 0.5rem 0px !important;
   margin-top: 14.9px !important;
   border-top: 0px;
-  font-family: "roboto"!important;
+  font-family: "roboto" !important;
 }
 
 .desplegables {
@@ -1139,8 +1129,7 @@ svg {
 
 .desplegable {
   font-size: 1rem;
-  background-color: #FFFFFF;
-
+  background-color: #ffffff;
 }
 
 .enlace-desplegable {
@@ -1151,12 +1140,8 @@ svg {
 }
 
 .bg-cum {
-
-  background-color: #FEFEFE;
+  background-color: #fefefe;
 }
-
-
-
 
 .actual {
   color: red !important;
@@ -1174,7 +1159,6 @@ svg {
 }
 
 /* modal */
-
 
 #marco_marca {
   text-align: center;
@@ -1324,15 +1308,14 @@ svg {
 }
 
 .marginas {
-  margin: 0 .3rem;
+  margin: 0 0.3rem;
 }
 
-
 .descripcion {
-  font-family: 'roboto';
+  font-family: "roboto";
 
   left: 85%;
-  font-size: .8rem !important;
+  font-size: 0.8rem !important;
   font-weight: bold !important;
   z-index: 9999;
   background-color: white;
@@ -1348,8 +1331,8 @@ svg {
 }
 
 /* MODAL Y LOGO */
-.logo-marca{
-  top: -123px!important;
+.logo-marca {
+  top: -123px !important;
 }
 @media (max-width: 1440px) {
   .logo-marca {
@@ -1366,13 +1349,11 @@ svg {
   .logo-marca {
     top: -70px !important;
   }
-  
 }
 @media (max-width: 574px) {
   .logo-marca {
     top: -60px !important;
   }
-  
 }
 @media (max-width: 488px) {
   .logo-marca {
@@ -1394,21 +1375,35 @@ svg {
   width: 35% !important;
 }
 
-
-.acordeon-cosas{
-  background-color: #DC3545!important;
-  color: white!important;
+.acordeon-cosas {
+  background-color: #dc3545 !important;
+  color: white !important;
 }
-.acordeon-cosas:active{
-  color: white!important;
+.acordeon-cosas:active {
+  color: white !important;
   border: #000000 solid 4px;
 }
-.acor-cum{
-  --bs-accordion-btn-focus-box-shadow: none!important;
+.acor-cum {
+  --bs-accordion-btn-focus-box-shadow: none !important;
 }
-.nav-cum{
-  color: #000000!important;
+.nav-cum {
+  color: #000000 !important;
 }
-.active{
-  color: white!important;
+.active {
+  color: white !important;
+}
+
+.hei {
+  height: 40px !important;
+}
+@media (max-width: 760px) {
+  .usu {
+    font-size: 0.8rem !important;
+  }
+}
+@media (max-width: 330px) {
+  .margin-nav-bar {
+    margin-right: 1rem!important;
+    margin-left: -1rem!important;
+  }
 }
