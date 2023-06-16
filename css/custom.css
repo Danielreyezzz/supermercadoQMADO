@@ -1111,7 +1111,7 @@ svg {
     transition: height .5s ease-in;
   }
   .display-footer{
-    height: calc(100vh - (225px)) !important;
+    height: calc(100vh - (288px)) !important;
     transition: height .5s ease-in;
   }
 }
