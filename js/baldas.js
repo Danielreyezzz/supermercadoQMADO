@@ -193,6 +193,32 @@ function cargarProductos() {
     }
 }
 
+function orderProductsRack(){
+ 
+    //  console.log((((rack_3.firstElementChild).firstElementChild.nextElementSibling).nextElementSibling).childElementCount);
+    //  console.log(((rack_3.firstElementChild).firstElementChild.nextElementSibling).nextElementSibling);
+    //  ((((rack_3.firstElementChild).firstElementChild.nextElementSibling).nextElementSibling).childElementCount < 4) 
+    // //  ? (((rack_3.firstElementChild).firstElementChild).nextElementSibling).classList.remove('justify-content-lg-between')
+    // ? console.log(((((rack_3.firstElementChild).firstElementChild).nextElementSibling).nextElementSibling).classList.replace('justify-content-lg-between','justify-content-lg-start' ))
+    //  : console.log('nop');
+
+    /* Las baldas ahora se dividen en balda 1 2 y 3 pero aparte  tienen lado derecho e izquierdo, entonces son como 6 subbaldas 
+        con id baldaSection_X, si hay menos de 4 productos en la subbalda se cambiara la clase que los centra */
+    for (let i = 1; i <= 6; i++) {
+        const baldaSections = [];
+        const baldaSection = document.getElementById(`baldaSection_${i}`); 
+
+        baldaSections.push({
+            baldaSection: baldaSection,
+        });
+        (baldaSection.childElementCount<4) 
+        ? baldaSection.classList.replace('justify-content-lg-between','justify-content-lg-start')
+        : baldaSection.classList.replace('justify-content-lg-start','justify-content-lg-between')
+    }
+
+}
+// orderProductsRack();
+
 cargarProductos()
 
 
