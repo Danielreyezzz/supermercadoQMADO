@@ -211,9 +211,12 @@ function orderProductsRack(){
         baldaSections.push({
             baldaSection: baldaSection,
         });
-        (baldaSection.childElementCount<4) 
-        ? baldaSection.classList.replace('justify-content-lg-between','justify-content-lg-start')
-        : baldaSection.classList.replace('justify-content-lg-start','justify-content-lg-between')
+        if(baldaSection.childElementCount<4 && baldaSection.classList.contains('justify-content-lg-between')) {
+            baldaSection.classList.replace('justify-content-lg-between','justify-content-lg-start')
+
+        }else if(baldaSection.childElementCount>=4 && baldaSection.classList.contains('justify-content-lg-start')){
+            baldaSection.classList.replace('justify-content-lg-start','justify-content-lg-between')
+        }
     }
 
 }
