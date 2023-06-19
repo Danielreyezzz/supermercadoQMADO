@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tramitar</title>
+    <link rel="icon" type="image/jpg" href="./src/img/favicon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#navBarWeb").load("navbar.html");
+            $("#asideMenu").load("asidemenu.html", function () {
+                loadCustomScript();
+            });
+            $("#footerWeb").load("footer.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="navBarWeb"></div>
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div id="asideMenu"
+                class="col-12 col-md-3 col-xl-2 px-sm-0 px-0 bg-dark position-absolute d-none fade-in-left"></div>
+
+
+            <div id="containerPanel" class="col py-3 overflow-y-auto overflow-x-hidden px-2 px-md-0 pt-0">
+                <div class="d-flex container-fluid p-0 mt-5 px-lg-5 px-0 justify-content-between">
+                    <section class="col-12 col-md-8 mb-3">
+
+                        <div class="col-12 d-flex row text-justify justify-content-center mx-lg-2 mx-0">
+                            <section class="mb-3 p-0">
+                                <div class="d-flex flex-row justify-content-between mb-1">
+                                    <h3 class="text-dark mb-0 align-self-center">Dirección</h3>
+                                    <i class="bi bi-lock-fill text-secondary fs-2 p-0 d-none"></i>
+                                </div>
+                                <hr class="text-dark border-3">
+                                <section class="p-0">
+                                    <div
+                                        class="d-flex flex-row flex-wrap justify-content-evenly border border-1 border-dark p-2 py-3">
+
+                                        <!--* SELECTED -->
+                                        <div class="d-flex flex-column border border-danger col-10 col-md-3 shadow m-2">
+                                            <i
+                                                class="bi bi-check-circle-fill text-success my-0 align-self-end me-2 fs-5"></i>
+                                            <div class="d-flex justify-content-center w-100 p-2 py-0">
+                                                <h3 class="fw-normal">Dirección 1</h3>
+                                            </div>
+                                            <div class="d-flex flex-column justify-content-start w-100 p-2 pt-0">
+                                                <p class="fw-normal fs-6 mt-1 mb-0">Calle:</p>
+                                                <p class="fw-normal fs-6 mt-1 mb-0">Número:</p>
+                                                <p class="fw-normal fs-6 mt-1 mb-0">Colonia:</p>
+                                                <p class="fw-normal fs-6 mt-1 mb-0">CP:</p>
+                                            </div>
+                                            <div class="d-flex flex-row justify-content-evenly w-100 p-0 py-1 pb-2">
+                                                <a type="button" class="btn btn-dark rounded-0 fw-normal fs-6 shadow"
+                                                    data-bs-target="#addressModal" data-bs-toggle="modal">Editar</a>
+                                                <a type="button"
+                                                    class="btn btn-dark rounded-0 fw-normal fs-6 shadow">Seleccionar</a>
+                                            </div>
+                                        </div>
+
+                                        <!--* OPTIONAL -->
+                                        <div class="d-flex flex-column col-10 col-md-3 shadow m-2">
+                                            <i
+                                                class="bi bi-check-circle text-secondary my-0 align-self-end me-2 fs-5"></i>
+                                            <div class="d-flex justify-content-center w-100 p-2 py-0">
+                                                <h3 class="fw-normal">Dirección 2</h3>
+                                            </div>
+                                            <div class="d-flex flex-column justify-content-start w-100 p-2 pt-0">
+                                                <p class="fw-normal fs-6 mt-1 mb-0">Calle:</p>
+                                                <p class="fw-normal fs-6 mt-1 mb-0">Número:</p>
+                                                <p class="fw-normal fs-6 mt-1 mb-0">Colonia:</p>
+                                                <p class="fw-normal fs-6 mt-1 mb-0">CP:</p>
+                                            </div>
+                                            <div class="d-flex flex-row justify-content-evenly w-100 p-0 py-1 pb-2">
+                                                <a type="button" class="btn btn-dark rounded-0 fw-normal fs-6 shadow"
+                                                    data-bs-target="#addressModal" data-bs-toggle="modal">Editar</a>
+                                                <a type="button"
+                                                    class="btn btn-dark rounded-0 fw-normal fs-6 shadow">Seleccionar</a>
+                                            </div>
+                                        </div>
+
+                                        <!--* NEW ADDRESS -->
+                                        <div class="d-flex justify-content-center flex-column col-10 col-md-3 m-2">
+
+                                            <div class="d-flex justify-content-center w-100 p-2 py-0">
+                                                <a href='#'
+                                                    class="bi bi-plus fs-1 text-light bg-danger px-4 py-2 shadow rounded rounded-5 border border-secondary"
+                                                    data-bs-target="#addressModal" data-bs-toggle="modal"></a>
+                                            </div>
+                                            <p class='text-center fw-normarl fs-5 my-1'>Añadir nueva</p>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="d-flex justify-content-end my-3 px-0">
+                                        <button type="button"
+                                            class="btn btn-dark rounded-0 px-5 fw-medium fs-5 shadow">Confirmar</button>
+                                    </div>
+                                </section>
+                            </section>
+
+                            <section class="my-3 p-0">
+                                <div class="d-flex flex-row justify-content-between mb-1">
+                                    <h3 class="text-secondary mb-0 align-self-center">Fecha de envío</h3>
+                                    <i class="bi bi-lock-fill text-secondary fs-2 p-0"></i>
+                                </div>
+                                <hr class="text-dark border-3">
+                                <section class="p-0 d-none">
+                                    <div class="d-flex flex-column justify-content-start p-2 pb-3">
+
+                                        <label class="fs-5 ms-2 my-1 fw-bolder" for='date'>Seleccionar día</label>
+                                        <input type="date" name='date' class="form-control px-3 fs-5">
+
+                                        <label class="fs-5 ms-2 my-1 fw-bolder mt-2">Tramo horario</label>
+                                        <div class='container d-flex flex-row flex-wrap justify-content-start p-2'>
+                                            <button
+                                                class="fs-4 text-dark bg-transparent px-2 py-1 shadow rounded rounded-0 border border-secondary m-2">09:00</button>
+                                            <button
+                                                class="fs-4 text-dark bg-transparent px-2 py-1 shadow rounded rounded-0 border border-secondary m-2">11:00</button>
+                                            <button
+                                                class="fs-4 text-dark bg-transparent px-2 py-1 shadow rounded rounded-0 border border-secondary m-2">13:00</button>
+                                            <button
+                                                class="fs-4 text-dark bg-transparent px-2 py-1 shadow rounded rounded-0 border border-secondary m-2">15:00</button>
+                                            <button
+                                                class="fs-4 text-dark bg-transparent px-2 py-1 shadow rounded rounded-0 border border-secondary m-2">17:00</button>
+                                            <button
+                                                class="fs-4 text-dark bg-transparent px-2 py-1 shadow rounded rounded-0 border border-secondary m-2">19:00</button>
+                                            <button
+                                                class="fs-4 text-dark bg-transparent px-2 py-1 shadow rounded rounded-0 border border-secondary m-2">21:00</button>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="d-flex justify-content-end my-3 px-0">
+                                        <button type="button"
+                                            class="btn btn-dark rounded-0 px-5 fw-medium fs-5 shadow">Confirmar</button>
+                                    </div>
+                                </section>
+                            </section>
+
+                            <section class="my-3 p-0">
+                                <div class="d-flex flex-row justify-content-between mb-1">
+                                    <h3 class="text-secondary mb-0 align-self-center">Método de pago</h3>
+                                    <i class="bi bi-lock-fill text-secondary fs-2 p-0"></i>
+                                </div>
+                                <hr class="text-dark border-3">
+                                <section class="p-0 d-none">
+                                    <div class="d-flex flex-column justify-content-start p-2 pb-3">
+
+                                    </div>
+                                    <div class="d-flex justify-content-end my-3 px-0">
+                                        <button type="button"
+                                            class="btn btn-dark rounded-0 px-5 fw-medium fs-5 shadow">Confirmar</button>
+                                    </div>
+                                </section>
+                            </section>
+
+                            <section class="my-3 p-0">
+                                <div class="d-flex flex-row justify-content-between mb-1">
+                                    <h3 class="text-secondary mb-0 align-self-center">Confirmación</h3>
+                                    <i class="bi bi-lock-fill text-secondary fs-2 p-0"></i>
+                                </div>
+                                <hr class="text-dark border-3">
+                                <section class="p-0 d-none">
+                                    <div class="d-flex flex-column justify-content-start p-2 pb-3">
+
+                                        <div class="mt-1 bg-white p-2">
+                                            <div class='p-2 '>
+                                                <h3 class='fw-normal mt-1 mb-0'>Dirección</h3>
+                                                <p class='fw-normal mt-1 mb-0 fs-5'>Ciudad:</p>
+                                                <p class='fw-normal mt-1 mb-0 fs-5'>Dirección:</p>
+                                                <p class='fw-normal mt-1 mb-0 fs-5'>CP:</p>
+                                            </div>
+                                            <div class='p-2'>
+                                                <h3 class='fw-normal mt-1 mb-0'>Entrega</h3>
+                                                <p class='fw-normal mt-1 mb-0 fs-5'>Fecha:</p>
+                                                <p class='fw-normal mt-1 mb-0 fs-5'>Hora:</p>
+                                            </div>
+                                            <div class='p-2'>
+                                                <h3 class='fw-normal'>Método de pago</h3>
+                                                <p class='fw-normal mt-1 mb-0 fs-5'>Tarjeta:</p>
+                                                <p class='fw-normal mt-1 mb-0 fs-5'>Titular:</p>
+                                                <p class='fw-normal mt-1 mb-0 fs-5'>Número:</p>
+                                                <p class='fw-normal mt-1 mb-0 fs-5'>Fecha expiración:</p>
+                                            </div>
+                                            <div class="d-flex flex-row align-items-center justify-content-center p-3">
+                                                <h3>Total: 22.35 €</h3>
+                                                <small class="text-muted ms-2 fs-6">Envío 2.95 €</small>
+                                            </div>
+
+                                        </div>
+                                        <div class="d-flex justify-content-end my-3 px-0">
+                                            <button type="button"
+                                                class="btn btn-dark rounded-0 px-5 fw-medium fs-5 shadow">Confirmar
+                                                pedido</button>
+                                        </div>
+                                </section>
+                            </section>
+
+                        </div>
+                    </section>
+                    <aside class="d-none d-md-flex col-md-4 col-lg-3 me-5">
+                        <section class="position-fixed position-lg-absolute col-md-4 col-lg-3">
+                            <div class="border mt-4 bg-white shadow border-dark p-2">
+                                <div class='p-2 border-bottom border-dark'>
+                                    <h3 class='fw-normal mt-1 mb-0'>Dirección</h3>
+                                    <p class='fw-normal mt-1 mb-0 fs-5'>Ciudad:</p>
+                                    <p class='fw-normal mt-1 mb-0 fs-5'>Dirección:</p>
+                                    <p class='fw-normal mt-1 mb-0 fs-5'>CP:</p>
+                                </div>
+                                <div class='p-2 border-bottom border-dark'>
+                                    <h3 class='fw-normal mt-1 mb-0'>Entrega</h3>
+                                    <p class='fw-normal mt-1 mb-0 fs-5'>Fecha:</p>
+                                    <p class='fw-normal mt-1 mb-0 fs-5'>Hora:</p>
+                                </div>
+                                <div class='p-2 border-bottom border-dark'>
+                                    <h3 class='fw-normal'>Método de pago</h3>
+                                    <p class='fw-normal mt-1 mb-0 fs-5'>Tarjeta:</p>
+                                    <p class='fw-normal mt-1 mb-0 fs-5'>Titular:</p>
+                                    <p class='fw-normal mt-1 mb-0 fs-5'>Número:</p>
+                                    <p class='fw-normal mt-1 mb-0 fs-5'>Fecha expiración:</p>
+                                </div>
+                                <div class="d-flex flex-row align-items-center justify-content-center p-3">
+                                    <h3>Total: 22.35 €</h3>
+                                    <small class="text-muted ms-2 fs-6">Envío 2.95 €</small>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <button type="button"
+                                        class="btn btn-dark rounded-0 px-5 fw-medium fs-5 shadow mb-3">Confirmar
+                                        pedido</button>
+                                </div>
+                            </div>
+                        </section>
+
+                    </aside>
+                </div>
+                <div id="footerWeb"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
