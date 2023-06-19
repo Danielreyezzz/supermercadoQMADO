@@ -1085,11 +1085,15 @@ svg {
     transition: bottom 0.5s ease-in;
   }
   .hidden-footer {
-    height: calc((100vh) - (165px)) !important;
+    /* height: 78dvh !important; */
+    height: -webkit-calc(100% - 165px) !important;
+    /* height: calc((100vh) - (165px)) !important; */
     transition: height 0.5s ease-in;
   }
   .display-footer {
-    height: calc(100vh - (295px)) !important;
+    /* height: 62dvh !important; */
+    height: -webkit-calc(100% - 295px) !important;
+    /* height: calc(100vh - (295px)) !important; */
     transition: height 0.5s ease-in;
   }
 }
@@ -1106,11 +1110,15 @@ svg {
     transition: bottom 0.5s ease-in;
   }
   .hidden-footer {
-    height: calc((100vh) - (164px)) !important;
+    height: 78dvh !important;;
+    height: -webkit-calc(100% - 164px) !important;
+    /* height: calc((100vh) - (164px)) !important; */
     transition: height 0.5s ease-in;
   }
   .display-footer {
-    height: calc(100vh - (288px)) !important;
+    height: 62dvh !important;
+    height: -webkit-calc(100% - 288px) !important;
+    /* height: calc(100vh - (288px)) !important; */
     transition: height 0.5s ease-in;
   }
 }
@@ -1359,7 +1367,7 @@ svg {
 @media (max-width: 574px) {
   .logo-marca {
     top: -60px !important;
-  }
+  } 
 }
 @media (max-width: 488px) {
   .logo-marca {
