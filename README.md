@@ -1,2 +1,2 @@
 # supermercadoQMADO
-Supermercado QMADO
+Proyecto de supermercado interactivo VirtualSoft Studios
